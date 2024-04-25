@@ -4,7 +4,8 @@ library(sf)
 library(tidyverse)
 
 # load the in the dashboard data files
-input_directory = "C:/Users/atabascio/OneDrive - CUI/Documents/construction-mitigation/Interim/"
+
+input_directory = "../../Interim/"
 
 ff_monthly = read_csv(paste0(input_directory, "ff_monthly_meta.csv")) %>%
   select(-...1)
