@@ -48,7 +48,7 @@ ui <- dashboardPage(
                  title = "Foot Traffic (%) Relative to 2019",
                  plotOutput("ffMonthlyPlot", height = "400px"),
                  width = 12,
-                style = "margin: 0px; padding: 0px;" 
+                 style = "margin: 0px; padding: 0px;" 
                )
         ),
         column(width = 3, 
