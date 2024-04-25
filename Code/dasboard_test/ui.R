@@ -43,12 +43,26 @@ dashboardPage(
                        # Time of Day Plot
                        box(
                          title = "Vists by Time of Day",
-                         
+                         plotOutput("timeOfDayPlot", height = "50vh"),
+                         width = 12,
+                         style = "margin: 0px; padding: 0px;"
+                       )
+                ),
+                column(width = 6,
+                       # Visitor Type Plot
+                       box(
+                         title = "Visit Count by Type of Visitor",
+                         plotOutput("VisitorTypePlot", height = "50vh"),
+                         width = 12,
+                         style = "margin: 0px; padding: 0px;"
                        )
                 )
               )
               
               
+      ),
+      tabItem(tabName = "realEstate"
+        
       )
     )
   )
