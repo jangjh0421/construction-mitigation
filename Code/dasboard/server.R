@@ -51,7 +51,7 @@ function(input, output){
   
   
   # Monthly Visits Plot
-  output$MonthlyPlot = renderPlot({
+  output$monthlyPlot = renderPlot({
   
     # generate the plot
     ggplot(monthlyData(), aes(x = date, y = Percentage)) +
