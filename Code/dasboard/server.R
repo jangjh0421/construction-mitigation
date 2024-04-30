@@ -27,6 +27,14 @@ function(input, output){
              (Year == as.numeric(input$year) | Year == as.numeric(input$year) - 1)) 
   })
   
+  # Visitor Level Summary
+  visitorLevelData = reactive({
+    visitorLevelFiltered = ff_quarter %>%
+      filter((Name == str_replace_all(input$bia, " ", "") & Quarter == input$quarter) &
+               (Year == as.numeric(input$year) | Year == as.numeric(input$year) - 1)) %>%
+      select(time_window, Change)
+  })
+  
   
   # Monthly Visits Plot
   output$MonthlyPlot = renderPlot({
@@ -122,6 +130,26 @@ function(input, output){
             legend.title = element_blank(),
             legend.margin = margin(c(0,0,0,0)),
             legend.position = "bottom")
+  })
+  
+  # Visitor Summary Table
+  output$vistorLevelsTable = renderTable({
+    visitorLevelData()
+  })
+  
+  # How to Read Visitor Levels
+  output$vistordescription = renderText({
+    text <- "<p>This is the first paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>This is the second paragraph. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>This is the third paragraph with bullet points:</p>
+    <ul>
+      <li>Bullet point 1</li>
+      <li>Bullet point 2</li>
+      <li>Bullet point 3</li>
+    </ul>"
+    
+    # Return the styled text
+    HTML(text)
   })
   
 }

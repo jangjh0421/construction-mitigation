@@ -18,7 +18,7 @@ dashboardPage(
       tabItem(tabName = "visitorLevels",
               fluidRow(
                 style = "margin: 0px; padding 0px;",
-                column(width = 6,
+                column(width = 5,
                        # Day of Week Plot
                        box(
                          title = "Visits by Day of Week",
@@ -27,7 +27,7 @@ dashboardPage(
                          style = "margin 0px; padding 0px;"
                        )
                 ),
-                column(width = 6,
+                column(width = 5,
                        # Monthly Visitor Levels Plot
                        box(
                          title = "Visitor Levels (%) Relative to 2019",
@@ -35,11 +35,20 @@ dashboardPage(
                          width = 12,
                          style = "margin 0px; padding 0px;"
                        )
+                ),
+                column(width = 2,
+                       # Visitor Level Table
+                       box(
+                         title = "Visitor Levels Summary",
+                         tableOutput("vistorLevelsTable"),
+                         width = 12,
+                         style = "margin 0px; padding 0px;"
+                       )
                 )
               ),
               fluidRow(
                 style = "margin: 0px; padding 0px;",
-                column(width = 6,
+                column(width = 4,
                        # Time of Day Plot
                        box(
                          title = "Vists by Time of Day",
@@ -48,13 +57,36 @@ dashboardPage(
                          style = "margin: 0px; padding: 0px;"
                        )
                 ),
-                column(width = 6,
+                column(width = 4,
                        # Visitor Type Plot
                        box(
                          title = "Visit Count by Type of Visitor",
                          plotOutput("VisitorTypePlot", height = "50vh"),
                          width = 12,
                          style = "margin: 0px; padding: 0px;"
+                       )
+                ),
+                column(width = 4,
+                       # Description Panel
+                       box(
+                         title = "How to Read: Visitor Level Measures",
+                         HTML("<p><b>Visits by Day of Week:</b></p>
+                              <p>This chart measures the quarterly total count of visits to buildings within the defined study area for the target and previous year based on the day of the week.</p>
+                              <p><b>Visits by Time of Day:</b></p>
+                              <p>This chart measures the quarterly total count of visits to buildings within the defined study area for the target and previous year based on the time of the day.</p>
+                              <p><b>Visitor Levels (%) Relative to 2019</b></p>
+                              <p>This chart measures the number of visits to buildings within the defined study area month by month, comparing the number of visits in 2019 to the same month of
+                              the current year to produce a relative percentage, with 100%, meaning the target month reached pre-pandemic levels.</p>
+                              <p><b>Visitor Levels Summary</b></p>
+                              <p>This table provides the percentage change of Visitor Levels, as defined in the previous chart, for the quarter to four distinct temporal baselines.
+                              <ul>
+                                <li>same quarter of the previous year</li>
+                                <li>same quarter of the pre-construction year (2022)</li>
+                                <li>same quarter of the pre-pandemic year</li>
+                                <li>the last quarter of the same year</li>
+                              </ul>"),
+                         width = 12,
+                         style = "margin 0px; padding 0px;"
                        )
                 )
               )
@@ -66,4 +98,4 @@ dashboardPage(
       )
     )
   )
-)
+)</h4>
