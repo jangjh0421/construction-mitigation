@@ -2,8 +2,22 @@ function(input, output){
   
   # Monthly Visits Filter
   monthlyData = reactive({
+    
+    # filter the data based on the input data
+    if (input$quarter == "Q1"){
+      target_end_date = ymd(paste0(input$year, "03", "31"))
+    } else if (input$quarter == "Q2"){
+      target_end_date = ymd(paste0(input$year, "06", "30"))
+    } else if (input$quarter == "Q3"){
+      target_end_date = ymd(paste0(input$year, "09", "30"))
+    } else {
+      target_end_date = ymd(paste0(input$year, "12", "31"))
+    }
+    
+    # filter the data based on the BIA
     monthlyFiltered = ff_monthly %>%
-      filter(Area == str_replace_all(input$bia, " ", ""))
+      filter(Area == str_replace_all(input$bia, " ", "") & date < target_end_date)
+    
   })
   
   # Day of Week Visits Filter
@@ -45,17 +59,17 @@ function(input, output){
       geom_line(size = 1.5, color = "#00AEF3") +
       ylim(0, 180) +
       labs(x = "Month", y = "Percentage (%)") +
-      scale_x_date(limits = c(as.Date("2020-01-01", "%Y-%m-%d"), as.Date("2024-01-01", "%Y-%m-%d"), date_breaks = "3 month", date_labels = "%b %Y")) +
+      scale_x_date(limits = c(as.Date("2020-01-01", "%Y-%m-%d"), as.Date("2024-01-01", "%Y-%m-%d")), date_breaks = "6 month", date_labels = "%b %Y") +
       theme(
         panel.background = element_rect(fill = 'transparent', colour = NA),
         panel.grid.minor = element_blank(),
         panel.grid.major = element_line(color = 'gray80'),
         plot.background = element_rect(fill = 'transparent', colour = NA),
         plot.title = element_text(size = 9),
-        axis.title.y = element_text(size = 7),
+        axis.title.y = element_text(size = 11),
         axis.title.x = element_blank(),
-        axis.text.x = element_text(size = 7, angle = 30),
-        axis.text.y = element_text(size = 7),
+        axis.text.x = element_text(size = 9, angle = 20),
+        axis.text.y = element_text(size = 10),
         legend.position = "none")
     
   })
@@ -76,10 +90,11 @@ function(input, output){
         panel.grid.major = element_line(color = 'gray80'),
         plot.background = element_rect(fill = 'transparent', colour = NA),
         plot.title = element_text(size = 9),
-        axis.title.y = element_text(size = 7),
+        axis.title.y = element_text(size = 11),
         axis.title.x = element_blank(),
-        axis.text = element_text(size = 7),
-        legend.text = element_text(size = 7),
+        axis.text.y = element_text(size = 10),
+        axis.text.x = element_text(size = 10, angle = 15),
+        legend.text = element_text(size = 10),
         legend.title = element_blank(),
         legend.key.size = unit(0.5, "cm"),
         legend.margin = margin(c(0,0,0,0)),
@@ -102,10 +117,10 @@ function(input, output){
         panel.grid.major = element_line(color = 'gray80'),
         plot.background = element_rect(fill = 'transparent', colour = NA),
         plot.title = element_text(size = 9),
-        axis.title.y = element_text(size = 7),
+        axis.title.y = element_text(size = 11),
         axis.title.x = element_blank(),
-        axis.text.y = element_text(size = 7),
-        axis.text.x = element_text(size = 7, angle = 7),
+        axis.text.y = element_text(size = 10),
+        axis.text.x = element_text(size = 10, angle = 10),
         legend.position = "none")
   })
   
@@ -123,9 +138,9 @@ function(input, output){
             plot.background = element_rect(fill = 'transparent', colour = NA),
             plot.title = element_text(size = 9),
             axis.title.x = element_blank(),
-            axis.title.y = element_text(size = 7),
-            axis.text = element_text(size = 7),
-            legend.text = element_text(size = 7),
+            axis.title.y = element_text(size = 11),
+            axis.text = element_text(size = 10),
+            legend.text = element_text(size = 10),
             legend.key.size = unit(0.5, "cm"),
             legend.title = element_blank(),
             legend.margin = margin(c(0,0,0,0)),
@@ -135,21 +150,6 @@ function(input, output){
   # Visitor Summary Table
   output$vistorLevelsTable = renderTable({
     visitorLevelData()
-  })
-  
-  # How to Read Visitor Levels
-  output$vistordescription = renderText({
-    text <- "<p>This is the first paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>This is the second paragraph. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>This is the third paragraph with bullet points:</p>
-    <ul>
-      <li>Bullet point 1</li>
-      <li>Bullet point 2</li>
-      <li>Bullet point 3</li>
-    </ul>"
-    
-    # Return the styled text
-    HTML(text)
   })
   
 }

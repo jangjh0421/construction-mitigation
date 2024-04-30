@@ -18,7 +18,7 @@ dashboardPage(
       tabItem(tabName = "visitorLevels",
               fluidRow(
                 style = "margin: 0px; padding 0px;",
-                column(width = 5,
+                column(width = 4,
                        # Day of Week Plot
                        box(
                          title = "Visits by Day of Week",
@@ -27,7 +27,7 @@ dashboardPage(
                          style = "margin 0px; padding 0px;"
                        )
                 ),
-                column(width = 5,
+                column(width = 4,
                        # Monthly Visitor Levels Plot
                        box(
                          title = "Visitor Levels (%) Relative to 2019",
@@ -36,7 +36,7 @@ dashboardPage(
                          style = "margin 0px; padding 0px;"
                        )
                 ),
-                column(width = 2,
+                column(width = 4,
                        # Visitor Level Table
                        box(
                          title = "Visitor Levels Summary",
@@ -98,4 +98,4 @@ dashboardPage(
       )
     )
   )
-)</h4>
+)
