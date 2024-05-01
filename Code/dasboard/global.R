@@ -1,6 +1,7 @@
 library(shiny)
 library(shinydashboard)
 library(sf)
+library(plotly)
 library(tidyverse)
 library(lubridate)
 
