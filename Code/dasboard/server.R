@@ -16,7 +16,7 @@ function(input, output){
     
     # filter the data based on the BIA
     monthlyFiltered = ff_monthly %>%
-      filter(Area == str_replace_all(input$bia, " ", "") & date < target_end_date)
+      filter(Area == str_replace_all(input$bia, " ", "") & Date < target_end_date)
     
   })
   
@@ -54,7 +54,7 @@ function(input, output){
   output$monthlyPlot = renderPlotly({
   
     # generate the plot
-    plotMonthlyVisits = ggplot(monthlyData(), aes(x = date, y = Percentage)) +
+    plotMonthlyVisits = ggplot(monthlyData(), aes(x = Date, y = Percentage)) +
       geom_hline(yintercept = 100, color = "#000000") +
       geom_line(size = 1.5, color = "#00AEF3") +
       ylim(0, 180) +
@@ -67,13 +67,16 @@ function(input, output){
         plot.background = element_rect(fill = 'transparent', colour = NA),
         axis.title.y = element_text(size = 10),
         axis.title.x = element_blank(),
-        axis.text.x = element_text(size = 8, angle = 8),
+        axis.text.x = element_text(size = 8, angle = 20),
         axis.text.y = element_text(size = 8),
         legend.position = "none")
     
     # convert into a plotly
-    ggplotly(plotMonthlyVisits)
-    
+    ggplotly(plotMonthlyVisits) %>%
+      config(displayModeBar = FALSE) %>%
+      layout(
+        yaxis = list(fixedrange = TRUE),
+        xaxis = list(fixedrange = TRUE))
   })
   
   # Day of Week Plot
@@ -133,18 +136,19 @@ function(input, output){
         axis.text.x = element_text(size = 8, angle = 8))
     
     # convert into a plotly
-    ggplotly(plotTimeofDay) %>%
+    ggplotly(plotTimeofDay, tooltip = c("y")) %>%
+      config(displayModeBar = FALSE) %>%
       layout(
         legend = list(
           font = list(size = 12),
-          itemsizing = "constant",
-          traceorder = "normal",
-          tracegroupgap = 10,
           title = "",
           orientation = "h",
-          x = 0.4, y = -0.2),
-        margin = list(autoexpand = TRUE)
-      )
+          x = 0.5,
+          xanchor = "center",
+          xref = "container"),
+        yaxis = list(fixedrange = TRUE),
+        xaxis = list(fixedrange = TRUE),
+        margin = list(autoexpand = TRUE))
     
   })
   

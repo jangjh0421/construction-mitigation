@@ -10,7 +10,7 @@ library(lubridate)
 input_directory = "../../Interim/"
 
 ff_monthly = read_csv(paste0(input_directory, "ff_monthly_meta.csv")) %>%
-  select(-...1)
+  select(-...1) %>% rename("Date" = date)
 ff_quarter = read_csv(paste0(input_directory, "ff_table_meta.csv")) %>%
   select(-...1)
 ff_day_of_week = read_csv(paste0(input_directory, "ff_day_of_week_meta.csv")) %>%
