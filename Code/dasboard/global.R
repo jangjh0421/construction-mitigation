@@ -18,7 +18,7 @@ ff_day_of_week = read_csv(paste0(input_directory, "ff_day_of_week_meta.csv")) %>
 ff_time_of_day = read_csv(paste0(input_directory, "ff_time_of_day_meta.csv")) %>%
   select(-...1)
 ff_type = read_csv(paste0(input_directory, "ff_type_meta.csv")) %>%
-  select(-...1)
+  select(-...1) %>% rename("Visits" = Count)
 traveltime = read_csv(paste0(input_directory, "tt_grouped_meta.csv")) %>%
   select(-...1)
 marketrent = read_csv(paste0(input_directory, "marketrent_meta.csv")) %>%

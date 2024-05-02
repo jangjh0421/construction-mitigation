@@ -157,7 +157,7 @@ function(input, output){
     
     # generate the plot
     plotVisitorType = ggplot(visitorTypeData(), aes(x = as.character(Year),
-                                                    y = Count, fill = factor(Type, levels = c("Infrequent Visitor", "Recurring Visitor", "Resident")))) +
+                                                    y = Visits, fill = factor(Type, levels = c("Infrequent Visitor", "Recurring Visitor", "Resident")))) +
     geom_bar(position = "stack",  stat = "identity", width = 0.7) +
     scale_fill_manual(values = c("#CC2936", "#002A41", "#00AEF3")) +
     scale_y_continuous(labels = scales::comma_format(scale = 1e-3)) +
@@ -171,18 +171,17 @@ function(input, output){
           axis.text = element_text(size = 8))
     
     # convert to plotly
-    ggplotly(plotVisitorType) %>%
+    ggplotly(plotVisitorType, tooltip = c("y")) %>%
+      config(displayModeBar = FALSE) %>%
       layout(
         legend = list(
           font = list(size = 12),
-          itemsizing = "constant",
-          traceorder = "normal",
-          tracegroupgap = 10,
           title = "",
           orientation = "h",
-          x = 0.4, y = -0.2),
-        margin = list(autoexpand = TRUE)
-      )
+          x = 0.5,
+          xanchor = "center",
+          xaxis = "container"),
+        margin = list(autoexpand = TRUE))
   })
   
   # Visitor Summary Table
