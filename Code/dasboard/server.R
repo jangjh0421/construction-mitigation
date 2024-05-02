@@ -96,18 +96,19 @@ function(input, output){
          axis.text.y = element_text(size = 8),
          axis.text.x = element_text(size = 8, angle = 8))
       
-     ggplotly(plotDayofWeek) %>%
+     ggplotly(plotDayofWeek, tooltip = c("y")) %>%
+       config(displayModeBar = FALSE) %>%
        layout(
          legend = list(
            font = list(size = 12),
-           itemsizing = "constant",
-           traceorder = "normal",
-           tracegroupgap = 10,
            title = "",
            orientation = "h",
-           x = 0.4, y = -0.2),
-         margin = list(autoexpand = TRUE)
-       )
+           x = 0.5,
+           xanchor = "center",
+           xref = "container"
+          ),
+         yaxis = list(fixedrange = TRUE),
+         xaxis = list(fixedrange = TRUE))
     
   })
   
