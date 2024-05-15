@@ -1,18 +1,22 @@
 dashboardPage(
-  dashboardHeader(title = "City of Toronto BIA Dashboard"),
+  dashboardHeader(title = "CUI | City of Toronto BIA", titleWidth = 300),
   dashboardSidebar(
+    width = 300,
     sidebarMenu(
       # side bar tabs
       menuItem(text = "Visitor Levels", tabName = "visitorLevels"),
       menuItem(text = "Commercial Real Estate", tabName = "realEstate"),
       # drop down inputs
-      selectInput("bia", "Select BIA", choices = c("Downtown West", "Downtown Yonge", "Financial District", "Gerrard India Baz", "Greektown", "Leslieville",
+      selectInput("bia", "Select BIA", choices = c("Downtown West", "Downtown Yonge", "Financial District", "Gerrard India Bazaar", "Greektown", "Leslieville",
                                                    "Liberty Village", "Pape Village", "Queen Street", "Riverside", "St Lawrence Market", "West Queen West")),
       selectInput("year", "Select Year", choices = c("2023")),
       selectInput("quarter", "Select Quarter", choices = c("Q1", "Q2", "Q3", "Q4"))
     )
   ),
   dashboardBody(
+    tags$head(
+      tags$link(rel = "stylesheet", type = "text/css", href = "custom.css")
+    ),
     tabItems(
       # Visitor Levels Tab
       tabItem(tabName = "visitorLevels",

@@ -4,6 +4,7 @@ library(sf)
 library(plotly)
 library(tidyverse)
 library(lubridate)
+library(scales)
 
 # load the in the dashboard data files
 

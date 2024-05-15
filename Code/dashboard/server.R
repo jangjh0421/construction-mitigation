@@ -55,8 +55,8 @@ function(input, output){
   
     # generate the plot
     plotMonthlyVisits = ggplot(monthlyData(), aes(x = Date, y = Percentage)) +
-      geom_hline(yintercept = 100, color = "#000000") +
-      geom_line(size = 1.5, color = "#00AEF3") +
+      geom_hline(size = 0.5, yintercept = 100, color = "gray50") +
+      geom_line(size = 1, color = "#00AEF3") +
       ylim(0, 180) +
       labs(x = "Month", y = "Percentage (%)") +
       scale_x_date(limits = c(as.Date("2020-01-01", "%Y-%m-%d"), as.Date("2024-01-01", "%Y-%m-%d")), date_breaks = "3 month", date_labels = "%b %Y") +
@@ -75,9 +75,9 @@ function(input, output){
     ggplotly(plotMonthlyVisits) %>%
       config(displayModeBar = FALSE) %>%
       layout(
-        yaxis = list(fixedrange = TRUE),
-        xaxis = list(fixedrange = TRUE))
-  })
+        yaxis = list(fixedrange = TRUE)
+      ) 
+})
   
   # Day of Week Plot
   output$dayOfWeekPlot = renderPlotly({
