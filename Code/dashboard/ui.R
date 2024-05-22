@@ -7,10 +7,10 @@ dashboardPage(
       menuItem(text = "Visitor Levels", tabName = "visitorLevels"),
       menuItem(text = "Commercial Real Estate", tabName = "realEstate"),
       # drop down inputs
-      selectInput("bia", "Select BIA", choices = c("Downtown West", "Downtown Yonge", "Financial District", "Gerrard India Bazaar", "Greektown", "Leslieville",
-                                                   "Liberty Village", "Pape Village", "Queen Street", "Riverside", "St Lawrence Market", "West Queen West")),
-      selectInput("year", "Select Year", choices = c("2023")),
-      selectInput("quarter", "Select Quarter", choices = c("Q1", "Q2", "Q3", "Q4"))
+      selectInput("bia", "Select BIA", choices = c("Downtown West", "Downtown Yonge", "Financial District", "Gerrard India Baz", "Greektown", "Leslieville",
+                                                   "Liberty Village", "Pape Village", "Queen Street", "Riverside", "St Lawrence Market", "West Queen West"), selectize = FALSE),
+      selectInput("year", "Select Year", choices = c("2023"), selectize = FALSE),
+      selectInput("quarter", "Select Quarter", choices = c("Q1", "Q2", "Q3", "Q4"), selected = "Q4", selectize = FALSE)
     )
   ),
   dashboardBody(
@@ -26,15 +26,17 @@ dashboardPage(
                        # Monthly Visitor Levels Plot
                        box(
                          title = "Monthly Visitor Levels (%) Relative to 2019",
+                         solidHeader = TRUE,
                          plotlyOutput("monthlyPlot", height = "60vh"),
                          width = 12,
-                         style = "margin 0px; padding 0px;"
+                         style = "margin: 0px; padding: 20px;"
                        )
                 ),
                 column(width = 4,
                        # Description Panel
                        box(
                          title = "Chart Description",
+                         solidHeader = TRUE,
                          HTML("<p><b>Monthly Visitor Levels (%) Relative to 2019</b></p>
                               <p>This chart measures the number of visits to buildings within the defined study area month by month, comparing the
                               number of visits in 2019 to the same month of the current year to produce a relative percentage, with 100%, meaning
@@ -50,6 +52,7 @@ dashboardPage(
                        # Visitor Type Plot
                        box(
                          title = "Quarterly Visit Count by Type of Visitor",
+                         solidHeader = TRUE,
                          plotlyOutput("visitorTypePlot", height = "75vh"),
                          width = 12,
                          style = "margin: 0px; padding: 0px;"
@@ -60,6 +63,7 @@ dashboardPage(
                        # Description Panel
                        box(
                          title = "Chart Description",
+                         solidHeader = TRUE,
                          HTML("<p><b>Quarterly Visit Count by Type of Visitor</b></p>
                               <p>This chart measures the quarterly total of visits to buildings within the defined study area for the target
                               and previous year based on the type of visitor.</p>
@@ -91,6 +95,7 @@ dashboardPage(
                        # Day of Week Plot
                        box(
                          title = "Quarterly Visits by Day of the Week",
+                         solidHeader = TRUE,
                          plotlyOutput("dayOfWeekPlot", height = "55vh"),
                          width = 12,
                          style = "margin 0px; padding 0px;"
@@ -100,6 +105,7 @@ dashboardPage(
                        # Description Panel
                        box(
                          title = "Chart Description",
+                         solidHeader = TRUE,
                          HTML("<p><b>Quarterly Visits by Day of the Week</b></p>
                               <p>This chart measures the quarterly total count of visits to buildings within the defined study area for the target and
                               previous year based on the day of the week.</p>"),
@@ -116,6 +122,7 @@ dashboardPage(
                        # Time of Day Plot
                        box(
                          title = "Quarterly Vists by Time of Day",
+                         solidHeader = TRUE,
                          plotlyOutput("timeOfDayPlot", height = "55vh"),
                          width = 12,
                          style = "margin: 0px; padding: 0px;"
@@ -125,17 +132,16 @@ dashboardPage(
                        # Description Panel
                        box(
                          title = "Chart Description",
+                         solidHeader = TRUE,
                          HTML("<p><b>Quarterly Visits by Time of Day</b></p>
                               <p>This chart measures the quarterly total count of visits to buildings within the defined study area for the target and
-                              previous year based on the time of day</p>.
-                              <p>
+                              previous year based on the time of day.</p>
                               <ul>
                                 <li>Early Morning: 12 am - 6 am</li>
                                 <li>Morning: 6 am - 12 pm</li>
                                 <li>Afternoon: 12 pm - 6 pm</li>
                                 <li>Evening: 6 pm - 12 pm</li>
-                              </ul>
-                              </p>"),
+                              </ul>"),
                          width = 12,
                          style = "margin 0px; padding 0px;"
                        )
@@ -147,6 +153,7 @@ dashboardPage(
                        # Visitor Level Summary Table
                        box(
                          title = "Visitor Level Summary Table",
+                         solidHeader = TRUE,
                          tableOutput("vistorLevelsTable"),
                          height = "30vh",
                          width = 12,
@@ -158,20 +165,18 @@ dashboardPage(
                        # Description Panel
                        box(
                          title = "Chart Description",
+                         solidHeader = TRUE,
                          HTML("<p><b>Visitor Level Summary Table</b></p>
                               <p>This table provides the percentage change of Visitor Levels, for the target quarter compared to
-                              four distinct temporal baseline</p>
-                              <p>
+                              four distinct temporal baseline.</p>
                               <ul>
                                 <li><b>Year Over Year:</b> Same quarter of the previous year</li>
                                 <li><b>Construction Start:</b> Same quarter of the pre-construction year (2022)</li>
                                 <li><b>Pre Pandemic:</b> Same quarter of the pre-pandemic year (2019)</li>
                                 <li><b>Last Quarter:</b> The last quarter of the same year</li>
-                              </ul>
-                              </p>"),
+                              </ul>"),
                          width = 12,
-                         style = "margin: 0px; padding: 0px;"
-                       )
+                         )
                 )
               )
       ),

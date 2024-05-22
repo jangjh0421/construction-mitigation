@@ -57,7 +57,7 @@ function(input, output){
     plotMonthlyVisits = ggplot(monthlyData(), aes(x = Date, y = Percentage)) +
       geom_hline(size = 0.5, yintercept = 100, color = "gray50") +
       geom_line(size = 1, color = "#00AEF3") +
-      ylim(0, 180) +
+      ylim(0, 175) +
       labs(x = "Month", y = "Percentage (%)") +
       scale_x_date(limits = c(as.Date("2020-01-01", "%Y-%m-%d"), as.Date("2024-01-01", "%Y-%m-%d")), date_breaks = "3 month", date_labels = "%b %Y") +
       theme(
@@ -67,12 +67,12 @@ function(input, output){
         plot.background = element_rect(fill = 'transparent', colour = NA),
         axis.title.y = element_text(size = 10),
         axis.title.x = element_blank(),
-        axis.text.x = element_text(size = 8, angle = 20),
+        axis.text.x = element_text(size = 8),
         axis.text.y = element_text(size = 8),
         legend.position = "none")
     
     # convert into a plotly
-    ggplotly(plotMonthlyVisits) %>%
+    ggplotly(plotMonthlyVisits, dynamicTicks = TRUE) %>%
       config(displayModeBar = FALSE) %>%
       layout(
         yaxis = list(fixedrange = TRUE)
@@ -97,7 +97,7 @@ function(input, output){
          axis.title.y = element_text(size = 10),
          axis.title.x = element_blank(),
          axis.text.y = element_text(size = 8),
-         axis.text.x = element_text(size = 8, angle = 8))
+         axis.text.x = element_text(size = 8))
       
      ggplotly(plotDayofWeek, tooltip = c("y")) %>%
        config(displayModeBar = FALSE) %>%
@@ -133,7 +133,7 @@ function(input, output){
         axis.title.y = element_text(size = 10),
         axis.title.x = element_blank(),
         axis.text.y = element_text(size = 8),
-        axis.text.x = element_text(size = 8, angle = 8))
+        axis.text.x = element_text(size = 8))
     
     # convert into a plotly
     ggplotly(plotTimeofDay, tooltip = c("y")) %>%
