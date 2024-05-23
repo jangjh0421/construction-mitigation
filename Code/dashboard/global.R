@@ -5,6 +5,7 @@ library(plotly)
 library(tidyverse)
 library(lubridate)
 library(scales)
+library(leaflet)
 
 # load the in the dashboard data files
 

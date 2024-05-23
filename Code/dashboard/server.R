@@ -46,9 +46,27 @@ function(input, output){
     visitorLevelFiltered = ff_quarter %>%
       filter((Name == str_replace_all(input$bia, " ", "") & Quarter == input$quarter) &
                (Year == as.numeric(input$year) | Year == as.numeric(input$year) - 1)) %>%
-      select(time_window, Change)
+      select(time_window, Change) %>%
+      rename("Period" = time_window, "Percent Change" = Change)
   })
   
+  # Vacancy Rate Summary
+  vacancyRateData = reactive({
+    vacancyRateFiltered = vacancyrate %>%
+      filter((Area == str_replace_all(input$bia, " ", "") & Quarter == input$quarter) &
+             (Year == as.numeric(input$year) | Year == as.numeric(input$year) - 1)) %>%
+      select(targetvacancy, controlvacancy, yoy_growth) %>%
+      rename("Current Year" = targetvacancy, "Previous Year" = controlvacancy, "Percent Change" = yoy_growth)
+  })
+  
+  # Monthly Rent Summary
+  monthlyRentData = reactive({
+    monthlyRentFiltered = marketrent %>%
+      filter((Area == str_replace_all(input$bia, " ", "") & Quarter == input$quarter) &
+               (Year == as.numeric(input$year) | Year == as.numeric(input$year) - 1)) %>%
+      select(targetrent, controlrent, yoy_growth) %>%
+      rename("Current Year" = targetrent, "Previous Year" = controlrent, "Percent Change" = yoy_growth)
+  })
   
   # Monthly Visits Plot
   output$monthlyPlot = renderPlotly({
@@ -189,6 +207,16 @@ function(input, output){
   # Visitor Summary Table
   output$vistorLevelsTable = renderTable({
     visitorLevelData()
+  })
+  
+  # Vacancy Rate Summary Table
+  output$vacancyRateTable = renderTable({
+    vacancyRateData()
+  })
+  
+  # Monthly Rent Summary Table
+  output$monthlyRentTable = renderTable({
+    monthlyRentData()
   })
   
 }

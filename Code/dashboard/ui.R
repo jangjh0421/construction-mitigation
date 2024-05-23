@@ -183,8 +183,59 @@ dashboardPage(
       ),
       tabItem(tabName = "realEstate",
               fluidRow(
-                style = "margin: 0px; padding: 0px"
+                style = "margin: 0px; padding: 0px;",
+                column(width = 4,
+                       # Vacancy Rate Table
+                       box(
+                        title = "Vacancy Rate Summary Table",
+                        solidHeader = TRUE,
+                        tableOutput("vacancyRateTable"),
+                        height = "30vh",
+                        width = 12,
+                        style = "margin: 0px; padding: 5px;"
+                       )
+                ),
+                column(width = 4,
+                       # Monthly Rent Table
+                       box(
+                         title = "Monthly Rent Summary Table",
+                         solidHeader = TRUE,
+                         tableOutput("monthlyRentTable"),
+                         height = "30vh",
+                         width = 12,
+                         style = "margin: 0px; padding: 5px;"
+                       )
+                  
+                ),
+                column(width = 4,
+                       # Description Panel
+                       box(
+                         title = "Table Description",
+                         solidHeader = TRUE,
+                         HTML("<p><b>Vacancy Rate Summary Table</b></p>
+                              <p>The amount of new/relet/sublet space available divided by the existing rental building area for each Business Improvement Area
+                              <p><b>Monthly Rent Summary Table</b></p>
+                              <p>The average cost of rent per square meter</p>"),
+                         height = "30vh",
+                         width = 12,
+                         style = "margin: 0px; padding: 5px;"
+                       )
+                )
+              ),
+              fluidRow(
+                style = "margin: 0px; padding: 0px;",
+                column(width = 12,
+                       box(
+                         title = "BIA Retail Map",
+                         solidHeader = TRUE,
+                         leafletOutput(retailMap),
+                         height = "50vh",
+                         width = 12,
+                         style = "margin: 0px; padding: 5px;"
+                       )
+                )
               )
+              
         
       )
     )
