@@ -181,6 +181,8 @@ function(input, output){
           x = 0.5,
           xanchor = "center",
           xaxis = "container"),
+        yaxis = list(fixedrange = TRUE),
+        xaxis = list(fixedrange = TRUE),
         margin = list(autoexpand = TRUE))
   })
   

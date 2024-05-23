@@ -42,12 +42,12 @@ dashboardPage(
                               number of visits in 2019 to the same month of the current year to produce a relative percentage, with 100%, meaning
                               the target month reached pre-pandemic levels.</p>"),
                          width = 12,
-                         style = "margin 0px; padding 0px;"
+                         style = "margin: 0px; padding: px;"
                        )
                 )
               ),
               fluidRow(
-                style = "margin: 0px; padding 0px;",
+                style = "margin: 0px; padding: 0px;",
                 column(width = 8,
                        # Visitor Type Plot
                        box(
@@ -55,7 +55,7 @@ dashboardPage(
                          solidHeader = TRUE,
                          plotlyOutput("visitorTypePlot", height = "75vh"),
                          width = 12,
-                         style = "margin: 0px; padding: 0px;"
+                         style = "margin: 0px; padding: 5px;"
                        )
                   
                 ),
@@ -85,12 +85,12 @@ dashboardPage(
                               </p>"
                               ),
                          width = 12,
-                         style = "margin 0px; padding 0px;"
+                         style = "margin: 0px; padding: 5px;"
                        )
                 )
               ),
               fluidRow(
-                style = "margin: 0px; padding 0px;",
+                style = "margin: 0px; padding: 0px;",
                 column(width = 8,
                        # Day of Week Plot
                        box(
@@ -98,7 +98,7 @@ dashboardPage(
                          solidHeader = TRUE,
                          plotlyOutput("dayOfWeekPlot", height = "55vh"),
                          width = 12,
-                         style = "margin 0px; padding 0px;"
+                         style = "margin: 0px; padding: 5px;"
                        )
                 ),
                 column(width = 4,
@@ -110,14 +110,14 @@ dashboardPage(
                               <p>This chart measures the quarterly total count of visits to buildings within the defined study area for the target and
                               previous year based on the day of the week.</p>"),
                          width = 12,
-                         style = "margin 0px; padding 0px;"
+                         style = "margin: 0px; padding: 5px;"
                        )
                 
                 
                 )
               ),
               fluidRow(
-                style = "margin: 0px; padding 0px;",
+                style = "margin: 0px; padding: 0px;",
                 column(width = 8,
                        # Time of Day Plot
                        box(
@@ -125,7 +125,7 @@ dashboardPage(
                          solidHeader = TRUE,
                          plotlyOutput("timeOfDayPlot", height = "55vh"),
                          width = 12,
-                         style = "margin: 0px; padding: 0px;"
+                         style = "margin: 0px; padding: 5px;"
                        )
                 ),
                 column(width = 4,
@@ -143,12 +143,12 @@ dashboardPage(
                                 <li>Evening: 6 pm - 12 pm</li>
                               </ul>"),
                          width = 12,
-                         style = "margin 0px; padding 0px;"
+                         style = "margin: 0px; padding: 5px;"
                        )
                 )
               ),
               fluidRow(
-                style = "margin: 0px; padding 0px;",
+                style = "margin: 0px; padding: 0px;",
                 column(width = 8,
                        # Visitor Level Summary Table
                        box(
@@ -157,7 +157,7 @@ dashboardPage(
                          tableOutput("vistorLevelsTable"),
                          height = "30vh",
                          width = 12,
-                         style = "margin: 0px; padding: 0px;"
+                         style = "margin: 0px; padding: 5px;"
                        )
                   
                 ),
@@ -176,11 +176,15 @@ dashboardPage(
                                 <li><b>Last Quarter:</b> The last quarter of the same year</li>
                               </ul>"),
                          width = 12,
+                         style = "margin: 0px; padding: 5px;"
                          )
                 )
               )
       ),
-      tabItem(tabName = "realEstate"
+      tabItem(tabName = "realEstate",
+              fluidRow(
+                style = "margin: 0px; padding: 0px"
+              )
         
       )
     )
