@@ -1,5 +1,7 @@
 function(input, output){
   
+  ## Reactivity ---------------------------------------------------------------
+  
   # Monthly Visits Filter
   monthlyData = reactive({
     
@@ -67,6 +69,14 @@ function(input, output){
       select(targetrent, controlrent, yoy_growth) %>%
       rename("Current Year" = targetrent, "Previous Year" = controlrent, "Percent Change" = yoy_growth)
   })
+  
+  # Retail Map Filter
+  retailMapData = reactive({
+    retialMapFiltered = BIAs_shp %>%
+      filter(layer == str_replace_all(input$bia, " ", ""))
+  })
+  
+  ## Visitor Levels -----------------------------------------------------------
   
   # Monthly Visits Plot
   output$monthlyPlot = renderPlotly({
@@ -209,6 +219,9 @@ function(input, output){
     visitorLevelData()
   })
   
+  
+  ## Commercial Real Estate ---------------------------------------------------
+  
   # Vacancy Rate Summary Table
   output$vacancyRateTable = renderTable({
     vacancyRateData()
@@ -217,6 +230,27 @@ function(input, output){
   # Monthly Rent Summary Table
   output$monthlyRentTable = renderTable({
     monthlyRentData()
+  })
+  
+  
+  # Business Outlook Map
+  output$retailMap = renderLeaflet({
+    leaflet() %>%
+      addTiles() %>%
+      addPolygons(data = retailMapData(), color = "blue", weight = 2, fillOpacity = 0.5) %>%
+      flyTo(lng = retailMapData()$Longitude, lat = retailMapData()$Latitude, zoom = 15)
+  })
+  
+  retailMapProxy = leafletProxy("retailMap")
+  
+  observe({
+    # zoom to the selected polygon based on the BIA input from the drop down menu
+    fdata = retailMapData()
+    retailMapProxy %>%
+      clearMarkers() %>%
+      addPolygons(data = retailMapData(), color = "blue", weight = 2, fillOpacity = 0.5) %>%
+      flyTo(lng = fdata$Longitude, lat = fdata$Latitude, zoom = 15)
+
   })
   
 }

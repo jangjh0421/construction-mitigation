@@ -27,3 +27,23 @@ marketrent = read_csv(paste0(input_directory, "marketrent_meta.csv")) %>%
   select(-...1)
 vacancyrate = read_csv(paste0(input_directory, "vacancyrate_meta.csv")) %>%
   select(-...1)
+
+# load in the area shapefiles
+
+shapefile_directory = "../../Data/BIAs/All"
+
+BIAs_shp = st_read(shapefile_directory) %>%
+  st_transform(crs = 4326)
+
+# get the centroid coordinates for the zoom and fly around
+BIA_centroids = st_centroid(BIAs_shp)
+
+BIA_centroids = as.data.frame(st_coordinates(BIA_centroids))
+
+BIA_centroids = BIA_centroids %>%
+  rename("Longitude" = X, "Latitude" = Y)
+
+# join back to the shapefile
+BIAs_shp = BIAs_shp %>%
+  bind_cols(BIA_centroids)
+

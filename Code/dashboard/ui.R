@@ -8,8 +8,8 @@ dashboardPage(
       menuItem(text = "Commercial Real Estate", tabName = "realEstate"),
       # drop down inputs
       selectInput("bia", "Select BIA", choices = c("Downtown West", "Downtown Yonge", "Financial District", "Gerrard India Baz", "Greektown", "Leslieville",
-                                                   "Liberty Village", "Pape Village", "Queen Street", "Riverside", "St Lawrence Market", "West Queen West"), selectize = FALSE),
-      selectInput("year", "Select Year", choices = c("2023"), selectize = FALSE),
+                                                   "Liberty Village", "Pape Village", "Queen Street", "Riverside", "St Lawrence Market", "West Queen West"), selected = "Downtown West", selectize = FALSE),
+      selectInput("year", "Select Year", choices = c("2023"), selected = "2023", selectize = FALSE),
       selectInput("quarter", "Select Quarter", choices = c("Q1", "Q2", "Q3", "Q4"), selected = "Q4", selectize = FALSE)
     )
   ),
@@ -224,12 +224,12 @@ dashboardPage(
               ),
               fluidRow(
                 style = "margin: 0px; padding: 0px;",
-                column(width = 12,
+                column(width = 8,
                        box(
                          title = "BIA Retail Map",
                          solidHeader = TRUE,
-                         leafletOutput(retailMap),
-                         height = "50vh",
+                         leafletOutput("retailMap", height = "393px"),
+                         height = "60vh",
                          width = 12,
                          style = "margin: 0px; padding: 5px;"
                        )
