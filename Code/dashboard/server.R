@@ -70,10 +70,17 @@ function(input, output){
   })
   
   # Retail Map Filter
-  retailMapData = reactive({
-    retialMapFiltered = BIAs_shp %>%
+  biaPolygonData = reactive({
+    biaPolygonFiltered = BIAs_shp %>%
       filter(layer == str_replace_all(input$bia, " ", ""))
   })
+  
+  businessPointData = reactive({
+    businessPointData = Business_shp %>%
+      filter(layer == str_replace_all(input$bia, " ", ""))
+  })
+  
+  
   
   ## Visitor Levels -----------------------------------------------------------
   
@@ -235,18 +242,20 @@ function(input, output){
   output$retailMap <- renderLeaflet({
     leaflet() %>%
       addProviderTiles(providers$CartoDB.Positron) %>%
-      setView(lng = mean(retailMapData()$Longitude), lat = mean(retailMapData()$Latitude), zoom = 14) %>%
-      addPolygons(data = retailMapData(), color = "#002A41", weight = 2, fillOpacity = 0.5)
+      setView(lng = mean(biaPolygonData()$Longitude), lat = mean(biaPolygonData()$Latitude), zoom = 14) %>%
+      addPolygons(data = biaPolygonData(), color = "#002A41", weight = 2, fillOpacity = 0.5) %>%
+      addMarkers(data = businessPointData())
   })
   
   retailMapProxy <- leafletProxy("retailMap")
   
   observe({
     # Update polygons without changing the view
-    fdata <- retailMapData()
+    fdata <- biaPolygonData()
     retailMapProxy %>%
       clearShapes() %>%
-      addPolygons(data = fdata, color = "#002A41", weight = 2, fillOpacity = 0.5)
+      addPolygons(data = fdata, color = "#002A41", weight = 2, fillOpacity = 0.5) %>%
+      addMarkers(data = businessPointData())
   })
   
 }

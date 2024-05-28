@@ -260,10 +260,10 @@ dashboardPage(
                        box(
                          title = "BIA Retail Map",
                          solidHeader = TRUE,
-                         leafletOutput("retailMap", height = "393px"),
-                         height = "60vh",
                          width = 12,
-                         style = "margin: 0px; padding: 5px;"
+                         style = "margin: 0px; padding: 5px;",
+                         tags$style(type = "text/css", ".box-body {height:80vh}"),
+                         leafletOutput("retailMap", width = "100%", height = "100%")
                        )
                 )
               )

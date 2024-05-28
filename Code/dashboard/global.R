@@ -29,9 +29,11 @@ vacancyrate = read_csv(paste0(input_directory, "vacancyrate_meta.csv")) %>%
   select(-...1)
 
 # load in the area shapefiles
-
 BIAs_shp = st_read(paste0(input_directory, "BIAs/All.shp")) %>%
   st_transform(crs = 4326)
+
+# load in the main street point file
+Business_shp = st_read(paste0(input_directory, "ms_businesses.geojson"))
 
 # get the centroid coordinates for the zoom and fly around
 BIA_centroids = st_centroid(BIAs_shp)
