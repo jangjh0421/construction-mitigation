@@ -30,9 +30,7 @@ vacancyrate = read_csv(paste0(input_directory, "vacancyrate_meta.csv")) %>%
 
 # load in the area shapefiles
 
-shapefile_directory = "../../Data/BIAs/All"
-
-BIAs_shp = st_read(shapefile_directory) %>%
+BIAs_shp = st_read(paste0(input_directory, "BIAs/All.shp")) %>%
   st_transform(crs = 4326)
 
 # get the centroid coordinates for the zoom and fly around
