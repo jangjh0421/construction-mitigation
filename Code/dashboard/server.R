@@ -19,7 +19,6 @@ function(input, output){
     # filter the data based on the BIA
     monthlyFiltered = ff_monthly %>%
       filter(Area == str_replace_all(input$bia, " ", "") & Date < target_end_date)
-    
   })
   
   # Day of Week Visits Filter
@@ -233,24 +232,21 @@ function(input, output){
   })
   
   
-  # Business Outlook Map
-  output$retailMap = renderLeaflet({
+  output$retailMap <- renderLeaflet({
     leaflet() %>%
-      addTiles() %>%
-      addPolygons(data = retailMapData(), color = "blue", weight = 2, fillOpacity = 0.5) %>%
-      flyTo(lng = retailMapData()$Longitude, lat = retailMapData()$Latitude, zoom = 15)
+      addProviderTiles(providers$CartoDB.Positron) %>%
+      setView(lng = mean(retailMapData()$Longitude), lat = mean(retailMapData()$Latitude), zoom = 14) %>%
+      addPolygons(data = retailMapData(), color = "#002A41", weight = 2, fillOpacity = 0.5)
   })
   
-  retailMapProxy = leafletProxy("retailMap")
+  retailMapProxy <- leafletProxy("retailMap")
   
   observe({
-    # zoom to the selected polygon based on the BIA input from the drop down menu
-    fdata = retailMapData()
+    # Update polygons without changing the view
+    fdata <- retailMapData()
     retailMapProxy %>%
-      clearMarkers() %>%
-      addPolygons(data = retailMapData(), color = "blue", weight = 2, fillOpacity = 0.5) %>%
-      flyTo(lng = fdata$Longitude, lat = fdata$Latitude, zoom = 15)
-
+      clearShapes() %>%
+      addPolygons(data = fdata, color = "#002A41", weight = 2, fillOpacity = 0.5)
   })
   
 }
