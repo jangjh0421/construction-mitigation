@@ -220,22 +220,77 @@ function(input, output){
         margin = list(autoexpand = TRUE))
   })
   
-  # Visitor Summary Table
-  output$vistorLevelsTable = renderTable({
-    visitorLevelData()
+  output$visitorLevelsTable = gt::render_gt({
+    visitorLevelData() %>%
+      gt::gt() %>%
+      gt::fmt_percent(
+        columns = c('Percent Change'),
+        decimals = 1,
+        scale_values = FALSE
+      ) %>%
+      gt::tab_style(
+        style = gt::cell_text(color = "#43b171"),
+        locations = gt::cells_body(
+          columns = c('Percent Change'),
+          rows = visitorLevelData()[['Percent Change']] > 0
+        )
+      ) %>%
+      gt::tab_style(
+        style = gt::cell_text(color = "#CC2936"),
+        locations = gt::cells_body(
+          columns = c('Percent Change'),
+          rows = visitorLevelData()[['Percent Change']] < 0
+        )
+      ) %>%
+      gt::tab_options(
+        table.width = gt::pct(95)
+      ) %>%
+      gt::opt_table_font(
+        font = list("sans-serif")
+      )
   })
+  
+  
   
   
   ## Commercial Real Estate ---------------------------------------------------
   
   # Vacancy Rate Summary Table
-  output$vacancyRateTable = renderTable({
-    vacancyRateData()
+  output$vacancyRateTable = gt::render_gt({
+    vacancyRateData() %>%
+      gt::gt() %>%
+      gt::fmt_percent(
+        columns = c('Percent Change', 'Current Year', 'Previous Year'),
+        decimals = 1,
+        scale_values = FALSE
+      ) %>%
+      gt::tab_options(
+        table.width = gt::pct(95)
+      ) %>%
+      gt::opt_table_font(
+        font = list("sans-serif")
+      )
   })
   
   # Monthly Rent Summary Table
-  output$monthlyRentTable = renderTable({
-    monthlyRentData()
+  output$monthlyRentTable = gt::render_gt({
+    monthlyRentData() %>%
+      gt::gt() %>%
+      gt::fmt_percent(
+        columns = c('Percent Change'),
+        decimals = 1,
+        scale_values = FALSE
+      ) %>%
+      gt::fmt_currency(
+        columns = c('Current Year','Previous Year'),
+        decimals = 1
+      ) %>%
+      gt::tab_options(
+        table.width = gt::pct(95)
+      ) %>%
+      gt::opt_table_font(
+        font = list("sans-serif")
+      )
   })
   
   

@@ -6,6 +6,8 @@ library(tidyverse)
 library(lubridate)
 library(scales)
 library(leaflet)
+library(DT)
+library(gt)
 
 # load the in the dashboard data files
 
