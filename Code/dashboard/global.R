@@ -47,4 +47,3 @@ BIA_centroids = BIA_centroids %>%
 # join back to the shapefile
 BIAs_shp = BIAs_shp %>%
   bind_cols(BIA_centroids)
-
