@@ -18,7 +18,6 @@
 library(tidyverse)
 library(sf)
 library(lubridate)
-setwd("C:/Users/atabascio/CUI/Projects - External - Documents/819. Research & Knowledge Initiative – INFC/3 - Background Data & Research/GIS Map prototype/RKI_MainStreetMatters/ConstructionMitigation")
 options(scipen = 999)
 
 
@@ -28,7 +27,7 @@ data_year = 23
 quarter = "Q4"
 
 # BIA list
-BIAs = c("DowntownWest", "DowntownYonge", "FinancialDistrict", "GerrardIndiaBaz", "Greektown", "Leslieville", "LibertyVillage",
+BIAs = c("DowntownWest", "DowntownYonge", "FinancialDistrict", "Greektown", "Leslieville", "LibertyVillage",
          "PapeVillage", "QueenStreet", "Riverside", "StLawrenceMarket", "WestQueenWest")
 
 # CREATE PROJECT FUNCTIONS ----------------------------------------------------
@@ -193,6 +192,10 @@ marketrent = read_csv("./Data/CoStar/MarketRent.csv")
 vacancyrate = read_csv("./Data/CoStar/VacancyRate.csv") %>%
   mutate(VacancyRate = VacancyRate * 100)
 
+# Load the Traffic Time Data
+travel_time = read_csv("./Data/TravelTime/i0539_tt_ontario_line.csv") %>%
+  mutate(study_area = str_replace_all(study_area, "BIA|\\s", ""))
+
 # get the date ranges based on the quarters
 if (quarter == "Q1"){
   # get the filters for the target quarter
@@ -223,10 +226,6 @@ if (quarter == "Q1"){
   control_start_date = ymd(paste0(year-1, "10","01"))
   control_end_date = ymd(paste0(year-1, "12","31"))
 }
-
-# Load the Traffic Time Data
-travel_time = read_csv("./Data/TravelTime/i0539_tt_ontario_line.csv") %>%
-  mutate(study_area = str_replace_all(study_area, "BIA|\\s", ""))
 
 # INITIATE FOR LOOP
 
@@ -689,9 +688,7 @@ for (i in 1:length(BIAs)){
   # use the generate_visit_types function to calculate the types of visits taking place
   ff_type_target = generate_visitor_type(ff_yoy_target, ff_yoy_target_cdl, year, study_area)
   ff_type_control = generate_visitor_type(ff_yoy_control, ff_yoy_control_cdl, (year - 1), study_area)
-  
 
-  ### EXPORT THE CHARTS -------------------------------------------------------
 
   #### Foot Traffic -----------------------------------------------------
   
@@ -741,29 +738,6 @@ for (i in 1:length(BIAs)){
   } else {
     ff_type_all = bind_rows(ff_type_all, ff_type)
   }
-  
-  # plot the chart
-  output_directory = paste0("Output/QuarterlyDashboard/", BIAs[i], "/ff_visittype", quarter, as.character(data_year), ".jpg", sep = "")
-  ggplot(ff_type_all, aes(x = as.character(Year),
-                           y = Count, fill = factor(Type, levels = c("Infrequent Visitor", "Recurring Visitor", "Resident")))) +
-    geom_bar(position = "stack",  stat = "identity", width = 0.7) +
-    scale_color_manual(values = c("#CC2936", "#002A41", "#00AEF3"), aesthetics = c("colour", "fill")) +
-    scale_y_continuous(labels = scales::comma_format(scale = 1e-3)) +
-    labs(title = paste0("Visit Count by Type of Visitor: ", quarter), x = "Year", y = "Visits (Thousands)") +
-    theme(panel.background = element_rect(fill = 'transparent', colour = NA),
-          panel.grid.minor = element_blank(),
-          panel.grid.major = element_line(color = 'gray80'),
-          plot.background = element_rect(fill = 'transparent', colour = NA),
-          plot.title = element_text(size = 9),
-          axis.title.x = element_blank(),
-          axis.title.y = element_text(size = 7),
-          axis.text = element_text(size = 7),
-          legend.text = element_text(size = 7),
-          legend.key.size = unit(0.5, "cm"),
-          legend.title = element_blank(),
-          legend.margin = margin(c(0,0,0,0)),
-          legend.position = "bottom")
-  ggsave(output_directory, dpi = 500, height = 8.4, width = 10.9, units = "cm")
 
   #### Day of the Week --------------------------------------------------------
   ff_day_of_week = generate_day_of_week_count(ff_yoy_target, ff_yoy_control, year)
@@ -777,31 +751,6 @@ for (i in 1:length(BIAs)){
     ff_day_of_week_all = bind_rows(ff_day_of_week_all, ff_day_of_week)
   }
   
-  # plot the chart
-  output_directory = paste0("Output/QuarterlyDashboard/", BIAs[i], "/ff_dayofweek", quarter, as.character(data_year), ".jpg", sep = "")
-  ggplot(ff_day_of_week, aes(x = factor(Day, levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")),
-                             y = Visits, fill = Year)) +
-    geom_bar(position = "dodge", stat = "identity", width = 0.7) +
-    scale_color_manual(values = c("#002A41", "#00AEF3"), aesthetics = c("fill", "color")) +
-    scale_y_continuous(labels = scales::comma_format(scale = 1e-3)) +
-    labs(title = paste0("Visits by Day of Week: ", quarter), x = "Day of the Week", y = "Visits (Thousands)") +
-    theme(
-      panel.background = element_rect(fill = 'transparent', colour = NA),
-      panel.grid.minor = element_blank(),
-      panel.grid.major = element_line(color = 'gray80'),
-      plot.background = element_rect(fill = 'transparent', colour = NA),
-      plot.title = element_text(size = 9),
-      axis.title.y = element_text(size = 7),
-      axis.title.x = element_blank(),
-      axis.text = element_text(size = 7),
-      legend.text = element_text(size = 7),
-      legend.title = element_blank(),
-      legend.key.size = unit(0.5, "cm"),
-      legend.margin = margin(c(0,0,0,0)),
-      legend.position = "bottom")
-  ggsave(output_directory, dpi = 500, height = 3.9, width = 10.9, units = 'cm')
-
-  
   #### Time of the Day --------------------------------------------------------
   ff_time_of_day = generate_time_of_day_count(ff_yoy_target, ff_yoy_control, year)
   ff_time_of_day = ff_time_of_day %>%
@@ -813,28 +762,6 @@ for (i in 1:length(BIAs)){
   } else {
     ff_time_of_day_all = bind_rows(ff_time_of_day_all, ff_time_of_day)
   }
-    
-  # plot the chart
-  output_directory = paste0("Output/QuarterlyDashboard/", BIAs[i], "/ff_timeofday", quarter, as.character(data_year), ".jpg", sep = "")
-  ggplot(ff_time_of_day, aes(x = factor(Time, levels = c("Early Morning: 12am - 6am", "Morning: 6am - 12pm", "Afternoon: 12pm - 6pm", "Evening: 6pm - 12am")),
-                             y = Visits, fill = Year)) +
-    geom_bar(position = "dodge", stat = "identity", width = 0.9) +
-    scale_color_manual(values = c("#002A41", "#00AEF3"), aesthetics = c("fill", "color")) +
-    scale_y_continuous(labels = scales::comma_format(scale = 1e-3)) +
-    labs(title = paste0("Visits by Time of Day: ", quarter), x = "Time of Day", y = "Visits (Thousands)") +
-    theme(
-      panel.background = element_rect(fill = 'transparent', colour = NA),
-      panel.grid.minor = element_blank(),
-      panel.grid.major = element_line(color = 'gray80'),
-      plot.background = element_rect(fill = 'transparent', colour = NA),
-      plot.title = element_text(size = 9),
-      axis.title.y = element_text(size = 7),
-      axis.title.x = element_blank(),
-      axis.text.y = element_text(size = 7),
-      axis.text.x = element_text(size = 7, angle = 7),
-      legend.position = "none")
-  ggsave(output_directory, dpi = 500, height = 3.9, width = 10.9, units = 'cm')
-
 
   #### Monthly visit level ----------------------------------------------------
 
@@ -853,27 +780,6 @@ for (i in 1:length(BIAs)){
   
   start_date = as.Date("2020-01-01")
 
-  # plot the chart
-  output_directory = paste0("Output/QuarterlyDashboard/", BIAs[i], "/ff_monthly", quarter, as.character(data_year), ".jpg", sep = "")
-  ggplot(ff_monthly, aes(x = date, y = Percentage)) +
-    geom_hline(yintercept = 100, color = "#000000") +
-    geom_line(size = 1.5, color = "#00AEF3") +
-    ylim(0, 180) +
-    labs(title = "Visitor Levels (%) Relative to 2019", x = "Month", y = "Percentage (%)") +
-    scale_x_date(limits = c(start_date, max(ff_monthly$date)), date_breaks = "3 month", date_labels = "%b %Y") +
-    theme(
-      panel.background = element_rect(fill = 'transparent', colour = NA),
-      panel.grid.minor = element_blank(),
-      panel.grid.major = element_line(color = 'gray80'),
-      plot.background = element_rect(fill = 'transparent', colour = NA),
-      plot.title = element_text(size = 9),
-      axis.title.y = element_text(size = 7),
-      axis.title.x = element_blank(),
-      axis.text.x = element_text(size = 7, angle = 30),
-      axis.text.y = element_text(size = 7),
-      legend.position = "none")
-  ggsave(output_directory, dpi = 500, height = 8.1, width = 10.9, units = 'cm')
-
   # CREATE A LARGE SHEET WITH EVERY STUDY AREA FOR A WEB APPLICATION
 
   # add the month and quarter for filtering
@@ -886,6 +792,8 @@ for (i in 1:length(BIAs)){
     ff_monthly_all = bind_rows(ff_monthly_all, ff_monthly)
   }
 
+  
+  
 
   ## COMMERCIAL REAL ESTATE ---------------------------------------------------
   variable_names = c("Area")
@@ -959,8 +867,10 @@ for (i in 1:length(BIAs)){
     marketrent_all = bind_rows(marketrent_all, marketrent_target)
   }
 
-
-
+  
+  
+  
+  
   ## TRAVEL TIME DATA ---------------------------------------------------------
 
   # filter the data based on the given years, and BIA
@@ -1007,7 +917,6 @@ for (i in 1:length(BIAs)){
   
 }
 
-
 # EXPORT DASHBOARD FILES -----------------------------------------------------
 
 # Load in the previous data files
@@ -1046,160 +955,4 @@ write.csv(ff_day_of_week_meta, "./Output/OutputData/ff_day_of_week_meta.csv")
 write.csv(ff_time_of_day_meta, "./Output/OutputData/ff_time_of_day_meta.csv")
 write.csv(ff_type_meta, "./Output/OutputData/ff_type_meta.csv")
 
-
-# PART 2: ALL BIA SPEND METRICS -----------------------------------------------
-
-## Moneris Spend Data ---------------------------------------------------------
-moneris_file_date = paste0("Moneris", as.character(year), ".csv", sep = "")
-moneris_file_directory = "./Data/MonerisSpend/"
-moneris_file_directory = paste0(moneris_file_directory, moneris_file_date, sep = "")
-spend_data = read.csv(moneris_file_directory)
-
-# convert the week_no to a date that can be used to visualize the data
-spend_data = spend_data %>%
-  mutate(date = case_when(
-    week_no == 1 ~ ymd(paste0(year, "01", "30")), week_no == 2 ~ ymd(paste0(year, "02", "06")),
-    week_no == 3 ~ ymd(paste0(year, "02", "13")), week_no == 4 ~ ymd(paste0(year, "02", "20")),
-    week_no == 5 ~ ymd(paste0(year, "02", "27")), week_no == 6 ~ ymd(paste0(year, "03", "06")),
-    week_no == 7 ~ ymd(paste0(year, "03", "13")), week_no == 8 ~ ymd(paste0(year, "03", "20")),
-    week_no == 9 ~ ymd(paste0(year, "03", "27")), week_no == 10 ~ ymd(paste0(year, "04", "03")),
-    week_no == 11 ~ ymd(paste0(year, "04", "10")), week_no == 12 ~ ymd(paste0(year, "04", "17")),
-    week_no == 13 ~ ymd(paste0(year, "04", "24")), week_no == 14 ~ ymd(paste0(year, "05", "01")),
-    week_no == 15 ~ ymd(paste0(year, "05", "08")), week_no == 16 ~ ymd(paste0(year, "05", "15")),
-    week_no == 17 ~ ymd(paste0(year, "05", "22")), week_no == 18 ~ ymd(paste0(year, "05", "29")),
-    week_no == 19 ~ ymd(paste0(year, "06", "05")), week_no == 20 ~ ymd(paste0(year, "06", "12")),
-    week_no == 21 ~ ymd(paste0(year, "06", "19")), week_no == 22 ~ ymd(paste0(year, "06", "26")),
-    week_no == 23 ~ ymd(paste0(year, "07", "03")), week_no == 24 ~ ymd(paste0(year, "07", "10")),
-    week_no == 25 ~ ymd(paste0(year, "07", "17")), week_no == 26 ~ ymd(paste0(year, "07", "24")),
-    week_no == 27 ~ ymd(paste0(year, "07", "31")), week_no == 28 ~ ymd(paste0(year, "08", "07")),
-    week_no == 29 ~ ymd(paste0(year, "08", "14")), week_no == 30 ~ ymd(paste0(year, "08", "21")),
-    week_no == 31 ~ ymd(paste0(year, "08", "28")), week_no == 32 ~ ymd(paste0(year, "09", "04")),
-    week_no == 33 ~ ymd(paste0(year, "09", "11")), week_no == 34 ~ ymd(paste0(year, "09", "18")),
-    week_no == 35 ~ ymd(paste0(year, "09", "25")), week_no == 36 ~ ymd(paste0(year, "10", "02")),
-    week_no == 37 ~ ymd(paste0(year, "10", "09")), week_no == 38 ~ ymd(paste0(year, "10", "16")),
-    week_no == 39 ~ ymd(paste0(year, "10", "23")), week_no == 40 ~ ymd(paste0(year, "10", "30")),
-    week_no == 41 ~ ymd(paste0(year, "11", "06")), week_no == 42 ~ ymd(paste0(year, "11", "13")),
-    week_no == 43 ~ ymd(paste0(year, "11", "20")), week_no == 44 ~ ymd(paste0(year, "11", "27")),
-    week_no == 45 ~ ymd(paste0(year, "12", "04")), week_no == 46 ~ ymd(paste0(year, "12", "11")),
-    week_no == 47 ~ ymd(paste0(year, "12", "18")), week_no == 48 ~ ymd(paste0(year, "12", "25")),
-    week_no == 49 ~ ymd(paste0(year, "01", "02")), week_no == 50 ~ ymd(paste0(year, "01", "09")),
-    week_no == 51 ~ ymd(paste0(year, "01", "16")), week_no == 52 ~ ymd(paste0(year, "01", "23"))
-  ))
-
-# convert the yoy_vol_growth into a percentage out of 100
-spend_data = spend_data %>%
-  mutate(yoy_vol_Growth = yoy_vol_Growth * 100,
-         yoy_txn_Growth = yoy_txn_Growth * 100)
-
-# FILTER THE SPEND DATA FOR THE TARGET QUARTER
-if (quarter == "Q1"){
-  spend_target = spend_data %>%
-    filter(week_no <= 9 | week_no >= 49) %>%
-    select(date, yoy_vol_Growth, yoy_txn_Growth)
-} else if (quarter == "Q2"){
-  spend_target = spend_data %>%
-    filter(week_no >= 10 & week_no <= 22) %>%
-    select(date, yoy_vol_Growth, yoy_txn_Growth)
-} else if (quarter == "Q3"){
-  spend_target = spend_data %>%
-    filter(week_no >= 23 & week_no <= 35) %>%
-    select(date, yoy_vol_Growth, yoy_txn_Growth)
-} else{
-  spend_target = spend_data %>%
-    filter(week_no >= 36 & week_no <= 48) %>%
-    select(date, yoy_vol_Growth, yoy_txn_Growth)
-}
-
-output_directory = paste0("Output/QuarterlyDashboard/weeklyspend", quarter, as.character(data_year), ".jpg", sep = "")
-# PLOT THE WEEK OVER WEEK TIME SERIES SPEND DATA
-ggplot(spend_target, aes(x = date, y = yoy_vol_Growth)) +
-  geom_hline(yintercept = 0, color = "#000000") +
-  geom_line(color = "#002A41") +
-  geom_point(color = "#00AEF3", fill = "#00AEF3", size = 2) +
-  labs(title = paste0("Weekly Year-over-Year change in Sales Volume Growth: ", quarter), x = "Week", y = "Percentage (%)") +
-  scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
-  theme(
-    panel.background = element_rect(fill = 'transparent', colour = NA),
-    panel.grid.minor = element_blank(),
-    panel.grid.major = element_line(color = 'gray80'),
-    plot.background = element_rect(fill = 'transparent', colour = NA),
-    plot.title = element_text(size = 9),
-    axis.title.y = element_text(size = 7),
-    axis.title.x = element_blank(),
-    axis.text.x = element_text(size = 7, angle = 17),
-    axis.text.y = element_text(size = 7),
-    legend.position = "none")
-ggsave(output_directory, dpi = 500, height = 8.1, width = 10.9, units = 'cm')
-
-
-# Calculate the Average Yoy_Growth for that quarter
-spend_target_avg = spend_target %>%
-  summarise(
-    vol_growth_avg = mean(yoy_vol_Growth),
-    txn_growth_avg = mean(yoy_txn_Growth))
-# Add the study area at the start of the table
-
-spend_target_avg = spend_target_avg %>%
-  mutate(Name = "All BIAs") %>%
-  select(Name, everything())
-
-## Toronto CMA Spend Data -----------------------------------------------------
-spend_data_CoT = read_csv("./Data/Retail_Sales.csv")
-
-# filter that start and end dates for the regional spend
-regional_spend_target = spend_data_CoT %>%
-  filter(date >= target_start_date & date <= target_end_date) %>%
-  rename("sales_target" = sales) %>%
-  summarise(
-    sales_target = mean(sales_target)
-  )
-regional_spend_control = spend_data_CoT %>%
-  filter(date >= control_start_date & date <= control_end_date) %>%
-  rename("sales_control" = sales) %>%
-  summarise(
-    sales_control = mean(sales_control) 
-  )
-
-# combine the columns and take the year over year change
-regional_spend = bind_cols(regional_spend_target, regional_spend_control)
-
-# get a number for the yoy_vol_growth
-regional_spend = regional_spend %>%
-  mutate(Name = "Toronto CMA",
-         vol_growth_avg = ((sales_target - sales_control) / sales_control) * 100) %>%
-  select(Name, vol_growth_avg)
-
-spend_report = bind_rows(spend_target_avg, regional_spend)
-
-# output the excel chart
-output_directory = paste0("Output/QuarterlyDashboard/quarterlyspend", quarter, as.character(data_year), ".csv", sep = "")
-write.csv(spend_report, file = output_directory)
-
-
-## StatsCan RTLBCI ------------------------------------------------------------
-
-RTLBCI = read_csv("./Data/RTLBCI/RTLBCI.csv")
-
-# filter the start and end dates
-RTLBCI_target = RTLBCI %>%
-  filter(Date >= target_start_date & Date <= target_end_date) %>%
-  summarise(
-    index_target = mean(RTLBCI)
-  )
-
-RTLBCI_control = RTLBCI %>%
-  filter(Date >= control_start_date & Date <= control_end_date) %>%
-  summarise(
-    index_control = mean(RTLBCI)
-  )
-
-RTLBCI_report = bind_cols(RTLBCI_target, RTLBCI_control)
-RTLBCI_report = RTLBCI_report %>%
-  mutate(Name = "Toronto CMA",
-         index_avg = ((index_target - index_control) / index_control) * 100) %>%
-  select(Name, index_avg)
-
-# output the excel chart
-output_directory = paste0("Output/QuarterlyDashboard/RTLBCI", quarter, as.character(data_year), ".csv", sep = "")
-write.csv(RTLBCI_report, file = output_directory)
 
