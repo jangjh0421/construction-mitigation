@@ -27,7 +27,7 @@ library(sf)
 library(lubridate)
 options(scipen = 999)
 
-
+input_df = read_csv("./Data/CoTDashboards/Retail_Sales.csv")
 
 #### WORKFLOW FUNCTIONS ####
 
@@ -111,6 +111,49 @@ append_results = function(input_table, appending_table = NULL){
   
   return(resulting_table)
 }
+
+
+
+## FILTER QUARTERS FOR TIME-SERIES DATA ##
+#   This function will assign and filter to the desired quarter based on
+#   time-based based input used for the co-star and city of Toronto
+#   datasets
+filter_quarter_time = function(input_df, desired_quarter, desired_year){
+  # Identify the date column within the data frame and store name
+  input_date = input_df %>%
+    select_if(~ inherits(.x, "Date")) %>%
+    colnames()
+  # retrieve the date column to use in the filter
+  input_date = rlang::sym(input_date)
+  
+  # filter the rows based on the desired quarter
+  if(desired_quarter == "Q1"){
+    # filter the desired rows
+    filtered_df = input_df %>%
+      filter((!!input_date >= ymd(paste0(desired_year, "01", "01"))) &
+               (!!input_date < ymd(paste0(desired_year, "03","31"))))
+    
+  } else if(desired_quarter == "Q2"){
+    filtered_df = input_df %>%
+      filter((!!input_date >= ymd(paste0(desired_year, "04", "01"))) &
+               (!!input_date < ymd(paste0(desired_year, "06","30"))))
+    
+  } else if(desired_quarter == "Q3"){
+    filtered_df = input_df %>%
+      filter((!!input_date >= ymd(paste0(desired_year, "07", "01"))) &
+               (!!input_date < ymd(paste0(desired_year, "09","30"))))
+    
+  } else{
+    filtered_df = input_df %>%
+      filter((!!input_date >= ymd(paste0(desired_year, "10", "01"))) &
+               (!!input_date < ymd(paste0(desired_year, "12","31"))))
+  }
+  
+  # return the filtered dataframe
+  return(filtered_df)
+  
+}
+
 
 
 #### CHART FUNCTIONS ####
@@ -277,8 +320,9 @@ BIAs = c("DowntownWest", "DowntownYonge", "FinancialDistrict", "Greektown", "Les
 
 #### Begin the Data Cleaning ####
 
-## FOOT TRAFFIC TABLE ##
+#### FOOT TRAFFIC ####
 
+## FOOT TRAFFIC TABLE ##
 for(i in 1:length(BIAs)){
   
   file_directory = "./Data/EnvironicsData_DA/"
@@ -348,7 +392,7 @@ for(i in 1:length(BIAs)){
   ff_change = ff_change %>%
     mutate(Year = year,
            Quarter = quarter) %>%
-    select(Year, Quarter, Name, everything())
+    select(Name, Year, Quarter, everything())
     
   # append the table based on the iteration
   if(i == 1){
@@ -389,7 +433,7 @@ for(i in 1:length(BIAs)){
     mutate(Name = BIAs[i],
            Quarter = quarter,
            Year = year) %>%
-    select(Year, Quarter, Name, everything())
+    select(Name, Year, Quarter, everything())
   
   # append the table based on the iteration
   if(i == 1){
@@ -419,7 +463,7 @@ for(i in 1:length(BIAs)){
     mutate(Name = BIAs[i],
            Quarter = quarter,
            Year = year) %>%
-    select(Year, Quarter, Name, everything())
+    select(Name, Year, Quarter, everything())
   
   # append the table based on the iteration
   if(i == 1){
@@ -449,7 +493,7 @@ for(i in 1:length(BIAs)){
     mutate(Name = BIAs[i],
            Quarter = quarter,
            Year = year) %>%
-    select(Year, Quarter, Name, everything())
+    select(Name, Year, Quarter, everything())
   
   # append the table based on the iteration
   if(i == 1){
@@ -496,8 +540,73 @@ for(i in 1:length(BIAs)){
 
 
 
+#### COMMERCIAL REAL ESTATE ####
 
+## VACANCY RATE ##
 
+# load in the vacancy rate data
+
+vacancy_rate = read_csv("./Data/CoStar/VacancyRate.csv")
+
+for(i in 1:length(BIAs)){
+  
+  # filter both the target and control period
+  vacancy_current = filter_quarter_time(vacancy_rate, quarter, year)
+  vacancy_current = vacancy_current %>%
+    rename("Name" = Area, "targetvacancy" = VacancyRate)
+  vacancy_previous = filter_quarter_time(vacancy_rate, quarter, (year-1)) %>%
+    select(VacancyRate) %>%
+    rename("controlvacancy" = VacancyRate)
+  
+  # bind columns and calculate the percentage change
+  vacancy_current = vacancy_current %>%
+    bind_cols(., vacancy_previous) %>%
+    mutate(yoy_growth = ((targetvacancy - controlvacancy) / controlvacancy) * 100,
+           Quarter = quarter,
+           Year = year) %>%
+    select(Name, Year, Quarter, everything())
+  
+  # append the table based on the iteration
+  if(i == 1){
+    vacancy_all = append_results(vacancy_current)
+  } else {
+    vacancy_all = append_results(vacancy_all, vacancy_current)
+  }
+  
+}
+
+## MARKET RENT ##
+
+# load in the market rent data
+
+market_rent = read_csv("./Data/CoStar/MarketRent.csv")
+
+for(i in 1:length(BIAs)){
+  
+  # filter both the target and control period
+  rent_current = filter_quarter_time(market_rent, quarter, year)
+  rent_current = rent_current %>%
+    rename("Name" = Area, "targetrent" = MarketRent)
+  rent_previous = filter_quarter_time(market_rent, quarter, (year-1)) %>%
+    select(MarketRent) %>%
+    rename("controlrent" = MarketRent)
+  
+  # bind columns and calculate the percentage change
+  rent_current = rent_current %>%
+    bind_cols(., rent_previous) %>%
+    mutate(yoy_growth = ((targetrent - controlrent) / controlrent) * 100,
+           Quarter = quarter,
+           Year = year) %>%
+    select(Name, Year, Quarter, everything())
+  
+  # append the table based on the iteration
+  if(i == 1){
+    rent_all = append_results(rent_current)
+  } else {
+    rent_all = append_results(rent_all, rent_current)
+  }
+  
+}
 
 
 
