@@ -155,7 +155,6 @@ filter_quarter_time = function(input_df, desired_quarter, desired_year){
 }
 
 
-
 #### CHART FUNCTIONS ####
 
 
@@ -302,6 +301,35 @@ monthly_foottraffic = function(ff_current, ff_pandemic){
   return(ff_monthly_change)
   
 }
+
+
+# CoT Dashboard Stats
+
+CoT_Dashboard_stats = function(input_stats, desired_quarter, desired_year){
+  
+  #   filter both the target and control period
+  input_df = filter_quarter_time(input_stats, desired_quarter = desired_quarter, desired_year = desired_year) %>%
+    rename("target" = Percentage) %>%
+    summarise(target = mean(target)) %>%
+    mutate(Quarter = desired_quarter,
+           Year = desired_year,
+           Name = "City of Toronto") %>%
+    select(Name, Year, Quarter, everything())
+  
+  control_df = filter_quarter_time(input_stats, desired_quarter = desired_quarter, desired_year = desired_year-1) %>%
+    rename("control" = Percentage) %>%
+    summarise(control = mean(control))
+  
+  #   bind columns and calculate the percentage change
+  input_df = input_df %>%
+    bind_cols(., control_df) %>%
+    mutate(yoy_growth = ((target - control) / control) * 100)
+  
+  return(input_df)
+}
+
+
+
 
 
 
@@ -609,6 +637,20 @@ for(i in 1:length(BIAs)){
 }
 
 
+#### CITY OF TORONTO COMMERCIAL DASHBOARDS ####
+
+# Load in the three data sets that will be used
+
+Retail_sales = read_csv("./Data/CoTDashboards/Retail_Sales.csv") %>%
+  rename("Percentage" = `$`)
+Office_Vacancy = read_csv("./Data/CoTDashboards/Office_Vacancy_Rate.csv") %>%
+  rename("Percentage" = `%`)
+Unemployment = read_csv("./Data/CoTDashboards/Unemployment_Rate.csv") %>%
+  rename("Percentage" = `%`)
+
+Retail_sales = CoT_Dashboard_stats(Retail_sales, quarter, year)
+Office_Vacancy = CoT_Dashboard_stats(Office_Vacancy, quarter, year)
+Unemployment = CoT_Dashboard_stats(Unemployment, quarter, year)  
 
 
 
