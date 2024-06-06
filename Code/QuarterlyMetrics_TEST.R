@@ -32,7 +32,7 @@ input_df = read_csv("./Data/CoTDashboards/Retail_Sales.csv")
 #### WORKFLOW FUNCTIONS ####
 
 # FILTER QUARTER
-#   This function will filter the mobilscapes data based on the desired quarter
+#   This function will filter the mobilescapes data based on the desired quarter
 #   Takes a large mobilescapes output and filters the rows based on the desired quarter
 #   returning the resulting data frame
 
