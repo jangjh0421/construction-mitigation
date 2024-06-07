@@ -1,4 +1,23 @@
-function(input, output) {
+function(input, output, session) {
+  
+  ## Input Reactivity
+  input_choices = reactive({
+    if(input$year == "2024"){
+      return(c("Q1"))
+    } else {
+      return(c("Q1", "Q2", "Q3", "Q4"))
+    }
+  })
+  
+  observeEvent(input$year, {
+    freezeReactiveValue(input, "quarter")
+    updateSelectInput(session = session, inputId = "quarter", choices = input_choices())
+  })
+  
+  
+  
+  
+  
   ## Reactivity ---------------------------------------------------------------
   
   output$selectedBIA <- renderText({
@@ -7,6 +26,7 @@ function(input, output) {
   
   # Monthly Visits Filter
   monthlyData = reactive({
+    req(input$quarter)
     # filter the data based on the input data
     if (input$quarter == "Q1") {
       target_end_date = ymd(paste0(input$year, "03", "31"))
@@ -74,8 +94,7 @@ function(input, output) {
           Quarter == input$quarter
       ) &
         (
-          Year == as.numeric(input$year) |
-            Year == as.numeric(input$year) - 1
+          Year == as.numeric(input$year)
         )
       ) %>%
       select(time_window, Change) %>%
@@ -90,8 +109,7 @@ function(input, output) {
           Quarter == input$quarter
       ) &
         (
-          Year == as.numeric(input$year) |
-            Year == as.numeric(input$year) - 1
+          Year == as.numeric(input$year)
         )
       ) %>%
       select(targetvacancy, controlvacancy, yoy_growth) %>%
@@ -110,8 +128,7 @@ function(input, output) {
           Quarter == input$quarter
       ) &
         (
-          Year == as.numeric(input$year) |
-            Year == as.numeric(input$year) - 1
+          Year == as.numeric(input$year)
         )
       ) %>%
       select(targetrent, controlrent, yoy_growth) %>%

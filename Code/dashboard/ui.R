@@ -33,13 +33,11 @@ dashboardPage(
         selected = "2024",
         selectize = FALSE
       ),
+      
       selectInput(
         "quarter",
         "Select Quarter",
-        choices = c("Q1", "Q2", "Q3", "Q4"),
-        selected = "Q1",
-        selectize = FALSE
-      )
+        choices = NULL)
     )
   ),
   dashboardBody(
