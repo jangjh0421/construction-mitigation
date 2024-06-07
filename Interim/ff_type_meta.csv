@@ -1,289 +1,322 @@
-,Name,Year,Quarter,Type,Count,Percentage
-1,DowntownWest,2023,Q1,Resident,2142881.417,27.05436769
-2,DowntownWest,2023,Q1,Recurring Visitor,2392473.633,30.20552646
-3,DowntownWest,2023,Q1,Infrequent Visitor,3385293.63,42.74010585
-4,DowntownWest,2022,Q1,Resident,1721887.801,22.54695494
-5,DowntownWest,2022,Q1,Recurring Visitor,1947782.206,25.50488924
-6,DowntownWest,2022,Q1,Infrequent Visitor,3967227.327,51.94815582
-7,DowntownYonge,2023,Q1,Resident,1820813.735,26.01746012
-8,DowntownYonge,2023,Q1,Recurring Visitor,2070065.072,29.57899231
-9,DowntownYonge,2023,Q1,Infrequent Visitor,3107551.195,44.40354757
-10,DowntownYonge,2022,Q1,Resident,2121636.405,32.17015249
-11,DowntownYonge,2022,Q1,Recurring Visitor,2371416.895,35.95754812
-12,DowntownYonge,2022,Q1,Infrequent Visitor,2101992.855,31.87229938
-13,FinancialDistrict,2023,Q1,Resident,1123709.18,14.39572296
-14,FinancialDistrict,2023,Q1,Recurring Visitor,1600667.76,20.50599037
-15,FinancialDistrict,2023,Q1,Infrequent Visitor,5081477.501,65.09828667
-16,FinancialDistrict,2022,Q1,Resident,1237058.59,14.12061897
-17,FinancialDistrict,2022,Q1,Recurring Visitor,1852412.51,21.1446826
-18,FinancialDistrict,2022,Q1,Infrequent Visitor,5671183.033,64.73469842
-19,GerrardIndiaBaz,2023,Q1,Resident,71245.35658,22.01188898
-20,GerrardIndiaBaz,2023,Q1,Recurring Visitor,61128.94269,18.88633259
-21,GerrardIndiaBaz,2023,Q1,Infrequent Visitor,191293.318,59.10177843
-22,GerrardIndiaBaz,2022,Q1,Resident,51892.19739,25.61678454
-23,GerrardIndiaBaz,2022,Q1,Recurring Visitor,43242.47247,21.34681428
-24,GerrardIndiaBaz,2022,Q1,Infrequent Visitor,107436.4112,53.03640117
-25,Greektown,2023,Q1,Resident,292334.0509,23.91687397
-26,Greektown,2023,Q1,Recurring Visitor,275474.6987,22.53755124
-27,Greektown,2023,Q1,Infrequent Visitor,654483.3075,53.54557479
-28,Greektown,2022,Q1,Resident,232573.6811,25.11781903
-29,Greektown,2022,Q1,Recurring Visitor,236739.525,25.56772769
-30,Greektown,2022,Q1,Infrequent Visitor,456617.8265,49.31445329
-31,Leslieville,2023,Q1,Resident,285497.4359,31.46475084
-32,Leslieville,2023,Q1,Recurring Visitor,279587.6564,30.81343242
-33,Leslieville,2023,Q1,Infrequent Visitor,342271.3249,37.72181674
-34,Leslieville,2022,Q1,Resident,274465.3454,41.38212669
-35,Leslieville,2022,Q1,Recurring Visitor,261294.0082,39.39623683
-36,Leslieville,2022,Q1,Infrequent Visitor,127486.7562,19.22163648
-37,LibertyVillage,2023,Q1,Resident,309341.4746,29.04615169
-38,LibertyVillage,2023,Q1,Recurring Visitor,321270.81,30.16627724
-39,LibertyVillage,2023,Q1,Infrequent Visitor,434387.5744,40.78757107
-40,LibertyVillage,2022,Q1,Resident,221051.1712,31.21362901
-41,LibertyVillage,2022,Q1,Recurring Visitor,248432.4493,35.08001459
-42,LibertyVillage,2022,Q1,Infrequent Visitor,238704.3671,33.7063564
-43,PapeVillage,2023,Q1,Resident,180748.2938,37.6238105
-44,PapeVillage,2023,Q1,Recurring Visitor,169970.5045,35.38035084
-45,PapeVillage,2023,Q1,Infrequent Visitor,129690.5261,26.99583866
-46,PapeVillage,2022,Q1,Resident,136327.1391,41.30639782
-47,PapeVillage,2022,Q1,Recurring Visitor,129138.3541,39.12823422
-48,PapeVillage,2022,Q1,Infrequent Visitor,64573.30534,19.56536796
-49,QueenStreet,2023,Q1,Resident,478581.4694,23.39780828
-50,QueenStreet,2023,Q1,Recurring Visitor,504448.0201,24.6624218
-51,QueenStreet,2023,Q1,Infrequent Visitor,1062382.045,51.93976992
-52,QueenStreet,2022,Q1,Resident,480014.2102,28.82861683
-53,QueenStreet,2022,Q1,Recurring Visitor,517849.5467,31.10092543
-54,QueenStreet,2022,Q1,Infrequent Visitor,667197.7792,40.07045774
-55,Riverside,2023,Q1,Resident,198068.0701,29.07840746
-56,Riverside,2023,Q1,Recurring Visitor,199605.8982,29.30417626
-57,Riverside,2023,Q1,Infrequent Visitor,283477.7433,41.61741628
-58,Riverside,2022,Q1,Resident,197036.4242,40.02529531
-59,Riverside,2022,Q1,Recurring Visitor,201995.2369,41.03261131
-60,Riverside,2022,Q1,Infrequent Visitor,93248.09023,18.94209339
-61,StLawrenceMarket,2023,Q1,Resident,1416511.116,27.75597317
-62,StLawrenceMarket,2023,Q1,Recurring Visitor,1570600.096,30.7752856
-63,StLawrenceMarket,2023,Q1,Infrequent Visitor,2116334.835,41.46874123
-64,StLawrenceMarket,2022,Q1,Resident,1126372.954,25.91721659
-65,StLawrenceMarket,2022,Q1,Recurring Visitor,1309300.914,30.12628743
-66,StLawrenceMarket,2022,Q1,Infrequent Visitor,1910367.498,43.95649597
-67,WestQueenWest,2023,Q1,Resident,457929.473,30.53907066
-68,WestQueenWest,2023,Q1,Recurring Visitor,462247.8968,30.82706402
-69,WestQueenWest,2023,Q1,Infrequent Visitor,579309.8874,38.63386532
-70,WestQueenWest,2022,Q1,Resident,234026.1289,32.62000827
-71,WestQueenWest,2022,Q1,Recurring Visitor,239905.1763,33.43946624
-72,WestQueenWest,2022,Q1,Infrequent Visitor,243499.9318,33.94052548
-73,DowntownWest,2023,Q2,Resident,2502915.936,27.4490697
-74,DowntownWest,2023,Q2,Recurring Visitor,2721061.692,29.84143853
-75,DowntownWest,2023,Q2,Infrequent Visitor,3894422.243,42.70949177
-76,DowntownWest,2022,Q2,Resident,1730654.135,17.77857894
-77,DowntownWest,2022,Q2,Recurring Visitor,1993721.626,20.48100576
-78,DowntownWest,2022,Q2,Infrequent Visitor,6010115.061,61.7404153
-79,DowntownYonge,2023,Q2,Resident,2212497.194,27.07790778
-80,DowntownYonge,2023,Q2,Recurring Visitor,2511783.578,30.74075949
-81,DowntownYonge,2023,Q2,Infrequent Visitor,3446576.488,42.18133273
-82,DowntownYonge,2022,Q2,Resident,2396671.927,26.76221631
-83,DowntownYonge,2022,Q2,Recurring Visitor,2696288.137,30.10785312
-84,DowntownYonge,2022,Q2,Infrequent Visitor,3862471.351,43.12993057
-85,FinancialDistrict,2023,Q2,Resident,1268806.872,14.69318163
-86,FinancialDistrict,2023,Q2,Recurring Visitor,1774808.855,20.55284333
-87,FinancialDistrict,2023,Q2,Infrequent Visitor,5591728.913,64.75397504
-88,FinancialDistrict,2022,Q2,Resident,1256372.627,11.50098301
-89,FinancialDistrict,2022,Q2,Recurring Visitor,1882333.405,17.2311017
-90,FinancialDistrict,2022,Q2,Infrequent Visitor,7785339.555,71.26791529
-91,GerrardIndiaBaz,2023,Q2,Resident,85708.40686,23.28974715
-92,GerrardIndiaBaz,2023,Q2,Recurring Visitor,86912.58152,23.61696037
-93,GerrardIndiaBaz,2023,Q2,Infrequent Visitor,195388.1888,53.09329248
-94,GerrardIndiaBaz,2022,Q2,Resident,48358.58354,21.6336092
-95,GerrardIndiaBaz,2022,Q2,Recurring Visitor,40820.58142,18.26142209
-96,GerrardIndiaBaz,2022,Q2,Infrequent Visitor,134355.3507,60.10496872
-97,Greektown,2023,Q2,Resident,301694.7281,25.05178734
-98,Greektown,2023,Q2,Recurring Visitor,282114.0758,23.42587117
-99,Greektown,2023,Q2,Infrequent Visitor,620475.4413,51.52234149
-100,Greektown,2022,Q2,Resident,219026.1601,21.85554155
-101,Greektown,2022,Q2,Recurring Visitor,228451.0298,22.79600287
-102,Greektown,2022,Q2,Infrequent Visitor,554676.7012,55.34845558
-103,Leslieville,2023,Q2,Resident,313596.5987,31.76713472
-104,Leslieville,2023,Q2,Recurring Visitor,311546.0888,31.55941938
-105,Leslieville,2023,Q2,Infrequent Visitor,362030.3813,36.6734459
-106,Leslieville,2022,Q2,Resident,270966.6612,37.59009355
-107,Leslieville,2022,Q2,Recurring Visitor,245390.617,34.04203384
-108,Leslieville,2022,Q2,Infrequent Visitor,204488.6565,28.36787261
-109,LibertyVillage,2023,Q2,Resident,407321.5993,30.51534885
-110,LibertyVillage,2023,Q2,Recurring Visitor,419741.3486,31.44580032
-111,LibertyVillage,2023,Q2,Infrequent Visitor,507745.9751,38.03885083
-112,LibertyVillage,2022,Q2,Resident,284829.546,28.5254836
-113,LibertyVillage,2022,Q2,Recurring Visitor,304225.2753,30.46795258
-114,LibertyVillage,2022,Q2,Infrequent Visitor,409454.2663,41.00656382
-115,PapeVillage,2023,Q2,Resident,175816.5984,35.31103139
-116,PapeVillage,2023,Q2,Recurring Visitor,173125.3315,34.77051694
-117,PapeVillage,2023,Q2,Infrequent Visitor,148966.4899,29.91845167
-118,PapeVillage,2022,Q2,Resident,158584.9609,44.52130681
-119,PapeVillage,2022,Q2,Recurring Visitor,141527.6483,39.73261912
-120,PapeVillage,2022,Q2,Infrequent Visitor,56087.53921,15.74607407
-121,QueenStreet,2023,Q2,Resident,509615.2131,23.85524589
-122,QueenStreet,2023,Q2,Recurring Visitor,553809.1116,25.92397595
-123,QueenStreet,2023,Q2,Infrequent Visitor,1072857.211,50.22077816
-124,QueenStreet,2022,Q2,Resident,409322.5099,20.73709258
-125,QueenStreet,2022,Q2,Recurring Visitor,456306.2912,23.11738441
-126,QueenStreet,2022,Q2,Infrequent Visitor,1108237.633,56.14552301
-127,Riverside,2023,Q2,Resident,160238.2885,24.10760045
-128,Riverside,2023,Q2,Recurring Visitor,181577.6217,27.31806982
-129,Riverside,2023,Q2,Infrequent Visitor,322863.6329,48.57432973
-130,Riverside,2022,Q2,Resident,164462.6281,31.44000676
-131,Riverside,2022,Q2,Recurring Visitor,165909.3527,31.71657433
-132,Riverside,2022,Q2,Infrequent Visitor,192727.8689,36.8434189
-133,StLawrenceMarket,2023,Q2,Resident,1516438.454,28.14085353
-134,StLawrenceMarket,2023,Q2,Recurring Visitor,1740485.162,32.29853337
-135,StLawrenceMarket,2023,Q2,Infrequent Visitor,2131820.021,39.5606131
-136,StLawrenceMarket,2022,Q2,Resident,1300506.387,24.95694853
-137,StLawrenceMarket,2022,Q2,Recurring Visitor,1442810.481,27.68778936
-138,StLawrenceMarket,2022,Q2,Infrequent Visitor,2467682.328,47.35526212
-139,WestQueenWest,2023,Q2,Resident,489775.7199,33.02938303
-140,WestQueenWest,2023,Q2,Recurring Visitor,490280.8203,33.06344587
-141,WestQueenWest,2023,Q2,Infrequent Visitor,502791.9874,33.9071711
-142,WestQueenWest,2022,Q2,Resident,328491.6027,30.54550759
-143,WestQueenWest,2022,Q2,Recurring Visitor,319714.9349,29.72938999
-144,WestQueenWest,2022,Q2,Infrequent Visitor,427210.5326,39.72510242
-145,DowntownWest,2023,Q3,Resident,2838792.572,26.302506
-146,DowntownWest,2023,Q3,Recurring Visitor,3128939.406,28.99082811
-147,DowntownWest,2023,Q3,Infrequent Visitor,4825127.729,44.70666589
-148,DowntownWest,2022,Q3,Resident,1812980.643,22.52755025
-149,DowntownWest,2022,Q3,Recurring Visitor,2104768.511,26.15321824
-150,DowntownWest,2022,Q3,Infrequent Visitor,4130088.371,51.31923151
-151,DowntownYonge,2023,Q3,Resident,2626932.428,25.9285187
-152,DowntownYonge,2023,Q3,Recurring Visitor,3007826.759,29.68804661
-153,DowntownYonge,2023,Q3,Infrequent Visitor,4496681.249,44.38343469
-154,DowntownYonge,2022,Q3,Resident,2050553.722,25.87697734
-155,DowntownYonge,2022,Q3,Recurring Visitor,2309830.419,29.14892147
-156,DowntownYonge,2022,Q3,Infrequent Visitor,3563855.599,44.97410119
-157,FinancialDistrict,2023,Q3,Resident,1736910.209,15.88482324
-158,FinancialDistrict,2023,Q3,Recurring Visitor,2386215.157,21.82300835
-159,FinancialDistrict,2023,Q3,Infrequent Visitor,6811275.24,62.29216841
-160,FinancialDistrict,2022,Q3,Resident,1161954.952,13.18686561
-161,FinancialDistrict,2022,Q3,Recurring Visitor,1757693.674,19.94782175
-162,FinancialDistrict,2022,Q3,Infrequent Visitor,5891808.061,66.86531264
-163,GerrardIndiaBaz,2023,Q3,Resident,125672.0612,27.3355828
-164,GerrardIndiaBaz,2023,Q3,Recurring Visitor,118077.0328,25.68354872
-165,GerrardIndiaBaz,2023,Q3,Infrequent Visitor,215988.9043,46.98086848
-166,GerrardIndiaBaz,2022,Q3,Resident,60057.62219,28.70030197
-167,GerrardIndiaBaz,2022,Q3,Recurring Visitor,49849.51504,23.82205759
-168,GerrardIndiaBaz,2022,Q3,Infrequent Visitor,99350.6687,47.47764044
-169,Greektown,2023,Q3,Resident,388153.4883,24.91889236
-170,Greektown,2023,Q3,Recurring Visitor,374187.3837,24.02228865
-171,Greektown,2023,Q3,Infrequent Visitor,795326.6307,51.058819
-172,Greektown,2022,Q3,Resident,206681.2233,25.08825501
-173,Greektown,2022,Q3,Recurring Visitor,200607.4358,24.35098083
-174,Greektown,2022,Q3,Infrequent Visitor,416527.9962,50.56076416
-175,Leslieville,2023,Q3,Resident,365656.385,31.9971521
-176,Leslieville,2023,Q3,Recurring Visitor,367093.9186,32.12294501
-177,Leslieville,2023,Q3,Infrequent Visitor,410027.6034,35.8799029
-178,Leslieville,2022,Q3,Resident,257790.9537,40.91115019
-179,Leslieville,2022,Q3,Recurring Visitor,241318.1041,38.29692647
-180,Leslieville,2022,Q3,Infrequent Visitor,131014.8877,20.79192334
-181,LibertyVillage,2023,Q3,Resident,454851.5275,30.35488273
-182,LibertyVillage,2023,Q3,Recurring Visitor,468106.7098,31.23947799
-183,LibertyVillage,2023,Q3,Infrequent Visitor,575487.7674,38.40563928
-184,LibertyVillage,2022,Q3,Resident,282962.1264,27.80661205
-185,LibertyVillage,2022,Q3,Recurring Visitor,293078.3672,28.80073231
-186,LibertyVillage,2022,Q3,Infrequent Visitor,441566.8505,43.39265563
-187,PapeVillage,2023,Q3,Resident,237476.6511,38.92144927
-188,PapeVillage,2023,Q3,Recurring Visitor,223442.6573,36.62133524
-189,PapeVillage,2023,Q3,Infrequent Visitor,149224.0844,24.45721549
-190,PapeVillage,2022,Q3,Resident,107720.4982,41.37016661
-191,PapeVillage,2022,Q3,Recurring Visitor,94499.40982,36.2925942
-192,PapeVillage,2022,Q3,Infrequent Visitor,58162.16689,22.33723919
-193,QueenStreet,2023,Q3,Resident,664720.2201,24.44286474
-194,QueenStreet,2023,Q3,Recurring Visitor,746290.0256,27.44232175
-195,QueenStreet,2023,Q3,Infrequent Visitor,1308475.491,48.11481352
-196,QueenStreet,2022,Q3,Resident,438520.6421,27.62051128
-197,QueenStreet,2022,Q3,Recurring Visitor,486953.0864,30.67106066
-198,QueenStreet,2022,Q3,Infrequent Visitor,662189.2863,41.70842805
-199,Riverside,2023,Q3,Resident,198796.0777,24.92915372
-200,Riverside,2023,Q3,Recurring Visitor,201012.4581,25.20708923
-201,Riverside,2023,Q3,Infrequent Visitor,397635.613,49.86375706
-202,Riverside,2022,Q3,Resident,141749.9396,30.97702858
-203,Riverside,2022,Q3,Recurring Visitor,142773.7944,31.20077457
-204,Riverside,2022,Q3,Infrequent Visitor,173073.2211,37.82219685
-205,StLawrenceMarket,2023,Q3,Resident,1803196.739,27.42625935
-206,StLawrenceMarket,2023,Q3,Recurring Visitor,2070252.838,31.48812885
-207,StLawrenceMarket,2023,Q3,Infrequent Visitor,2701259.413,41.0856118
-208,StLawrenceMarket,2022,Q3,Resident,1228802.95,28.08761226
-209,StLawrenceMarket,2022,Q3,Recurring Visitor,1392161.852,31.82162143
-210,StLawrenceMarket,2022,Q3,Infrequent Visitor,1753928.083,40.09076631
-211,WestQueenWest,2023,Q3,Resident,656151.6981,34.10096794
-212,WestQueenWest,2023,Q3,Recurring Visitor,638377.9706,33.17724662
-213,WestQueenWest,2023,Q3,Infrequent Visitor,629614.2419,32.72178543
-214,WestQueenWest,2022,Q3,Resident,341526.0033,33.0433442
-215,WestQueenWest,2022,Q3,Recurring Visitor,320198.7564,30.97988914
-216,WestQueenWest,2022,Q3,Infrequent Visitor,371844.9699,35.97676666
-217,DowntownWest,2023,Q4,Resident,2532435.835,24.59909076
-218,DowntownWest,2023,Q4,Recurring Visitor,2739549.954,26.61091627
-219,DowntownWest,2023,Q4,Infrequent Visitor,5022849.333,48.78999297
-220,DowntownWest,2022,Q4,Resident,2279420.99,26.28354121
-221,DowntownWest,2022,Q4,Recurring Visitor,2663968.126,30.71767626
-222,DowntownWest,2022,Q4,Infrequent Visitor,3729038.132,42.99878253
-223,DowntownYonge,2023,Q4,Resident,2297701.754,24.08012872
-224,DowntownYonge,2023,Q4,Recurring Visitor,2588831.123,27.13119167
-225,DowntownYonge,2023,Q4,Infrequent Visitor,4655366.922,48.78867961
-226,DowntownYonge,2022,Q4,Resident,1955352.373,24.93200635
-227,DowntownYonge,2022,Q4,Recurring Visitor,2130838.299,27.16956531
-228,DowntownYonge,2022,Q4,Infrequent Visitor,3756549.079,47.89842833
-229,FinancialDistrict,2023,Q4,Resident,1404664.101,13.84104638
-230,FinancialDistrict,2023,Q4,Recurring Visitor,1964034.693,19.35287964
-231,FinancialDistrict,2023,Q4,Infrequent Visitor,6779841.01,66.80607398
-232,FinancialDistrict,2022,Q4,Resident,1445633.348,15.77831076
-233,FinancialDistrict,2022,Q4,Recurring Visitor,2015510.9,21.99821785
-234,FinancialDistrict,2022,Q4,Infrequent Visitor,5701011.131,62.2234714
-235,GerrardIndiaBaz,2023,Q4,Resident,91239.34348,24.28251063
-236,GerrardIndiaBaz,2023,Q4,Recurring Visitor,87289.45861,23.23128516
-237,GerrardIndiaBaz,2023,Q4,Infrequent Visitor,197212.1783,52.48620421
-238,GerrardIndiaBaz,2022,Q4,Resident,88864.40364,28.05075505
-239,GerrardIndiaBaz,2022,Q4,Recurring Visitor,75895.22491,23.95693074
-240,GerrardIndiaBaz,2022,Q4,Infrequent Visitor,152038.9869,47.9923142
-241,Greektown,2023,Q4,Resident,327412.427,24.64952089
-242,Greektown,2023,Q4,Recurring Visitor,305037.2367,22.9649858
-243,Greektown,2023,Q4,Infrequent Visitor,695821.2931,52.3854933
-244,Greektown,2022,Q4,Resident,287131.0565,26.32361509
-245,Greektown,2022,Q4,Recurring Visitor,265594.1212,24.34915087
-246,Greektown,2022,Q4,Infrequent Visitor,538048.4701,49.32723404
-247,Leslieville,2023,Q4,Resident,311138.7226,30.58560162
-248,Leslieville,2023,Q4,Recurring Visitor,321998.7864,31.65316911
-249,Leslieville,2023,Q4,Infrequent Visitor,384134.3645,37.76122927
-250,Leslieville,2022,Q4,Resident,315543.5724,36.34220132
-251,Leslieville,2022,Q4,Recurring Visitor,311210.2674,35.8431202
-252,Leslieville,2022,Q4,Infrequent Visitor,241502.7899,27.81467848
-253,LibertyVillage,2023,Q4,Resident,396808.596,29.66208637
-254,LibertyVillage,2023,Q4,Recurring Visitor,402480.7821,30.08609148
-255,LibertyVillage,2023,Q4,Infrequent Visitor,538474.2272,40.25182215
-256,LibertyVillage,2022,Q4,Resident,322189.6036,28.87704163
-257,LibertyVillage,2022,Q4,Recurring Visitor,327817.1705,29.38142627
-258,LibertyVillage,2022,Q4,Infrequent Visitor,465722.4881,41.7415321
-259,PapeVillage,2023,Q4,Resident,179117.88,36.90384891
-260,PapeVillage,2023,Q4,Recurring Visitor,169481.8279,34.91852276
-261,PapeVillage,2023,Q4,Infrequent Visitor,136763.9745,28.17762833
-262,PapeVillage,2022,Q4,Resident,181334.6636,42.65300138
-263,PapeVillage,2022,Q4,Recurring Visitor,163461.7836,38.44899559
-264,PapeVillage,2022,Q4,Infrequent Visitor,80342.83428,18.89800303
-265,QueenStreet,2023,Q4,Resident,524207.5029,22.05063618
-266,QueenStreet,2023,Q4,Recurring Visitor,569019.2801,23.93563056
-267,QueenStreet,2023,Q4,Infrequent Visitor,1284062.918,54.01373326
-268,QueenStreet,2022,Q4,Resident,530906.1458,26.05219117
-269,QueenStreet,2022,Q4,Recurring Visitor,611310.0403,29.99770517
-270,QueenStreet,2022,Q4,Infrequent Visitor,895639.8326,43.95010366
-271,Riverside,2023,Q4,Resident,152829.8051,23.2827847
-272,Riverside,2023,Q4,Recurring Visitor,155152.412,23.63662116
-273,Riverside,2023,Q4,Infrequent Visitor,348424.682,53.08059414
-274,Riverside,2022,Q4,Resident,182240.6788,28.65009804
-275,Riverside,2022,Q4,Recurring Visitor,190539.4082,29.95474314
-276,Riverside,2022,Q4,Infrequent Visitor,263310.8562,41.39515882
-277,StLawrenceMarket,2023,Q4,Resident,1508477.959,24.82880799
-278,StLawrenceMarket,2023,Q4,Recurring Visitor,1732383.926,28.51419048
-279,StLawrenceMarket,2023,Q4,Infrequent Visitor,2834653.137,46.65700153
-280,StLawrenceMarket,2022,Q4,Resident,1513507.859,28.54237463
-281,StLawrenceMarket,2022,Q4,Recurring Visitor,1685820.875,31.79192675
-282,StLawrenceMarket,2022,Q4,Infrequent Visitor,2103340.993,39.66569862
-283,WestQueenWest,2023,Q4,Resident,497876.1345,30.00370562
-284,WestQueenWest,2023,Q4,Recurring Visitor,507340.7568,30.57407588
-285,WestQueenWest,2023,Q4,Infrequent Visitor,654165.2558,39.4222185
-286,WestQueenWest,2022,Q4,Resident,419658.8803,31.71705971
-287,WestQueenWest,2022,Q4,Recurring Visitor,392291.7466,29.64870121
-288,WestQueenWest,2022,Q4,Infrequent Visitor,511182.3623,38.63423908
+"","Name","Year","Quarter","Type","Count","Percentage"
+"1","DowntownWest",2024,"Q1","Resident",2254483.32684061,24.511809175172
+"2","DowntownWest",2024,"Q1","Recurring Visitor",2399076.10649839,26.0838902728158
+"3","DowntownWest",2024,"Q1","Infrequent Visitor",4543980.04948375,49.4043005520123
+"4","DowntownYonge",2024,"Q1","Resident",1934929.20538528,23.1751679382567
+"5","DowntownYonge",2024,"Q1","Recurring Visitor",2217686.71211084,26.5618307091371
+"6","DowntownYonge",2024,"Q1","Infrequent Visitor",4196532.66490173,50.2630013526062
+"7","FinancialDistrict",2024,"Q1","Resident",1275841.17188335,14.0902279182714
+"8","FinancialDistrict",2024,"Q1","Recurring Visitor",1746892.72372183,19.2924614508842
+"9","FinancialDistrict",2024,"Q1","Infrequent Visitor",6032060.52847161,66.6173106308444
+"10","Greektown",2024,"Q1","Resident",244936.008059472,22.4168385119593
+"11","Greektown",2024,"Q1","Recurring Visitor",250370.459387174,22.9142060439092
+"12","Greektown",2024,"Q1","Infrequent Visitor",597336.493463293,54.6689554441314
+"13","Leslieville",2024,"Q1","Resident",255958.64923059,29.0804228705197
+"14","Leslieville",2024,"Q1","Recurring Visitor",255635.347002183,29.0436912908473
+"15","Leslieville",2024,"Q1","Infrequent Visitor",368581.131791476,41.875885838633
+"16","LibertyVillage",2024,"Q1","Resident",268351.235157066,23.9502887393264
+"17","LibertyVillage",2024,"Q1","Recurring Visitor",296261.308057043,26.4412566094718
+"18","LibertyVillage",2024,"Q1","Infrequent Visitor",555838.39613692,49.6084546512018
+"19","PapeVillage",2024,"Q1","Resident",146037.496651225,36.5221018755775
+"20","PapeVillage",2024,"Q1","Recurring Visitor",129446.822597578,32.372987423014
+"21","PapeVillage",2024,"Q1","Infrequent Visitor",124376.283376811,31.1049107014085
+"22","QueenStreet",2024,"Q1","Resident",382235.749739077,19.0427171593005
+"23","QueenStreet",2024,"Q1","Recurring Visitor",414392.057321828,20.6447218660915
+"24","QueenStreet",2024,"Q1","Infrequent Visitor",1210626.44421801,60.3125609746081
+"25","Riverside",2024,"Q1","Resident",143084.924907854,25.1762641460144
+"26","Riverside",2024,"Q1","Recurring Visitor",146233.319201826,25.7302344991588
+"27","Riverside",2024,"Q1","Infrequent Visitor",279014.38887354,49.0935013548268
+"28","StLawrenceMarket",2024,"Q1","Resident",1376568.7016037,25.4251505084571
+"29","StLawrenceMarket",2024,"Q1","Recurring Visitor",1604665.97111958,29.6380949123603
+"30","StLawrenceMarket",2024,"Q1","Infrequent Visitor",2432966.12481305,44.9367545791826
+"31","WestQueenWest",2024,"Q1","Resident",374590.996044788,26.9475271287524
+"32","WestQueenWest",2024,"Q1","Recurring Visitor",394158.306120803,28.3551707311818
+"33","WestQueenWest",2024,"Q1","Infrequent Visitor",621326.285308661,44.6973021400658
+"34","DowntownWest",2023,"Q1","Resident",2142881.417,27.05436769
+"35","DowntownWest",2023,"Q1","Recurring Visitor",2392473.633,30.20552646
+"36","DowntownWest",2023,"Q1","Infrequent Visitor",3385293.63,42.74010585
+"37","DowntownWest",2022,"Q1","Resident",1721887.801,22.54695494
+"38","DowntownWest",2022,"Q1","Recurring Visitor",1947782.206,25.50488924
+"39","DowntownWest",2022,"Q1","Infrequent Visitor",3967227.327,51.94815582
+"40","DowntownYonge",2023,"Q1","Resident",1820813.735,26.01746012
+"41","DowntownYonge",2023,"Q1","Recurring Visitor",2070065.072,29.57899231
+"42","DowntownYonge",2023,"Q1","Infrequent Visitor",3107551.195,44.40354757
+"43","DowntownYonge",2022,"Q1","Resident",2121636.405,32.17015249
+"44","DowntownYonge",2022,"Q1","Recurring Visitor",2371416.895,35.95754812
+"45","DowntownYonge",2022,"Q1","Infrequent Visitor",2101992.855,31.87229938
+"46","FinancialDistrict",2023,"Q1","Resident",1123709.18,14.39572296
+"47","FinancialDistrict",2023,"Q1","Recurring Visitor",1600667.76,20.50599037
+"48","FinancialDistrict",2023,"Q1","Infrequent Visitor",5081477.501,65.09828667
+"49","FinancialDistrict",2022,"Q1","Resident",1237058.59,14.12061897
+"50","FinancialDistrict",2022,"Q1","Recurring Visitor",1852412.51,21.1446826
+"51","FinancialDistrict",2022,"Q1","Infrequent Visitor",5671183.033,64.73469842
+"52","GerrardIndiaBaz",2023,"Q1","Resident",71245.35658,22.01188898
+"53","GerrardIndiaBaz",2023,"Q1","Recurring Visitor",61128.94269,18.88633259
+"54","GerrardIndiaBaz",2023,"Q1","Infrequent Visitor",191293.318,59.10177843
+"55","GerrardIndiaBaz",2022,"Q1","Resident",51892.19739,25.61678454
+"56","GerrardIndiaBaz",2022,"Q1","Recurring Visitor",43242.47247,21.34681428
+"57","GerrardIndiaBaz",2022,"Q1","Infrequent Visitor",107436.4112,53.03640117
+"58","Greektown",2023,"Q1","Resident",292334.0509,23.91687397
+"59","Greektown",2023,"Q1","Recurring Visitor",275474.6987,22.53755124
+"60","Greektown",2023,"Q1","Infrequent Visitor",654483.3075,53.54557479
+"61","Greektown",2022,"Q1","Resident",232573.6811,25.11781903
+"62","Greektown",2022,"Q1","Recurring Visitor",236739.525,25.56772769
+"63","Greektown",2022,"Q1","Infrequent Visitor",456617.8265,49.31445329
+"64","Leslieville",2023,"Q1","Resident",285497.4359,31.46475084
+"65","Leslieville",2023,"Q1","Recurring Visitor",279587.6564,30.81343242
+"66","Leslieville",2023,"Q1","Infrequent Visitor",342271.3249,37.72181674
+"67","Leslieville",2022,"Q1","Resident",274465.3454,41.38212669
+"68","Leslieville",2022,"Q1","Recurring Visitor",261294.0082,39.39623683
+"69","Leslieville",2022,"Q1","Infrequent Visitor",127486.7562,19.22163648
+"70","LibertyVillage",2023,"Q1","Resident",309341.4746,29.04615169
+"71","LibertyVillage",2023,"Q1","Recurring Visitor",321270.81,30.16627724
+"72","LibertyVillage",2023,"Q1","Infrequent Visitor",434387.5744,40.78757107
+"73","LibertyVillage",2022,"Q1","Resident",221051.1712,31.21362901
+"74","LibertyVillage",2022,"Q1","Recurring Visitor",248432.4493,35.08001459
+"75","LibertyVillage",2022,"Q1","Infrequent Visitor",238704.3671,33.7063564
+"76","PapeVillage",2023,"Q1","Resident",180748.2938,37.6238105
+"77","PapeVillage",2023,"Q1","Recurring Visitor",169970.5045,35.38035084
+"78","PapeVillage",2023,"Q1","Infrequent Visitor",129690.5261,26.99583866
+"79","PapeVillage",2022,"Q1","Resident",136327.1391,41.30639782
+"80","PapeVillage",2022,"Q1","Recurring Visitor",129138.3541,39.12823422
+"81","PapeVillage",2022,"Q1","Infrequent Visitor",64573.30534,19.56536796
+"82","QueenStreet",2023,"Q1","Resident",478581.4694,23.39780828
+"83","QueenStreet",2023,"Q1","Recurring Visitor",504448.0201,24.6624218
+"84","QueenStreet",2023,"Q1","Infrequent Visitor",1062382.045,51.93976992
+"85","QueenStreet",2022,"Q1","Resident",480014.2102,28.82861683
+"86","QueenStreet",2022,"Q1","Recurring Visitor",517849.5467,31.10092543
+"87","QueenStreet",2022,"Q1","Infrequent Visitor",667197.7792,40.07045774
+"88","Riverside",2023,"Q1","Resident",198068.0701,29.07840746
+"89","Riverside",2023,"Q1","Recurring Visitor",199605.8982,29.30417626
+"90","Riverside",2023,"Q1","Infrequent Visitor",283477.7433,41.61741628
+"91","Riverside",2022,"Q1","Resident",197036.4242,40.02529531
+"92","Riverside",2022,"Q1","Recurring Visitor",201995.2369,41.03261131
+"93","Riverside",2022,"Q1","Infrequent Visitor",93248.09023,18.94209339
+"94","StLawrenceMarket",2023,"Q1","Resident",1416511.116,27.75597317
+"95","StLawrenceMarket",2023,"Q1","Recurring Visitor",1570600.096,30.7752856
+"96","StLawrenceMarket",2023,"Q1","Infrequent Visitor",2116334.835,41.46874123
+"97","StLawrenceMarket",2022,"Q1","Resident",1126372.954,25.91721659
+"98","StLawrenceMarket",2022,"Q1","Recurring Visitor",1309300.914,30.12628743
+"99","StLawrenceMarket",2022,"Q1","Infrequent Visitor",1910367.498,43.95649597
+"100","WestQueenWest",2023,"Q1","Resident",457929.473,30.53907066
+"101","WestQueenWest",2023,"Q1","Recurring Visitor",462247.8968,30.82706402
+"102","WestQueenWest",2023,"Q1","Infrequent Visitor",579309.8874,38.63386532
+"103","WestQueenWest",2022,"Q1","Resident",234026.1289,32.62000827
+"104","WestQueenWest",2022,"Q1","Recurring Visitor",239905.1763,33.43946624
+"105","WestQueenWest",2022,"Q1","Infrequent Visitor",243499.9318,33.94052548
+"106","DowntownWest",2023,"Q2","Resident",2502915.936,27.4490697
+"107","DowntownWest",2023,"Q2","Recurring Visitor",2721061.692,29.84143853
+"108","DowntownWest",2023,"Q2","Infrequent Visitor",3894422.243,42.70949177
+"109","DowntownWest",2022,"Q2","Resident",1730654.135,17.77857894
+"110","DowntownWest",2022,"Q2","Recurring Visitor",1993721.626,20.48100576
+"111","DowntownWest",2022,"Q2","Infrequent Visitor",6010115.061,61.7404153
+"112","DowntownYonge",2023,"Q2","Resident",2212497.194,27.07790778
+"113","DowntownYonge",2023,"Q2","Recurring Visitor",2511783.578,30.74075949
+"114","DowntownYonge",2023,"Q2","Infrequent Visitor",3446576.488,42.18133273
+"115","DowntownYonge",2022,"Q2","Resident",2396671.927,26.76221631
+"116","DowntownYonge",2022,"Q2","Recurring Visitor",2696288.137,30.10785312
+"117","DowntownYonge",2022,"Q2","Infrequent Visitor",3862471.351,43.12993057
+"118","FinancialDistrict",2023,"Q2","Resident",1268806.872,14.69318163
+"119","FinancialDistrict",2023,"Q2","Recurring Visitor",1774808.855,20.55284333
+"120","FinancialDistrict",2023,"Q2","Infrequent Visitor",5591728.913,64.75397504
+"121","FinancialDistrict",2022,"Q2","Resident",1256372.627,11.50098301
+"122","FinancialDistrict",2022,"Q2","Recurring Visitor",1882333.405,17.2311017
+"123","FinancialDistrict",2022,"Q2","Infrequent Visitor",7785339.555,71.26791529
+"124","GerrardIndiaBaz",2023,"Q2","Resident",85708.40686,23.28974715
+"125","GerrardIndiaBaz",2023,"Q2","Recurring Visitor",86912.58152,23.61696037
+"126","GerrardIndiaBaz",2023,"Q2","Infrequent Visitor",195388.1888,53.09329248
+"127","GerrardIndiaBaz",2022,"Q2","Resident",48358.58354,21.6336092
+"128","GerrardIndiaBaz",2022,"Q2","Recurring Visitor",40820.58142,18.26142209
+"129","GerrardIndiaBaz",2022,"Q2","Infrequent Visitor",134355.3507,60.10496872
+"130","Greektown",2023,"Q2","Resident",301694.7281,25.05178734
+"131","Greektown",2023,"Q2","Recurring Visitor",282114.0758,23.42587117
+"132","Greektown",2023,"Q2","Infrequent Visitor",620475.4413,51.52234149
+"133","Greektown",2022,"Q2","Resident",219026.1601,21.85554155
+"134","Greektown",2022,"Q2","Recurring Visitor",228451.0298,22.79600287
+"135","Greektown",2022,"Q2","Infrequent Visitor",554676.7012,55.34845558
+"136","Leslieville",2023,"Q2","Resident",313596.5987,31.76713472
+"137","Leslieville",2023,"Q2","Recurring Visitor",311546.0888,31.55941938
+"138","Leslieville",2023,"Q2","Infrequent Visitor",362030.3813,36.6734459
+"139","Leslieville",2022,"Q2","Resident",270966.6612,37.59009355
+"140","Leslieville",2022,"Q2","Recurring Visitor",245390.617,34.04203384
+"141","Leslieville",2022,"Q2","Infrequent Visitor",204488.6565,28.36787261
+"142","LibertyVillage",2023,"Q2","Resident",407321.5993,30.51534885
+"143","LibertyVillage",2023,"Q2","Recurring Visitor",419741.3486,31.44580032
+"144","LibertyVillage",2023,"Q2","Infrequent Visitor",507745.9751,38.03885083
+"145","LibertyVillage",2022,"Q2","Resident",284829.546,28.5254836
+"146","LibertyVillage",2022,"Q2","Recurring Visitor",304225.2753,30.46795258
+"147","LibertyVillage",2022,"Q2","Infrequent Visitor",409454.2663,41.00656382
+"148","PapeVillage",2023,"Q2","Resident",175816.5984,35.31103139
+"149","PapeVillage",2023,"Q2","Recurring Visitor",173125.3315,34.77051694
+"150","PapeVillage",2023,"Q2","Infrequent Visitor",148966.4899,29.91845167
+"151","PapeVillage",2022,"Q2","Resident",158584.9609,44.52130681
+"152","PapeVillage",2022,"Q2","Recurring Visitor",141527.6483,39.73261912
+"153","PapeVillage",2022,"Q2","Infrequent Visitor",56087.53921,15.74607407
+"154","QueenStreet",2023,"Q2","Resident",509615.2131,23.85524589
+"155","QueenStreet",2023,"Q2","Recurring Visitor",553809.1116,25.92397595
+"156","QueenStreet",2023,"Q2","Infrequent Visitor",1072857.211,50.22077816
+"157","QueenStreet",2022,"Q2","Resident",409322.5099,20.73709258
+"158","QueenStreet",2022,"Q2","Recurring Visitor",456306.2912,23.11738441
+"159","QueenStreet",2022,"Q2","Infrequent Visitor",1108237.633,56.14552301
+"160","Riverside",2023,"Q2","Resident",160238.2885,24.10760045
+"161","Riverside",2023,"Q2","Recurring Visitor",181577.6217,27.31806982
+"162","Riverside",2023,"Q2","Infrequent Visitor",322863.6329,48.57432973
+"163","Riverside",2022,"Q2","Resident",164462.6281,31.44000676
+"164","Riverside",2022,"Q2","Recurring Visitor",165909.3527,31.71657433
+"165","Riverside",2022,"Q2","Infrequent Visitor",192727.8689,36.8434189
+"166","StLawrenceMarket",2023,"Q2","Resident",1516438.454,28.14085353
+"167","StLawrenceMarket",2023,"Q2","Recurring Visitor",1740485.162,32.29853337
+"168","StLawrenceMarket",2023,"Q2","Infrequent Visitor",2131820.021,39.5606131
+"169","StLawrenceMarket",2022,"Q2","Resident",1300506.387,24.95694853
+"170","StLawrenceMarket",2022,"Q2","Recurring Visitor",1442810.481,27.68778936
+"171","StLawrenceMarket",2022,"Q2","Infrequent Visitor",2467682.328,47.35526212
+"172","WestQueenWest",2023,"Q2","Resident",489775.7199,33.02938303
+"173","WestQueenWest",2023,"Q2","Recurring Visitor",490280.8203,33.06344587
+"174","WestQueenWest",2023,"Q2","Infrequent Visitor",502791.9874,33.9071711
+"175","WestQueenWest",2022,"Q2","Resident",328491.6027,30.54550759
+"176","WestQueenWest",2022,"Q2","Recurring Visitor",319714.9349,29.72938999
+"177","WestQueenWest",2022,"Q2","Infrequent Visitor",427210.5326,39.72510242
+"178","DowntownWest",2023,"Q3","Resident",2838792.572,26.302506
+"179","DowntownWest",2023,"Q3","Recurring Visitor",3128939.406,28.99082811
+"180","DowntownWest",2023,"Q3","Infrequent Visitor",4825127.729,44.70666589
+"181","DowntownWest",2022,"Q3","Resident",1812980.643,22.52755025
+"182","DowntownWest",2022,"Q3","Recurring Visitor",2104768.511,26.15321824
+"183","DowntownWest",2022,"Q3","Infrequent Visitor",4130088.371,51.31923151
+"184","DowntownYonge",2023,"Q3","Resident",2626932.428,25.9285187
+"185","DowntownYonge",2023,"Q3","Recurring Visitor",3007826.759,29.68804661
+"186","DowntownYonge",2023,"Q3","Infrequent Visitor",4496681.249,44.38343469
+"187","DowntownYonge",2022,"Q3","Resident",2050553.722,25.87697734
+"188","DowntownYonge",2022,"Q3","Recurring Visitor",2309830.419,29.14892147
+"189","DowntownYonge",2022,"Q3","Infrequent Visitor",3563855.599,44.97410119
+"190","FinancialDistrict",2023,"Q3","Resident",1736910.209,15.88482324
+"191","FinancialDistrict",2023,"Q3","Recurring Visitor",2386215.157,21.82300835
+"192","FinancialDistrict",2023,"Q3","Infrequent Visitor",6811275.24,62.29216841
+"193","FinancialDistrict",2022,"Q3","Resident",1161954.952,13.18686561
+"194","FinancialDistrict",2022,"Q3","Recurring Visitor",1757693.674,19.94782175
+"195","FinancialDistrict",2022,"Q3","Infrequent Visitor",5891808.061,66.86531264
+"196","GerrardIndiaBaz",2023,"Q3","Resident",125672.0612,27.3355828
+"197","GerrardIndiaBaz",2023,"Q3","Recurring Visitor",118077.0328,25.68354872
+"198","GerrardIndiaBaz",2023,"Q3","Infrequent Visitor",215988.9043,46.98086848
+"199","GerrardIndiaBaz",2022,"Q3","Resident",60057.62219,28.70030197
+"200","GerrardIndiaBaz",2022,"Q3","Recurring Visitor",49849.51504,23.82205759
+"201","GerrardIndiaBaz",2022,"Q3","Infrequent Visitor",99350.6687,47.47764044
+"202","Greektown",2023,"Q3","Resident",388153.4883,24.91889236
+"203","Greektown",2023,"Q3","Recurring Visitor",374187.3837,24.02228865
+"204","Greektown",2023,"Q3","Infrequent Visitor",795326.6307,51.058819
+"205","Greektown",2022,"Q3","Resident",206681.2233,25.08825501
+"206","Greektown",2022,"Q3","Recurring Visitor",200607.4358,24.35098083
+"207","Greektown",2022,"Q3","Infrequent Visitor",416527.9962,50.56076416
+"208","Leslieville",2023,"Q3","Resident",365656.385,31.9971521
+"209","Leslieville",2023,"Q3","Recurring Visitor",367093.9186,32.12294501
+"210","Leslieville",2023,"Q3","Infrequent Visitor",410027.6034,35.8799029
+"211","Leslieville",2022,"Q3","Resident",257790.9537,40.91115019
+"212","Leslieville",2022,"Q3","Recurring Visitor",241318.1041,38.29692647
+"213","Leslieville",2022,"Q3","Infrequent Visitor",131014.8877,20.79192334
+"214","LibertyVillage",2023,"Q3","Resident",454851.5275,30.35488273
+"215","LibertyVillage",2023,"Q3","Recurring Visitor",468106.7098,31.23947799
+"216","LibertyVillage",2023,"Q3","Infrequent Visitor",575487.7674,38.40563928
+"217","LibertyVillage",2022,"Q3","Resident",282962.1264,27.80661205
+"218","LibertyVillage",2022,"Q3","Recurring Visitor",293078.3672,28.80073231
+"219","LibertyVillage",2022,"Q3","Infrequent Visitor",441566.8505,43.39265563
+"220","PapeVillage",2023,"Q3","Resident",237476.6511,38.92144927
+"221","PapeVillage",2023,"Q3","Recurring Visitor",223442.6573,36.62133524
+"222","PapeVillage",2023,"Q3","Infrequent Visitor",149224.0844,24.45721549
+"223","PapeVillage",2022,"Q3","Resident",107720.4982,41.37016661
+"224","PapeVillage",2022,"Q3","Recurring Visitor",94499.40982,36.2925942
+"225","PapeVillage",2022,"Q3","Infrequent Visitor",58162.16689,22.33723919
+"226","QueenStreet",2023,"Q3","Resident",664720.2201,24.44286474
+"227","QueenStreet",2023,"Q3","Recurring Visitor",746290.0256,27.44232175
+"228","QueenStreet",2023,"Q3","Infrequent Visitor",1308475.491,48.11481352
+"229","QueenStreet",2022,"Q3","Resident",438520.6421,27.62051128
+"230","QueenStreet",2022,"Q3","Recurring Visitor",486953.0864,30.67106066
+"231","QueenStreet",2022,"Q3","Infrequent Visitor",662189.2863,41.70842805
+"232","Riverside",2023,"Q3","Resident",198796.0777,24.92915372
+"233","Riverside",2023,"Q3","Recurring Visitor",201012.4581,25.20708923
+"234","Riverside",2023,"Q3","Infrequent Visitor",397635.613,49.86375706
+"235","Riverside",2022,"Q3","Resident",141749.9396,30.97702858
+"236","Riverside",2022,"Q3","Recurring Visitor",142773.7944,31.20077457
+"237","Riverside",2022,"Q3","Infrequent Visitor",173073.2211,37.82219685
+"238","StLawrenceMarket",2023,"Q3","Resident",1803196.739,27.42625935
+"239","StLawrenceMarket",2023,"Q3","Recurring Visitor",2070252.838,31.48812885
+"240","StLawrenceMarket",2023,"Q3","Infrequent Visitor",2701259.413,41.0856118
+"241","StLawrenceMarket",2022,"Q3","Resident",1228802.95,28.08761226
+"242","StLawrenceMarket",2022,"Q3","Recurring Visitor",1392161.852,31.82162143
+"243","StLawrenceMarket",2022,"Q3","Infrequent Visitor",1753928.083,40.09076631
+"244","WestQueenWest",2023,"Q3","Resident",656151.6981,34.10096794
+"245","WestQueenWest",2023,"Q3","Recurring Visitor",638377.9706,33.17724662
+"246","WestQueenWest",2023,"Q3","Infrequent Visitor",629614.2419,32.72178543
+"247","WestQueenWest",2022,"Q3","Resident",341526.0033,33.0433442
+"248","WestQueenWest",2022,"Q3","Recurring Visitor",320198.7564,30.97988914
+"249","WestQueenWest",2022,"Q3","Infrequent Visitor",371844.9699,35.97676666
+"250","DowntownWest",2023,"Q4","Resident",2532435.835,24.59909076
+"251","DowntownWest",2023,"Q4","Recurring Visitor",2739549.954,26.61091627
+"252","DowntownWest",2023,"Q4","Infrequent Visitor",5022849.333,48.78999297
+"253","DowntownWest",2022,"Q4","Resident",2279420.99,26.28354121
+"254","DowntownWest",2022,"Q4","Recurring Visitor",2663968.126,30.71767626
+"255","DowntownWest",2022,"Q4","Infrequent Visitor",3729038.132,42.99878253
+"256","DowntownYonge",2023,"Q4","Resident",2297701.754,24.08012872
+"257","DowntownYonge",2023,"Q4","Recurring Visitor",2588831.123,27.13119167
+"258","DowntownYonge",2023,"Q4","Infrequent Visitor",4655366.922,48.78867961
+"259","DowntownYonge",2022,"Q4","Resident",1955352.373,24.93200635
+"260","DowntownYonge",2022,"Q4","Recurring Visitor",2130838.299,27.16956531
+"261","DowntownYonge",2022,"Q4","Infrequent Visitor",3756549.079,47.89842833
+"262","FinancialDistrict",2023,"Q4","Resident",1404664.101,13.84104638
+"263","FinancialDistrict",2023,"Q4","Recurring Visitor",1964034.693,19.35287964
+"264","FinancialDistrict",2023,"Q4","Infrequent Visitor",6779841.01,66.80607398
+"265","FinancialDistrict",2022,"Q4","Resident",1445633.348,15.77831076
+"266","FinancialDistrict",2022,"Q4","Recurring Visitor",2015510.9,21.99821785
+"267","FinancialDistrict",2022,"Q4","Infrequent Visitor",5701011.131,62.2234714
+"268","GerrardIndiaBaz",2023,"Q4","Resident",91239.34348,24.28251063
+"269","GerrardIndiaBaz",2023,"Q4","Recurring Visitor",87289.45861,23.23128516
+"270","GerrardIndiaBaz",2023,"Q4","Infrequent Visitor",197212.1783,52.48620421
+"271","GerrardIndiaBaz",2022,"Q4","Resident",88864.40364,28.05075505
+"272","GerrardIndiaBaz",2022,"Q4","Recurring Visitor",75895.22491,23.95693074
+"273","GerrardIndiaBaz",2022,"Q4","Infrequent Visitor",152038.9869,47.9923142
+"274","Greektown",2023,"Q4","Resident",327412.427,24.64952089
+"275","Greektown",2023,"Q4","Recurring Visitor",305037.2367,22.9649858
+"276","Greektown",2023,"Q4","Infrequent Visitor",695821.2931,52.3854933
+"277","Greektown",2022,"Q4","Resident",287131.0565,26.32361509
+"278","Greektown",2022,"Q4","Recurring Visitor",265594.1212,24.34915087
+"279","Greektown",2022,"Q4","Infrequent Visitor",538048.4701,49.32723404
+"280","Leslieville",2023,"Q4","Resident",311138.7226,30.58560162
+"281","Leslieville",2023,"Q4","Recurring Visitor",321998.7864,31.65316911
+"282","Leslieville",2023,"Q4","Infrequent Visitor",384134.3645,37.76122927
+"283","Leslieville",2022,"Q4","Resident",315543.5724,36.34220132
+"284","Leslieville",2022,"Q4","Recurring Visitor",311210.2674,35.8431202
+"285","Leslieville",2022,"Q4","Infrequent Visitor",241502.7899,27.81467848
+"286","LibertyVillage",2023,"Q4","Resident",396808.596,29.66208637
+"287","LibertyVillage",2023,"Q4","Recurring Visitor",402480.7821,30.08609148
+"288","LibertyVillage",2023,"Q4","Infrequent Visitor",538474.2272,40.25182215
+"289","LibertyVillage",2022,"Q4","Resident",322189.6036,28.87704163
+"290","LibertyVillage",2022,"Q4","Recurring Visitor",327817.1705,29.38142627
+"291","LibertyVillage",2022,"Q4","Infrequent Visitor",465722.4881,41.7415321
+"292","PapeVillage",2023,"Q4","Resident",179117.88,36.90384891
+"293","PapeVillage",2023,"Q4","Recurring Visitor",169481.8279,34.91852276
+"294","PapeVillage",2023,"Q4","Infrequent Visitor",136763.9745,28.17762833
+"295","PapeVillage",2022,"Q4","Resident",181334.6636,42.65300138
+"296","PapeVillage",2022,"Q4","Recurring Visitor",163461.7836,38.44899559
+"297","PapeVillage",2022,"Q4","Infrequent Visitor",80342.83428,18.89800303
+"298","QueenStreet",2023,"Q4","Resident",524207.5029,22.05063618
+"299","QueenStreet",2023,"Q4","Recurring Visitor",569019.2801,23.93563056
+"300","QueenStreet",2023,"Q4","Infrequent Visitor",1284062.918,54.01373326
+"301","QueenStreet",2022,"Q4","Resident",530906.1458,26.05219117
+"302","QueenStreet",2022,"Q4","Recurring Visitor",611310.0403,29.99770517
+"303","QueenStreet",2022,"Q4","Infrequent Visitor",895639.8326,43.95010366
+"304","Riverside",2023,"Q4","Resident",152829.8051,23.2827847
+"305","Riverside",2023,"Q4","Recurring Visitor",155152.412,23.63662116
+"306","Riverside",2023,"Q4","Infrequent Visitor",348424.682,53.08059414
+"307","Riverside",2022,"Q4","Resident",182240.6788,28.65009804
+"308","Riverside",2022,"Q4","Recurring Visitor",190539.4082,29.95474314
+"309","Riverside",2022,"Q4","Infrequent Visitor",263310.8562,41.39515882
+"310","StLawrenceMarket",2023,"Q4","Resident",1508477.959,24.82880799
+"311","StLawrenceMarket",2023,"Q4","Recurring Visitor",1732383.926,28.51419048
+"312","StLawrenceMarket",2023,"Q4","Infrequent Visitor",2834653.137,46.65700153
+"313","StLawrenceMarket",2022,"Q4","Resident",1513507.859,28.54237463
+"314","StLawrenceMarket",2022,"Q4","Recurring Visitor",1685820.875,31.79192675
+"315","StLawrenceMarket",2022,"Q4","Infrequent Visitor",2103340.993,39.66569862
+"316","WestQueenWest",2023,"Q4","Resident",497876.1345,30.00370562
+"317","WestQueenWest",2023,"Q4","Recurring Visitor",507340.7568,30.57407588
+"318","WestQueenWest",2023,"Q4","Infrequent Visitor",654165.2558,39.4222185
+"319","WestQueenWest",2022,"Q4","Resident",419658.8803,31.71705971
+"320","WestQueenWest",2022,"Q4","Recurring Visitor",392291.7466,29.64870121
+"321","WestQueenWest",2022,"Q4","Infrequent Visitor",511182.3623,38.63423908

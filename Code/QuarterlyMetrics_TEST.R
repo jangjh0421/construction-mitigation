@@ -27,8 +27,6 @@ library(sf)
 library(lubridate)
 options(scipen = 999)
 
-input_df = read_csv("./Data/CoTDashboards/Retail_Sales.csv")
-
 #### WORKFLOW FUNCTIONS ####
 
 # FILTER QUARTER
@@ -101,7 +99,7 @@ filter_quarter = function(mobilescapes_output, desired_quarter, common_location)
 }
 
 
-# APPEND RESULTS
+## APPEND RESULTS ##
 append_results = function(input_table, appending_table = NULL){
   if(is.null(appending_table)){
     resulting_table = input_table
@@ -155,6 +153,21 @@ filter_quarter_time = function(input_df, desired_quarter, desired_year){
 }
 
 
+## META DATA BIND ##
+#   Appends the quarterly updated metric to the previous meta data file
+meta_data_bind = function(new_data, file_extension){
+  # Load in the previous meta data
+  file_name = paste0("./Interim/", file_extension, ".csv")
+  old_data = read_csv(file_name) %>%
+    select(-...1)
+  
+  # combine the previous and current data
+  data_bind = bind_rows(new_data, old_data)
+
+  return(data_bind)
+}
+
+
 #### CHART FUNCTIONS ####
 
 
@@ -173,8 +186,8 @@ foottraffic_change = function(ff_target, ff_control, name){
     return(ff_quarterly_sum)
   }
   # get the target and control quarterly totals using the get_monthly_total function
-  ff_yoy_target_sum = sum(get_monthly_total(target_ff))
-  ff_control_sum = sum(get_monthly_total(control_ff))
+  ff_yoy_target_sum = sum(get_monthly_total(ff_target))
+  ff_control_sum = sum(get_monthly_total(ff_control))
   
   # create a custom tibble
   ff_change = tibble("Name" = c(name), "Target Count" = c(ff_yoy_target_sum), "Control Count" = c(ff_control_sum),
@@ -262,7 +275,7 @@ visitor_type = function(foottraffic_CEL, foottraffic_CDL, StudyArea_Buff){
 
 # MONTHLY FOOT TRAFFIC SUMMARY
 
-monthly_foottraffic = function(ff_current, ff_pandemic){
+monthly_foottraffic = function(ff_current, ff_pandemic, desired_year){
   
   # summarize the quarterly totals for each month
   ff_current = ff_current %>%
@@ -281,18 +294,18 @@ monthly_foottraffic = function(ff_current, ff_pandemic){
   ff_monthly_change = ff_monthly_change %>%
     mutate(Percentage = Count_current / Count_pandemic * 100,
            date = case_when(
-             Month == "January" ~ ymd(paste0(study_year, "01", "01")),
-             Month == "February" ~ ymd(paste0(study_year, "02", "01")),
-             Month == "March" ~ ymd(paste0(study_year, "03", "01")),
-             Month == "April" ~ ymd(paste0(study_year, "04", "01")),
-             Month == "May" ~ ymd(paste0(study_year, "05", "01")),
-             Month == "June" ~ ymd(paste0(study_year, "06", "01")),
-             Month == "July" ~ ymd(paste0(study_year, "07", "01")),
-             Month == "August" ~ ymd(paste0(study_year, "08", "01")),
-             Month == "September" ~ ymd(paste0(study_year, "09", "01")),
-             Month == "October" ~ ymd(paste0(study_year, "10", "01")),
-             Month == "November" ~ ymd(paste0(study_year, "11", "01")),
-             Month == "December" ~ ymd(paste0(study_year, "12", "01"))
+             Month == "January" ~ ymd(paste0(desired_year, "01", "01")),
+             Month == "February" ~ ymd(paste0(desired_year, "02", "01")),
+             Month == "March" ~ ymd(paste0(desired_year, "03", "01")),
+             Month == "April" ~ ymd(paste0(desired_year, "04", "01")),
+             Month == "May" ~ ymd(paste0(desired_year, "05", "01")),
+             Month == "June" ~ ymd(paste0(desired_year, "06", "01")),
+             Month == "July" ~ ymd(paste0(desired_year, "07", "01")),
+             Month == "August" ~ ymd(paste0(desired_year, "08", "01")),
+             Month == "September" ~ ymd(paste0(desired_year, "09", "01")),
+             Month == "October" ~ ymd(paste0(desired_year, "10", "01")),
+             Month == "November" ~ ymd(paste0(desired_year, "11", "01")),
+             Month == "December" ~ ymd(paste0(desired_year, "12", "01"))
            )) %>%
     select(date, Percentage, Count_current) %>%
     rename("Count" = Count_current)
@@ -368,18 +381,19 @@ for(i in 1:length(BIAs)){
   ff_previous_year = filter_quarter(ff_previous_year, quarter, "evening")
   
     # pre-construction
-  file_name = paste0(file_directory, BIAs[i], "22")
+  file_name = paste0(file_directory, BIAs[i], "22.csv")
   ff_construction_year = read_csv(file_name)
   ff_construction_year = filter_quarter(ff_construction_year, quarter, "evening")
   
     # pre-pandemic
-  file_name = paste0(file_directory, BIAs[i], "19")
+  file_name = paste0(file_directory, BIAs[i], "19.csv")
   ff_pandemic_year = read_csv(file_name)
   ff_pandemic_year = filter_quarter(ff_pandemic_year, quarter, "evening")
   
     # last quarter
   if(quarter == "Q1"){
-    ff_last_quarter = ff_previous_year
+    file_name = paste0(file_directory, BIAs[i], (data_year - 1), "CEL.csv")
+    ff_last_quarter = read_csv(file_name)
     ff_last_quarter = filter_quarter(ff_last_quarter, "Q4", "evening")
   } else {
     ff_last_quarter = ff_current_year
@@ -431,6 +445,16 @@ for(i in 1:length(BIAs)){
   
 }
 
+# bind old data to the new data set
+ff_change_meta = meta_data_bind(ff_change_all, "ff_table_meta")
+write.csv(ff_change_meta, "./Interim/ff_table_meta.csv")
+
+# remove all elements
+rm(ff_change, ff_change_all, ff_change_meta, ff_construction_year, ff_current_year,
+   ff_last_quarter, ff_lastquarter_change, ff_pandemic_change, ff_pandemic_year,
+   ff_preconst_change, ff_previous_year, ff_yoy_change)
+
+
 
 ## VISITOR TYPE CHART ##
 
@@ -440,12 +464,12 @@ for(i in 1:length(BIAs)){
   
   # Load in the evening data for the current quarter
   file_name = paste0(file_directory, BIAs[i], data_year, "CEL.csv")
-  ff_visit_type_evening = read_csv(file_name)
+  ff_visit_type = read_csv(file_name)
   ff_visit_type_evening = filter_quarter(ff_visit_type, quarter, "evening")
   
   # Load in the day data for the current quarter
   file_name = paste0(file_directory, BIAs[i], data_year, "CDL.csv")
-  ff_visit_type_day = read_csv(file_name)
+  ff_visit_type = read_csv(file_name)
   ff_visit_type_day = filter_quarter(ff_visit_type, quarter, "day")
   
   # Load in the BIA shapefile
@@ -471,6 +495,15 @@ for(i in 1:length(BIAs)){
   }
   
 }
+
+# bind old data to the new data set
+ff_visit_type_meta = meta_data_bind(ff_visit_type_all, "ff_type_meta")
+write.csv(ff_visit_type_meta, "./Interim/ff_type_meta.csv")
+
+# remove all elements
+rm(ff_visit_type, ff_visit_type_all, ff_visit_type_day, ff_visit_type_evening,
+   ff_visit_type_meta, study_area)
+
 
 
 ## DAY OF THE WEEK ##
@@ -502,6 +535,13 @@ for(i in 1:length(BIAs)){
   
 }
 
+# bind the old data to the new data set
+ff_day_of_week_meta = meta_data_bind(ff_day_of_week_all, "ff_day_of_week_meta")
+write.csv(ff_day_of_week_meta, "./Interim/ff_day_of_week_meta.csv")
+
+# remove all elements
+rm(ff_day_of_week, ff_day_of_week_all, ff_day_of_week_meta)
+
 
 ## TIME OF THE DAY ##
 
@@ -532,6 +572,13 @@ for(i in 1:length(BIAs)){
   
 }
 
+# bind the old data to the new data set
+ff_time_of_day_meta = meta_data_bind(ff_time_of_day_all, "ff_time_of_day_meta")
+write.csv(ff_time_of_day_meta, "./Interim/ff_time_of_day_meta.csv")
+
+# remove all elements
+rm(ff_time_of_day, ff_time_of_day_all, ff_time_of_day_meta)
+
 
 ## MONTHLY FOOTTRAFFIC CHART ##
 
@@ -542,16 +589,16 @@ for(i in 1:length(BIAs)){
   # Load in the evening data for the current quarter
   file_name = paste0(file_directory, BIAs[i], data_year, "CEL.csv")
   ff_current_year = read_csv(file_name)
-  ff_current_year = filter_quarter(ff_monthly_current, quarter, "evening")
+  ff_current_year = filter_quarter(ff_current_year, quarter, "evening")
   
   # Load in the pre-pandemic data for the current quarter
-  file_name = paste0(file_directory, BIAs[i], "19")
+  file_name = paste0(file_directory, BIAs[i], "19.csv")
   ff_pandemic_year = read_csv(file_name)
   ff_pandemic_year = filter_quarter(ff_pandemic_year, quarter, "evening")
   
   # get the relative change in foot traffic 
   # compared to 2019 to the current quarter
-  ff_monthly_change = monthly_foottraffic(ff_current_year, ff_pandemic_year)
+  ff_monthly_change = monthly_foottraffic(ff_current_year, ff_pandemic_year, year)
   
   ff_monthly_change = ff_monthly_change %>%
     mutate(Name = BIAs[i]) %>%
@@ -565,6 +612,14 @@ for(i in 1:length(BIAs)){
   }
   
 }
+
+# bind the old data to the new data set
+ff_monthly_change_meta = meta_data_bind(ff_monthly_change_all, "ff_monthly_meta")
+write.csv(ff_monthly_change_meta, "./Interim/ff_monthly_meta.csv")
+
+# remove all elements
+rm(ff_current_year, ff_monthly_change, ff_monthly_change_all,
+   ff_monthly_change_meta, ff_pandemic_year)
 
 
 
@@ -650,7 +705,11 @@ Unemployment = read_csv("./Data/CoTDashboards/Unemployment_Rate.csv") %>%
 
 Retail_sales = CoT_Dashboard_stats(Retail_sales, quarter, year)
 Office_Vacancy = CoT_Dashboard_stats(Office_Vacancy, quarter, year)
-Unemployment = CoT_Dashboard_stats(Unemployment, quarter, year)  
+Unemployment = CoT_Dashboard_stats(Unemployment, quarter, year) 
+
+
+#### HOUSEHOLD AND SPENDING DATA
+
 
 
 

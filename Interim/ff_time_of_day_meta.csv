@@ -1,385 +1,429 @@
-,Name,Year,Quarter,Time,Visits,Percentage
-1,DowntownWest,2023,Q1,Early Morning: 12am - 6am,1771872.479,18.44556411
-2,DowntownWest,2023,Q1,Morning: 6am - 12pm,2803269.267,29.18262098
-3,DowntownWest,2023,Q1,Afternoon: 12pm - 6pm,3093502.785,32.20401277
-4,DowntownWest,2023,Q1,Evening: 6pm - 12am,1937309.878,20.16780213
-5,DowntownWest,2022,Q1,Early Morning: 12am - 6am,1478430.211,15.72456556
-6,DowntownWest,2022,Q1,Morning: 6am - 12pm,2363273.524,25.13574818
-7,DowntownWest,2022,Q1,Afternoon: 12pm - 6pm,3077071.106,32.72769049
-8,DowntownWest,2022,Q1,Evening: 6pm - 12am,2483266.854,26.41199576
-9,DowntownYonge,2023,Q1,Early Morning: 12am - 6am,1235211.619,14.54894658
-10,DowntownYonge,2023,Q1,Morning: 6am - 12pm,2484708.403,29.26615107
-11,DowntownYonge,2023,Q1,Afternoon: 12pm - 6pm,3190308,37.57705965
-12,DowntownYonge,2023,Q1,Evening: 6pm - 12am,1579813.589,18.60784271
-13,DowntownYonge,2022,Q1,Early Morning: 12am - 6am,1009649.626,11.97727334
-14,DowntownYonge,2022,Q1,Morning: 6am - 12pm,2128432.231,25.24916959
-15,DowntownYonge,2022,Q1,Afternoon: 12pm - 6pm,3676283.113,43.61101774
-16,DowntownYonge,2022,Q1,Evening: 6pm - 12am,1615346.841,19.16253933
-17,FinancialDistrict,2023,Q1,Early Morning: 12am - 6am,773596.3555,7.99659194
-18,FinancialDistrict,2023,Q1,Morning: 6am - 12pm,3822706.823,39.51495681
-19,FinancialDistrict,2023,Q1,Afternoon: 12pm - 6pm,3290751.079,34.01618088
-20,FinancialDistrict,2023,Q1,Evening: 6pm - 12am,1787021.414,18.47227037
-21,FinancialDistrict,2022,Q1,Early Morning: 12am - 6am,767826.607,7.096702089
-22,FinancialDistrict,2022,Q1,Morning: 6am - 12pm,4042362.983,37.36188036
-23,FinancialDistrict,2022,Q1,Afternoon: 12pm - 6pm,3759274.013,34.74540671
-24,FinancialDistrict,2022,Q1,Evening: 6pm - 12am,2250021.241,20.79601084
-25,GerrardIndiaBaz,2023,Q1,Early Morning: 12am - 6am,20855.66459,5.730833028
-26,GerrardIndiaBaz,2023,Q1,Morning: 6am - 12pm,73345.46981,20.15426739
-27,GerrardIndiaBaz,2023,Q1,Afternoon: 12pm - 6pm,176298.8608,48.4443605
-28,GerrardIndiaBaz,2023,Q1,Evening: 6pm - 12am,93420.30214,25.67053908
-29,GerrardIndiaBaz,2022,Q1,Early Morning: 12am - 6am,18862.6171,8.141463836
-30,GerrardIndiaBaz,2022,Q1,Morning: 6am - 12pm,37011.71744,15.97496028
-31,GerrardIndiaBaz,2022,Q1,Afternoon: 12pm - 6pm,106964.4434,46.16788556
-32,GerrardIndiaBaz,2022,Q1,Evening: 6pm - 12am,68847.04025,29.71569032
-33,Greektown,2023,Q1,Early Morning: 12am - 6am,73201.07899,5.349465629
-34,Greektown,2023,Q1,Morning: 6am - 12pm,357400.9641,26.11852447
-35,Greektown,2023,Q1,Afternoon: 12pm - 6pm,627947.7327,45.88982648
-36,Greektown,2023,Q1,Evening: 6pm - 12am,309831.3686,22.64218342
-37,Greektown,2022,Q1,Early Morning: 12am - 6am,44004.86301,3.958188807
-38,Greektown,2022,Q1,Morning: 6am - 12pm,302099.5212,27.17351814
-39,Greektown,2022,Q1,Afternoon: 12pm - 6pm,511737.6128,46.03023285
-40,Greektown,2022,Q1,Evening: 6pm - 12am,253900.3972,22.8380602
-41,Leslieville,2023,Q1,Early Morning: 12am - 6am,56022.0882,5.279703622
-42,Leslieville,2023,Q1,Morning: 6am - 12pm,277872.0694,26.1875667
-43,Leslieville,2023,Q1,Afternoon: 12pm - 6pm,501340.3233,47.24794105
-44,Leslieville,2023,Q1,Evening: 6pm - 12am,225849.4778,21.28478863
-45,Leslieville,2022,Q1,Early Morning: 12am - 6am,90049.74639,11.28616052
-46,Leslieville,2022,Q1,Morning: 6am - 12pm,208286.8213,26.10510961
-47,Leslieville,2022,Q1,Afternoon: 12pm - 6pm,322660.1075,40.43980037
-48,Leslieville,2022,Q1,Evening: 6pm - 12am,176880.922,22.1689295
-49,LibertyVillage,2023,Q1,Early Morning: 12am - 6am,134961.984,10.38097807
-50,LibertyVillage,2023,Q1,Morning: 6am - 12pm,396658.137,30.51006882
-51,LibertyVillage,2023,Q1,Afternoon: 12pm - 6pm,503859.7063,38.75577703
-52,LibertyVillage,2023,Q1,Evening: 6pm - 12am,264609.4624,20.35317608
-53,LibertyVillage,2022,Q1,Early Morning: 12am - 6am,88518.95621,10.0158139
-54,LibertyVillage,2022,Q1,Morning: 6am - 12pm,295103.4745,33.39060477
-55,LibertyVillage,2022,Q1,Afternoon: 12pm - 6pm,336859.299,38.11522631
-56,LibertyVillage,2022,Q1,Evening: 6pm - 12am,163310.2128,18.47835502
-57,PapeVillage,2023,Q1,Early Morning: 12am - 6am,18169.34658,3.488379379
-58,PapeVillage,2023,Q1,Morning: 6am - 12pm,152055.391,29.19350391
-59,PapeVillage,2023,Q1,Afternoon: 12pm - 6pm,239996.8203,46.07760412
-60,PapeVillage,2023,Q1,Evening: 6pm - 12am,110631.9562,21.24051259
-61,PapeVillage,2022,Q1,Early Morning: 12am - 6am,19495.52207,4.832196137
-62,PapeVillage,2022,Q1,Morning: 6am - 12pm,107036.1747,26.53018411
-63,PapeVillage,2022,Q1,Afternoon: 12pm - 6pm,180274.2023,44.683097
-64,PapeVillage,2022,Q1,Evening: 6pm - 12am,96644.6547,23.95452275
-65,QueenStreet,2023,Q1,Early Morning: 12am - 6am,186109.3741,7.884992927
-66,QueenStreet,2023,Q1,Morning: 6am - 12pm,556434.3021,23.57474231
-67,QueenStreet,2023,Q1,Afternoon: 12pm - 6pm,1045209.126,44.28292024
-68,QueenStreet,2023,Q1,Evening: 6pm - 12am,572545.7523,24.25734452
-69,QueenStreet,2022,Q1,Early Morning: 12am - 6am,189859.3371,9.554840308
-70,QueenStreet,2022,Q1,Morning: 6am - 12pm,399218.2021,20.09101173
-71,QueenStreet,2022,Q1,Afternoon: 12pm - 6pm,894068.258,44.99478171
-72,QueenStreet,2022,Q1,Evening: 6pm - 12am,503902.9761,25.35936626
-73,Riverside,2023,Q1,Early Morning: 12am - 6am,64544.18975,8.337028724
-74,Riverside,2023,Q1,Morning: 6am - 12pm,231307.8827,29.8775222
-75,Riverside,2023,Q1,Afternoon: 12pm - 6pm,315198.0132,40.71342285
-76,Riverside,2023,Q1,Evening: 6pm - 12am,163136.8806,21.07202623
-77,Riverside,2022,Q1,Early Morning: 12am - 6am,57213.72148,9.943425654
-78,Riverside,2022,Q1,Morning: 6am - 12pm,174454.6024,30.31923679
-79,Riverside,2022,Q1,Afternoon: 12pm - 6pm,231209.6638,40.18294988
-80,Riverside,2022,Q1,Evening: 6pm - 12am,112514.4723,19.55438768
-81,StLawrenceMarket,2023,Q1,Early Morning: 12am - 6am,1117116.937,18.36087418
-82,StLawrenceMarket,2023,Q1,Morning: 6am - 12pm,1977966.133,32.50974548
-83,StLawrenceMarket,2023,Q1,Afternoon: 12pm - 6pm,1945470.64,31.97565131
-84,StLawrenceMarket,2023,Q1,Evening: 6pm - 12am,1043671.507,17.15372903
-85,StLawrenceMarket,2022,Q1,Early Morning: 12am - 6am,661115.4629,12.54225814
-86,StLawrenceMarket,2022,Q1,Morning: 6am - 12pm,1719931.204,32.62943064
-87,StLawrenceMarket,2022,Q1,Afternoon: 12pm - 6pm,1801627.522,34.17932074
-88,StLawrenceMarket,2022,Q1,Evening: 6pm - 12am,1088429.75,20.64899047
-89,WestQueenWest,2023,Q1,Early Morning: 12am - 6am,160505.3931,9.440400591
-90,WestQueenWest,2023,Q1,Morning: 6am - 12pm,419649.8767,24.68242885
-91,WestQueenWest,2023,Q1,Afternoon: 12pm - 6pm,708073.8627,41.64658136
-92,WestQueenWest,2023,Q1,Evening: 6pm - 12am,411967.7133,24.2305892
-93,WestQueenWest,2022,Q1,Early Morning: 12am - 6am,85189.20372,9.716134096
-94,WestQueenWest,2022,Q1,Morning: 6am - 12pm,242494.4344,27.65735961
-95,WestQueenWest,2022,Q1,Afternoon: 12pm - 6pm,350995.8933,40.03233998
-96,WestQueenWest,2022,Q1,Evening: 6pm - 12am,198101.3248,22.59416631
-97,DowntownWest,2023,Q2,Early Morning: 12am - 6am,3717734.508,20.11260531
-98,DowntownWest,2023,Q2,Morning: 6am - 12pm,5058386.674,27.36541151
-99,DowntownWest,2023,Q2,Afternoon: 12pm - 6pm,5928597.251,32.07317153
-100,DowntownWest,2023,Q2,Evening: 6pm - 12am,3779880.901,20.44881165
-101,DowntownWest,2022,Q2,Early Morning: 12am - 6am,2987887.338,15.81424166
-102,DowntownWest,2022,Q2,Morning: 6am - 12pm,4870634.632,25.77921602
-103,DowntownWest,2022,Q2,Afternoon: 12pm - 6pm,6083652.781,32.19945882
-104,DowntownWest,2022,Q2,Evening: 6pm - 12am,4951474.411,26.20708349
-105,DowntownYonge,2023,Q2,Early Morning: 12am - 6am,2413067.924,13.95190535
-106,DowntownYonge,2023,Q2,Morning: 6am - 12pm,4686424.433,27.09602554
-107,DowntownYonge,2023,Q2,Afternoon: 12pm - 6pm,7007717.257,40.51730451
-108,DowntownYonge,2023,Q2,Evening: 6pm - 12am,3188406.03,18.4347646
-109,DowntownYonge,2022,Q2,Early Morning: 12am - 6am,2266886.635,12.55237641
-110,DowntownYonge,2022,Q2,Morning: 6am - 12pm,4442498.107,24.59933707
-111,DowntownYonge,2022,Q2,Afternoon: 12pm - 6pm,7484497.928,41.44372893
-112,DowntownYonge,2022,Q2,Evening: 6pm - 12am,3865539.395,21.40455758
-113,FinancialDistrict,2023,Q2,Early Morning: 12am - 6am,1417488.751,7.831888552
-114,FinancialDistrict,2023,Q2,Morning: 6am - 12pm,6921113.186,38.24043549
-115,FinancialDistrict,2023,Q2,Afternoon: 12pm - 6pm,6395769.207,35.33781246
-116,FinancialDistrict,2023,Q2,Evening: 6pm - 12am,3364568.099,18.58986349
-117,FinancialDistrict,2022,Q2,Early Morning: 12am - 6am,1640890.047,7.633170679
-118,FinancialDistrict,2022,Q2,Morning: 6am - 12pm,8293673.768,38.58090768
-119,FinancialDistrict,2022,Q2,Afternoon: 12pm - 6pm,7104002.155,33.04673646
-120,FinancialDistrict,2022,Q2,Evening: 6pm - 12am,4458268.257,20.73918517
-121,GerrardIndiaBaz,2023,Q2,Early Morning: 12am - 6am,60636.39975,9.178748453
-122,GerrardIndiaBaz,2023,Q2,Morning: 6am - 12pm,115558.4969,17.49250251
-123,GerrardIndiaBaz,2023,Q2,Afternoon: 12pm - 6pm,287927.4208,43.58460231
-124,GerrardIndiaBaz,2023,Q2,Evening: 6pm - 12am,196494.9776,29.74414673
-125,GerrardIndiaBaz,2022,Q2,Early Morning: 12am - 6am,26545.45541,6.984171013
-126,GerrardIndiaBaz,2022,Q2,Morning: 6am - 12pm,57759.28936,15.19660327
-127,GerrardIndiaBaz,2022,Q2,Afternoon: 12pm - 6pm,166633.5734,43.84168043
-128,GerrardIndiaBaz,2022,Q2,Evening: 6pm - 12am,129141.9428,33.97754529
-129,Greektown,2023,Q2,Early Morning: 12am - 6am,173756.2894,7.179699992
-130,Greektown,2023,Q2,Morning: 6am - 12pm,641773.4283,26.5184109
-131,Greektown,2023,Q2,Afternoon: 12pm - 6pm,1038212.416,42.89947548
-132,Greektown,2023,Q2,Evening: 6pm - 12am,566363.0178,23.40241363
-133,Greektown,2022,Q2,Early Morning: 12am - 6am,101344.7895,5.242201175
-134,Greektown,2022,Q2,Morning: 6am - 12pm,481255.6082,24.89362035
-135,Greektown,2022,Q2,Afternoon: 12pm - 6pm,842871.6136,43.59871469
-136,Greektown,2022,Q2,Evening: 6pm - 12am,507776.7546,26.26546379
-137,Leslieville,2023,Q2,Early Morning: 12am - 6am,148741.5436,7.665070818
-138,Leslieville,2023,Q2,Morning: 6am - 12pm,458680.9898,23.63712373
-139,Leslieville,2023,Q2,Afternoon: 12pm - 6pm,843221.1719,43.45356274
-140,Leslieville,2023,Q2,Evening: 6pm - 12am,489867.3107,25.24424271
-141,Leslieville,2022,Q2,Early Morning: 12am - 6am,166435.9705,11.64306685
-142,Leslieville,2022,Q2,Morning: 6am - 12pm,348986.364,24.4134219
-143,Leslieville,2022,Q2,Afternoon: 12pm - 6pm,558097.9508,39.04187138
-144,Leslieville,2022,Q2,Evening: 6pm - 12am,355965.3699,24.90163987
-145,LibertyVillage,2023,Q2,Early Morning: 12am - 6am,303004.5082,11.80763436
-146,LibertyVillage,2023,Q2,Morning: 6am - 12pm,752829.992,29.33666346
-147,LibertyVillage,2023,Q2,Afternoon: 12pm - 6pm,972366.1447,37.89166033
-148,LibertyVillage,2023,Q2,Evening: 6pm - 12am,537973.9071,20.96404185
-149,LibertyVillage,2022,Q2,Early Morning: 12am - 6am,203963.4093,10.49768469
-150,LibertyVillage,2022,Q2,Morning: 6am - 12pm,596988.9663,30.72610894
-151,LibertyVillage,2022,Q2,Afternoon: 12pm - 6pm,705924.3321,36.33284559
-152,LibertyVillage,2022,Q2,Evening: 6pm - 12am,436060.3803,22.44336078
-153,PapeVillage,2023,Q2,Early Morning: 12am - 6am,61813.92088,6.353951372
-154,PapeVillage,2023,Q2,Morning: 6am - 12pm,269036.6335,27.65470402
-155,PapeVillage,2023,Q2,Afternoon: 12pm - 6pm,412192.035,42.36987573
-156,PapeVillage,2023,Q2,Evening: 6pm - 12am,229799.6196,23.62146888
-157,PapeVillage,2022,Q2,Early Morning: 12am - 6am,35007.63186,4.998998467
-158,PapeVillage,2022,Q2,Morning: 6am - 12pm,193345.0003,27.60916145
-159,PapeVillage,2022,Q2,Afternoon: 12pm - 6pm,291990.2683,41.69544827
-160,PapeVillage,2022,Q2,Evening: 6pm - 12am,179950.0102,25.69639182
-161,QueenStreet,2023,Q2,Early Morning: 12am - 6am,302127.2164,7.292742318
-162,QueenStreet,2023,Q2,Morning: 6am - 12pm,893827.9199,21.57520522
-163,QueenStreet,2023,Q2,Afternoon: 12pm - 6pm,1919462.046,46.33194671
-164,QueenStreet,2023,Q2,Evening: 6pm - 12am,1027430.642,24.80010575
-165,QueenStreet,2022,Q2,Early Morning: 12am - 6am,377182.6021,10.44437602
-166,QueenStreet,2022,Q2,Morning: 6am - 12pm,684093.652,18.94289741
-167,QueenStreet,2022,Q2,Afternoon: 12pm - 6pm,1553319.543,43.01219966
-168,QueenStreet,2022,Q2,Evening: 6pm - 12am,996750.6469,27.60052691
-169,Riverside,2023,Q2,Early Morning: 12am - 6am,97697.55733,8.033205937
-170,Riverside,2023,Q2,Morning: 6am - 12pm,342248.04,28.14143016
-171,Riverside,2023,Q2,Afternoon: 12pm - 6pm,481401.3471,39.58334543
-172,Riverside,2023,Q2,Evening: 6pm - 12am,294824.5082,24.24201847
-173,Riverside,2022,Q2,Early Morning: 12am - 6am,105598.4916,10.19071587
-174,Riverside,2022,Q2,Morning: 6am - 12pm,285929.4973,27.59344591
-175,Riverside,2022,Q2,Afternoon: 12pm - 6pm,404154.3326,39.00265913
-176,Riverside,2022,Q2,Evening: 6pm - 12am,240540.1866,23.21317909
-177,StLawrenceMarket,2023,Q2,Early Morning: 12am - 6am,2035518.094,18.77779923
-178,StLawrenceMarket,2023,Q2,Morning: 6am - 12pm,3451530.042,31.84061018
-179,StLawrenceMarket,2023,Q2,Afternoon: 12pm - 6pm,3437539.856,31.71154972
-180,StLawrenceMarket,2023,Q2,Evening: 6pm - 12am,1915436.814,17.67004087
-181,StLawrenceMarket,2022,Q2,Early Morning: 12am - 6am,1553140.57,15.32456101
-182,StLawrenceMarket,2022,Q2,Morning: 6am - 12pm,3178865.096,31.36529498
-183,StLawrenceMarket,2022,Q2,Afternoon: 12pm - 6pm,3286195.94,32.42430928
-184,StLawrenceMarket,2022,Q2,Evening: 6pm - 12am,2116774.322,20.88583473
-185,WestQueenWest,2023,Q2,Early Morning: 12am - 6am,310057.664,10.52021083
-186,WestQueenWest,2023,Q2,Morning: 6am - 12pm,711591.1373,24.14418238
-187,WestQueenWest,2023,Q2,Afternoon: 12pm - 6pm,1166461.681,39.57787285
-188,WestQueenWest,2023,Q2,Evening: 6pm - 12am,759146.6504,25.75773393
-189,WestQueenWest,2022,Q2,Early Morning: 12am - 6am,233680.4695,11.88329687
-190,WestQueenWest,2022,Q2,Morning: 6am - 12pm,493908.4851,25.11660975
-191,WestQueenWest,2022,Q2,Afternoon: 12pm - 6pm,731398.6746,37.1936414
-192,WestQueenWest,2022,Q2,Evening: 6pm - 12am,507473.9676,25.80645198
-193,DowntownWest,2023,Q3,Early Morning: 12am - 6am,3991487.092,19.99514491
-194,DowntownWest,2023,Q3,Morning: 6am - 12pm,5416234.501,27.13234221
-195,DowntownWest,2023,Q3,Afternoon: 12pm - 6pm,6417154.691,32.14639933
-196,DowntownWest,2023,Q3,Evening: 6pm - 12am,4137405.108,20.72611355
-197,DowntownWest,2022,Q3,Early Morning: 12am - 6am,2016558.42,16.10088016
-198,DowntownWest,2022,Q3,Morning: 6am - 12pm,3182112.12,25.40705263
-199,DowntownWest,2022,Q3,Afternoon: 12pm - 6pm,4050454.063,32.34018655
-200,DowntownWest,2022,Q3,Evening: 6pm - 12am,3275398.276,26.15188065
-201,DowntownYonge,2023,Q3,Early Morning: 12am - 6am,2608684.59,13.65994989
-202,DowntownYonge,2023,Q3,Morning: 6am - 12pm,5166718.6,27.05467631
-203,DowntownYonge,2023,Q3,Afternoon: 12pm - 6pm,7783726.553,40.75821012
-204,DowntownYonge,2023,Q3,Evening: 6pm - 12am,3538192.07,18.52716368
-205,DowntownYonge,2022,Q3,Early Morning: 12am - 6am,1698198.225,13.01864935
-206,DowntownYonge,2022,Q3,Morning: 6am - 12pm,3168954.553,24.29369406
-207,DowntownYonge,2022,Q3,Afternoon: 12pm - 6pm,5225245.25,40.0575355
-208,DowntownYonge,2022,Q3,Evening: 6pm - 12am,2951952.267,22.63012109
-209,FinancialDistrict,2023,Q3,Early Morning: 12am - 6am,1588058.48,7.825011367
-210,FinancialDistrict,2023,Q3,Morning: 6am - 12pm,7728409.712,38.08102446
-211,FinancialDistrict,2023,Q3,Afternoon: 12pm - 6pm,7192039.422,35.43810944
-212,FinancialDistrict,2023,Q3,Evening: 6pm - 12am,3786139.972,18.65585473
-213,FinancialDistrict,2022,Q3,Early Morning: 12am - 6am,1145438.21,7.933057064
-214,FinancialDistrict,2022,Q3,Morning: 6am - 12pm,5433214.454,37.62926708
-215,FinancialDistrict,2022,Q3,Afternoon: 12pm - 6pm,4818201.737,33.36982214
-216,FinancialDistrict,2022,Q3,Evening: 6pm - 12am,3041945.174,21.06785372
-217,GerrardIndiaBaz,2023,Q3,Early Morning: 12am - 6am,57225.91219,7.618597788
-218,GerrardIndiaBaz,2023,Q3,Morning: 6am - 12pm,144308.0881,19.21201845
-219,GerrardIndiaBaz,2023,Q3,Afternoon: 12pm - 6pm,326649.1226,43.48743755
-220,GerrardIndiaBaz,2023,Q3,Evening: 6pm - 12am,222951.3218,29.68194621
-221,GerrardIndiaBaz,2022,Q3,Early Morning: 12am - 6am,29565.52673,10.46448202
-222,GerrardIndiaBaz,2022,Q3,Morning: 6am - 12pm,42025.46847,14.87457887
-223,GerrardIndiaBaz,2022,Q3,Afternoon: 12pm - 6pm,110441.0713,39.08973498
-224,GerrardIndiaBaz,2022,Q3,Evening: 6pm - 12am,100500.0902,35.57120413
-225,Greektown,2023,Q3,Early Morning: 12am - 6am,183835.7663,6.661321209
-226,Greektown,2023,Q3,Morning: 6am - 12pm,733115.7898,26.56457912
-227,Greektown,2023,Q3,Afternoon: 12pm - 6pm,1199400.225,43.46047735
-228,Greektown,2023,Q3,Evening: 6pm - 12am,643397.5321,23.31362233
-229,Greektown,2022,Q3,Early Morning: 12am - 6am,80969.75446,6.324995026
-230,Greektown,2022,Q3,Morning: 6am - 12pm,297758.2433,23.25954204
-231,Greektown,2022,Q3,Afternoon: 12pm - 6pm,556968.4167,43.50788129
-232,Greektown,2022,Q3,Evening: 6pm - 12am,344458.813,26.90758165
-233,Leslieville,2023,Q3,Early Morning: 12am - 6am,173307.359,8.124211882
-234,Leslieville,2023,Q3,Morning: 6am - 12pm,524391.417,24.58214704
-235,Leslieville,2023,Q3,Afternoon: 12pm - 6pm,919436.999,43.10088756
-236,Leslieville,2023,Q3,Evening: 6pm - 12am,516084.7946,24.19275353
-237,Leslieville,2022,Q3,Early Morning: 12am - 6am,121130.2612,12.43949442
-238,Leslieville,2022,Q3,Morning: 6am - 12pm,213771.2834,21.95328122
-239,Leslieville,2022,Q3,Afternoon: 12pm - 6pm,393386.0988,40.39885767
-240,Leslieville,2022,Q3,Evening: 6pm - 12am,245467.8571,25.20836668
-241,LibertyVillage,2023,Q3,Early Morning: 12am - 6am,298368.8965,11.01143976
-242,LibertyVillage,2023,Q3,Morning: 6am - 12pm,790196.4361,29.16255869
-243,LibertyVillage,2023,Q3,Afternoon: 12pm - 6pm,1036707.15,38.26014866
-244,LibertyVillage,2023,Q3,Evening: 6pm - 12am,584354.0782,21.56585289
-245,LibertyVillage,2022,Q3,Early Morning: 12am - 6am,172081.654,11.00204575
-246,LibertyVillage,2022,Q3,Morning: 6am - 12pm,446417.9131,28.54174278
-247,LibertyVillage,2022,Q3,Afternoon: 12pm - 6pm,571223.0074,36.52116026
-248,LibertyVillage,2022,Q3,Evening: 6pm - 12am,374365.2128,23.93505121
-249,PapeVillage,2023,Q3,Early Morning: 12am - 6am,57089.41836,5.436810885
-250,PapeVillage,2023,Q3,Morning: 6am - 12pm,303213.8376,28.87603938
-251,PapeVillage,2023,Q3,Afternoon: 12pm - 6pm,456835.3106,43.50591162
-252,PapeVillage,2023,Q3,Evening: 6pm - 12am,232914.8483,22.18123811
-253,PapeVillage,2022,Q3,Early Morning: 12am - 6am,29284.07926,6.788046425
-254,PapeVillage,2022,Q3,Morning: 6am - 12pm,101145.5028,23.44551668
-255,PapeVillage,2022,Q3,Afternoon: 12pm - 6pm,179219.6453,41.5430945
-256,PapeVillage,2022,Q3,Evening: 6pm - 12am,121757.3576,28.2233424
-257,QueenStreet,2023,Q3,Early Morning: 12am - 6am,351592.256,7.382340635
-258,QueenStreet,2023,Q3,Morning: 6am - 12pm,1063610.592,22.33250464
-259,QueenStreet,2023,Q3,Afternoon: 12pm - 6pm,2164544.005,45.44867212
-260,QueenStreet,2023,Q3,Evening: 6pm - 12am,1182865.352,24.83648261
-261,QueenStreet,2022,Q3,Early Morning: 12am - 6am,287204.0676,11.92759858
-262,QueenStreet,2022,Q3,Morning: 6am - 12pm,447937.8458,18.60288003
-263,QueenStreet,2022,Q3,Afternoon: 12pm - 6pm,999590.7557,41.5130516
-264,QueenStreet,2022,Q3,Evening: 6pm - 12am,673162.4802,27.9564698
-265,Riverside,2023,Q3,Early Morning: 12am - 6am,90438.83313,6.812348776
-266,Riverside,2023,Q3,Morning: 6am - 12pm,380410.7064,28.65462015
-267,Riverside,2023,Q3,Afternoon: 12pm - 6pm,544090.9254,40.98391168
-268,Riverside,2023,Q3,Evening: 6pm - 12am,312631.5093,23.5491194
-269,Riverside,2022,Q3,Early Morning: 12am - 6am,58702.61249,8.470302397
-270,Riverside,2022,Q3,Morning: 6am - 12pm,176463.859,25.46227816
-271,Riverside,2022,Q3,Afternoon: 12pm - 6pm,287064.0748,41.42097631
-272,Riverside,2022,Q3,Evening: 6pm - 12am,170809.7932,24.64644313
-273,StLawrenceMarket,2023,Q3,Early Morning: 12am - 6am,2212347.541,18.46533376
-274,StLawrenceMarket,2023,Q3,Morning: 6am - 12pm,3790663.973,31.63873403
-275,StLawrenceMarket,2023,Q3,Afternoon: 12pm - 6pm,3842502.661,32.07140505
-276,StLawrenceMarket,2023,Q3,Evening: 6pm - 12am,2135571.95,17.82452716
-277,StLawrenceMarket,2022,Q3,Early Morning: 12am - 6am,1164021.668,16.75522952
-278,StLawrenceMarket,2022,Q3,Morning: 6am - 12pm,2071677.109,29.82025715
-279,StLawrenceMarket,2022,Q3,Afternoon: 12pm - 6pm,2221861.842,31.98205511
-280,StLawrenceMarket,2022,Q3,Evening: 6pm - 12am,1489653.482,21.44245823
-281,WestQueenWest,2023,Q3,Early Morning: 12am - 6am,346426.7693,10.31342348
-282,WestQueenWest,2023,Q3,Morning: 6am - 12pm,815652.7556,24.28268547
-283,WestQueenWest,2023,Q3,Afternoon: 12pm - 6pm,1362079.029,40.55026655
-284,WestQueenWest,2023,Q3,Evening: 6pm - 12am,834830.5356,24.85362451
-285,WestQueenWest,2022,Q3,Early Morning: 12am - 6am,199504.447,12.77353449
-286,WestQueenWest,2022,Q3,Morning: 6am - 12pm,380993.7982,24.39362879
-287,WestQueenWest,2022,Q3,Afternoon: 12pm - 6pm,573140.8012,36.69609324
-288,WestQueenWest,2022,Q3,Evening: 6pm - 12am,408218.7714,26.13674348
-289,DowntownWest,2023,Q4,Early Morning: 12am - 6am,4424928.203,19.9595576
-290,DowntownWest,2023,Q4,Morning: 6am - 12pm,6143135.286,27.70988748
-291,DowntownWest,2023,Q4,Afternoon: 12pm - 6pm,7049911.413,31.80008951
-292,DowntownWest,2023,Q4,Evening: 6pm - 12am,4551495.442,20.53046542
-293,DowntownWest,2022,Q4,Early Morning: 12am - 6am,1745478.634,17.55752968
-294,DowntownWest,2022,Q4,Morning: 6am - 12pm,2683413.349,26.99208606
-295,DowntownWest,2022,Q4,Afternoon: 12pm - 6pm,3329744.991,33.49344721
-296,DowntownWest,2022,Q4,Evening: 6pm - 12am,2182844.922,21.95693706
-297,DowntownYonge,2023,Q4,Early Morning: 12am - 6am,3015752.698,14.23819747
-298,DowntownYonge,2023,Q4,Morning: 6am - 12pm,5878562.114,27.75430767
-299,DowntownYonge,2023,Q4,Afternoon: 12pm - 6pm,8387523.802,39.59980547
-300,DowntownYonge,2023,Q4,Evening: 6pm - 12am,3898881.094,18.40768939
-301,DowntownYonge,2022,Q4,Early Morning: 12am - 6am,1301652.244,14.25331845
-302,DowntownYonge,2022,Q4,Morning: 6am - 12pm,2465253.619,26.99495589
-303,DowntownYonge,2022,Q4,Afternoon: 12pm - 6pm,3561154.241,38.9952583
-304,DowntownYonge,2022,Q4,Evening: 6pm - 12am,1804214.938,19.75646736
-305,FinancialDistrict,2023,Q4,Early Morning: 12am - 6am,1775219.302,7.971943408
-306,FinancialDistrict,2023,Q4,Morning: 6am - 12pm,8750576.584,39.2960471
-307,FinancialDistrict,2023,Q4,Afternoon: 12pm - 6pm,7689275.704,34.53008352
-308,FinancialDistrict,2023,Q4,Evening: 6pm - 12am,4053266.397,18.20192598
-309,FinancialDistrict,2022,Q4,Early Morning: 12am - 6am,881235.1817,8.319708867
-310,FinancialDistrict,2022,Q4,Morning: 6am - 12pm,3981158.461,37.58597028
-311,FinancialDistrict,2022,Q4,Afternoon: 12pm - 6pm,3699169.52,34.92372308
-312,FinancialDistrict,2022,Q4,Evening: 6pm - 12am,2030576.488,19.17059777
-313,GerrardIndiaBaz,2023,Q4,Early Morning: 12am - 6am,63434.45123,7.907757192
-314,GerrardIndiaBaz,2023,Q4,Morning: 6am - 12pm,149600.8479,18.64928534
-315,GerrardIndiaBaz,2023,Q4,Afternoon: 12pm - 6pm,349982.1547,43.62887749
-316,GerrardIndiaBaz,2023,Q4,Evening: 6pm - 12am,239162.6041,29.81407999
-317,GerrardIndiaBaz,2022,Q4,Early Morning: 12am - 6am,28512.47245,8.426844207
-318,GerrardIndiaBaz,2022,Q4,Morning: 6am - 12pm,76782.19764,22.69293267
-319,GerrardIndiaBaz,2022,Q4,Afternoon: 12pm - 6pm,140732.3127,41.59335097
-320,GerrardIndiaBaz,2022,Q4,Evening: 6pm - 12am,92325.92551,27.28687215
-321,Greektown,2023,Q4,Early Morning: 12am - 6am,210369.0852,7.085768096
-322,Greektown,2023,Q4,Morning: 6am - 12pm,795537.6366,26.79573949
-323,Greektown,2023,Q4,Afternoon: 12pm - 6pm,1271235.344,42.81845324
-324,Greektown,2023,Q4,Evening: 6pm - 12am,691753.9299,23.30003917
-325,Greektown,2022,Q4,Early Morning: 12am - 6am,79289.37237,6.667705409
-326,Greektown,2022,Q4,Morning: 6am - 12pm,321294.0043,27.01867484
-327,Greektown,2022,Q4,Afternoon: 12pm - 6pm,538900.576,45.31793075
-328,Greektown,2022,Q4,Evening: 6pm - 12am,249671.3488,20.995689
-329,Leslieville,2023,Q4,Early Morning: 12am - 6am,182482.5644,7.907031189
-330,Leslieville,2023,Q4,Morning: 6am - 12pm,577035.6679,25.00315051
-331,Leslieville,2023,Q4,Afternoon: 12pm - 6pm,998037.2837,43.2452928
-332,Leslieville,2023,Q4,Evening: 6pm - 12am,550296.3194,23.8445255
-333,Leslieville,2022,Q4,Early Morning: 12am - 6am,77883.41896,8.003265935
-334,Leslieville,2022,Q4,Morning: 6am - 12pm,262556.5376,26.98019452
-335,Leslieville,2022,Q4,Afternoon: 12pm - 6pm,428429.7468,44.02525266
-336,Leslieville,2022,Q4,Evening: 6pm - 12am,204275.7549,20.99128688
-337,LibertyVillage,2023,Q4,Early Morning: 12am - 6am,361058.1808,12.21047441
-338,LibertyVillage,2023,Q4,Morning: 6am - 12pm,897726.3451,30.35982882
-339,LibertyVillage,2023,Q4,Afternoon: 12pm - 6pm,1089087.12,36.8313782
-340,LibertyVillage,2023,Q4,Evening: 6pm - 12am,609082.9216,20.59831856
-341,LibertyVillage,2022,Q4,Early Morning: 12am - 6am,141176.887,11.1603501
-342,LibertyVillage,2022,Q4,Morning: 6am - 12pm,370128.4679,29.25948695
-343,LibertyVillage,2022,Q4,Afternoon: 12pm - 6pm,484911.257,38.33332431
-344,LibertyVillage,2022,Q4,Evening: 6pm - 12am,268769.5737,21.24683864
-345,PapeVillage,2023,Q4,Early Morning: 12am - 6am,66549.56721,5.83566165
-346,PapeVillage,2023,Q4,Morning: 6am - 12pm,332645.6027,29.16934351
-347,PapeVillage,2023,Q4,Afternoon: 12pm - 6pm,486258.7788,42.63952159
-348,PapeVillage,2023,Q4,Evening: 6pm - 12am,254940.5978,22.35547325
-349,PapeVillage,2022,Q4,Early Morning: 12am - 6am,27707.63963,6.054357386
-350,PapeVillage,2022,Q4,Morning: 6am - 12pm,128699.5799,28.12196429
-351,PapeVillage,2022,Q4,Afternoon: 12pm - 6pm,204403.0468,44.66382242
-352,PapeVillage,2022,Q4,Evening: 6pm - 12am,96837.63687,21.1598559
-353,QueenStreet,2023,Q4,Early Morning: 12am - 6am,383661.7386,7.50828345
-354,QueenStreet,2023,Q4,Morning: 6am - 12pm,1167912.948,22.85612709
-355,QueenStreet,2023,Q4,Afternoon: 12pm - 6pm,2275575.624,44.5331527
-356,QueenStreet,2023,Q4,Evening: 6pm - 12am,1282695.918,25.10243676
-357,QueenStreet,2022,Q4,Early Morning: 12am - 6am,242383.0009,10.60470787
-358,QueenStreet,2022,Q4,Morning: 6am - 12pm,514402.825,22.50608197
-359,QueenStreet,2022,Q4,Afternoon: 12pm - 6pm,986955.0003,43.18112005
-360,QueenStreet,2022,Q4,Evening: 6pm - 12am,541876.1268,23.70809011
-361,Riverside,2023,Q4,Early Morning: 12am - 6am,115074.2936,8.056298563
-362,Riverside,2023,Q4,Morning: 6am - 12pm,421275.3339,29.49329308
-363,Riverside,2023,Q4,Afternoon: 12pm - 6pm,567450.3443,39.72693856
-364,Riverside,2023,Q4,Evening: 6pm - 12am,324576.7538,22.7234698
-365,Riverside,2022,Q4,Early Morning: 12am - 6am,42009.48276,5.869935927
-366,Riverside,2022,Q4,Morning: 6am - 12pm,228443.9366,31.92020426
-367,Riverside,2022,Q4,Afternoon: 12pm - 6pm,289972.7974,40.51756008
-368,Riverside,2022,Q4,Evening: 6pm - 12am,155245.6965,21.69229973
-369,StLawrenceMarket,2023,Q4,Early Morning: 12am - 6am,2498592.169,18.71160956
-370,StLawrenceMarket,2023,Q4,Morning: 6am - 12pm,4315461.33,32.31789025
-371,StLawrenceMarket,2023,Q4,Afternoon: 12pm - 6pm,4173356.339,31.25368572
-372,StLawrenceMarket,2023,Q4,Evening: 6pm - 12am,2365755.536,17.71681448
-373,StLawrenceMarket,2022,Q4,Early Morning: 12am - 6am,1037664.85,17.15292116
-374,StLawrenceMarket,2022,Q4,Morning: 6am - 12pm,1947099.299,32.1861541
-375,StLawrenceMarket,2022,Q4,Afternoon: 12pm - 6pm,1950967.632,32.25009885
-376,StLawrenceMarket,2022,Q4,Evening: 6pm - 12am,1113761.715,18.41082589
-377,WestQueenWest,2023,Q4,Early Morning: 12am - 6am,405020.1845,11.07558813
-378,WestQueenWest,2023,Q4,Morning: 6am - 12pm,908810.4319,24.85211952
-379,WestQueenWest,2023,Q4,Afternoon: 12pm - 6pm,1437394.704,39.30666256
-380,WestQueenWest,2023,Q4,Evening: 6pm - 12am,905647.6122,24.76562979
-381,WestQueenWest,2022,Q4,Early Morning: 12am - 6am,165047.7742,11.33256304
-382,WestQueenWest,2022,Q4,Morning: 6am - 12pm,395942.65,27.18634082
-383,WestQueenWest,2022,Q4,Afternoon: 12pm - 6pm,563923.1209,38.72026961
-384,WestQueenWest,2022,Q4,Evening: 6pm - 12am,331489.3326,22.76082653
+"","Name","Year","Quarter","Time","Visits","Percentage"
+"1","DowntownWest",2024,"Q1","Early Morning: 12am - 6am",1691032.41622278,18.385704343873
+"2","DowntownWest",2024,"Q1","Morning: 6am - 12pm",2776555.48399169,30.1880246252507
+"3","DowntownWest",2024,"Q1","Afternoon: 12pm - 6pm",2585986.06487099,28.1160637548831
+"4","DowntownWest",2024,"Q1","Evening: 6pm - 12am",2143965.51773729,23.3102072759932
+"5","DowntownYonge",2024,"Q1","Early Morning: 12am - 6am",1159272.14260161,13.8849145054821
+"6","DowntownYonge",2024,"Q1","Morning: 6am - 12pm",2509690.88011746,30.0592432312024
+"7","DowntownYonge",2024,"Q1","Afternoon: 12pm - 6pm",2952180.2910568,35.3590580155772
+"8","DowntownYonge",2024,"Q1","Evening: 6pm - 12am",1728005.26862198,20.6967842477383
+"9","FinancialDistrict",2024,"Q1","Early Morning: 12am - 6am",778361.965385207,8.59613072291884
+"10","FinancialDistrict",2024,"Q1","Morning: 6am - 12pm",3765838.19379861,41.5894388920107
+"11","FinancialDistrict",2024,"Q1","Afternoon: 12pm - 6pm",2767190.78320875,30.5605036802466
+"12","FinancialDistrict",2024,"Q1","Evening: 6pm - 12am",1743403.48168422,19.2539267048238
+"13","Greektown",2024,"Q1","Early Morning: 12am - 6am",62443.853593694,5.71493670189314
+"14","Greektown",2024,"Q1","Morning: 6am - 12pm",327179.033385229,29.9438192612121
+"15","Greektown",2024,"Q1","Afternoon: 12pm - 6pm",406651.606985893,37.2172449312481
+"16","Greektown",2024,"Q1","Evening: 6pm - 12am",296368.466945123,27.1239991056467
+"17","Leslieville",2024,"Q1","Early Morning: 12am - 6am",71945.797470386,8.17403209653112
+"18","Leslieville",2024,"Q1","Morning: 6am - 12pm",252749.14767262,28.715779351772
+"19","Leslieville",2024,"Q1","Afternoon: 12pm - 6pm",327564.382667533,37.2158190157935
+"20","Leslieville",2024,"Q1","Evening: 6pm - 12am",227915.80021371,25.8943695359034
+"21","LibertyVillage",2024,"Q1","Early Morning: 12am - 6am",121018.549855932,10.8008789680721
+"22","LibertyVillage",2024,"Q1","Morning: 6am - 12pm",384611.985879273,34.3265351807409
+"23","LibertyVillage",2024,"Q1","Afternoon: 12pm - 6pm",371140.89945656,33.1242436792035
+"24","LibertyVillage",2024,"Q1","Evening: 6pm - 12am",243679.504159264,21.7483421719834
+"25","PapeVillage",2024,"Q1","Early Morning: 12am - 6am",20508.776067318,5.12898143319215
+"26","PapeVillage",2024,"Q1","Morning: 6am - 12pm",130714.934388631,32.6901258914518
+"27","PapeVillage",2024,"Q1","Afternoon: 12pm - 6pm",151414.282098183,37.8667668442322
+"28","PapeVillage",2024,"Q1","Evening: 6pm - 12am",97222.610071482,24.3141258311239
+"29","QueenStreet",2024,"Q1","Early Morning: 12am - 6am",147252.335176239,7.33600813561202
+"30","QueenStreet",2024,"Q1","Morning: 6am - 12pm",508809.986561729,25.3485569273321
+"31","QueenStreet",2024,"Q1","Afternoon: 12pm - 6pm",802594.398643725,39.984690436319
+"32","QueenStreet",2024,"Q1","Evening: 6pm - 12am",548597.530897217,27.3307445007368
+"33","Riverside",2024,"Q1","Early Morning: 12am - 6am",54072.321616681,9.51420321104058
+"34","Riverside",2024,"Q1","Morning: 6am - 12pm",179697.979265957,31.6184517370944
+"35","Riverside",2024,"Q1","Afternoon: 12pm - 6pm",185461.48786158,32.6325600710413
+"36","Riverside",2024,"Q1","Evening: 6pm - 12am",149100.844239002,26.2347849808238
+"37","StLawrenceMarket",2024,"Q1","Early Morning: 12am - 6am",939492.256046081,17.3523718675818
+"38","StLawrenceMarket",2024,"Q1","Morning: 6am - 12pm",1898294.58581692,35.0613997670852
+"39","StLawrenceMarket",2024,"Q1","Afternoon: 12pm - 6pm",1508541.56038083,27.8626821721735
+"40","StLawrenceMarket",2024,"Q1","Evening: 6pm - 12am",1067872.39529249,19.7235461931595
+"41","WestQueenWest",2024,"Q1","Early Morning: 12am - 6am",140049.656925385,10.0749670152724
+"42","WestQueenWest",2024,"Q1","Morning: 6am - 12pm",393896.024551433,28.3363025795695
+"43","WestQueenWest",2024,"Q1","Afternoon: 12pm - 6pm",469968.274827796,33.8088287473433
+"44","WestQueenWest",2024,"Q1","Evening: 6pm - 12am",386161.631169638,27.7799016578148
+"45","DowntownWest",2023,"Q1","Early Morning: 12am - 6am",1771872.479,18.44556411
+"46","DowntownWest",2023,"Q1","Morning: 6am - 12pm",2803269.267,29.18262098
+"47","DowntownWest",2023,"Q1","Afternoon: 12pm - 6pm",3093502.785,32.20401277
+"48","DowntownWest",2023,"Q1","Evening: 6pm - 12am",1937309.878,20.16780213
+"49","DowntownWest",2022,"Q1","Early Morning: 12am - 6am",1478430.211,15.72456556
+"50","DowntownWest",2022,"Q1","Morning: 6am - 12pm",2363273.524,25.13574818
+"51","DowntownWest",2022,"Q1","Afternoon: 12pm - 6pm",3077071.106,32.72769049
+"52","DowntownWest",2022,"Q1","Evening: 6pm - 12am",2483266.854,26.41199576
+"53","DowntownYonge",2023,"Q1","Early Morning: 12am - 6am",1235211.619,14.54894658
+"54","DowntownYonge",2023,"Q1","Morning: 6am - 12pm",2484708.403,29.26615107
+"55","DowntownYonge",2023,"Q1","Afternoon: 12pm - 6pm",3190308,37.57705965
+"56","DowntownYonge",2023,"Q1","Evening: 6pm - 12am",1579813.589,18.60784271
+"57","DowntownYonge",2022,"Q1","Early Morning: 12am - 6am",1009649.626,11.97727334
+"58","DowntownYonge",2022,"Q1","Morning: 6am - 12pm",2128432.231,25.24916959
+"59","DowntownYonge",2022,"Q1","Afternoon: 12pm - 6pm",3676283.113,43.61101774
+"60","DowntownYonge",2022,"Q1","Evening: 6pm - 12am",1615346.841,19.16253933
+"61","FinancialDistrict",2023,"Q1","Early Morning: 12am - 6am",773596.3555,7.99659194
+"62","FinancialDistrict",2023,"Q1","Morning: 6am - 12pm",3822706.823,39.51495681
+"63","FinancialDistrict",2023,"Q1","Afternoon: 12pm - 6pm",3290751.079,34.01618088
+"64","FinancialDistrict",2023,"Q1","Evening: 6pm - 12am",1787021.414,18.47227037
+"65","FinancialDistrict",2022,"Q1","Early Morning: 12am - 6am",767826.607,7.096702089
+"66","FinancialDistrict",2022,"Q1","Morning: 6am - 12pm",4042362.983,37.36188036
+"67","FinancialDistrict",2022,"Q1","Afternoon: 12pm - 6pm",3759274.013,34.74540671
+"68","FinancialDistrict",2022,"Q1","Evening: 6pm - 12am",2250021.241,20.79601084
+"69","GerrardIndiaBaz",2023,"Q1","Early Morning: 12am - 6am",20855.66459,5.730833028
+"70","GerrardIndiaBaz",2023,"Q1","Morning: 6am - 12pm",73345.46981,20.15426739
+"71","GerrardIndiaBaz",2023,"Q1","Afternoon: 12pm - 6pm",176298.8608,48.4443605
+"72","GerrardIndiaBaz",2023,"Q1","Evening: 6pm - 12am",93420.30214,25.67053908
+"73","GerrardIndiaBaz",2022,"Q1","Early Morning: 12am - 6am",18862.6171,8.141463836
+"74","GerrardIndiaBaz",2022,"Q1","Morning: 6am - 12pm",37011.71744,15.97496028
+"75","GerrardIndiaBaz",2022,"Q1","Afternoon: 12pm - 6pm",106964.4434,46.16788556
+"76","GerrardIndiaBaz",2022,"Q1","Evening: 6pm - 12am",68847.04025,29.71569032
+"77","Greektown",2023,"Q1","Early Morning: 12am - 6am",73201.07899,5.349465629
+"78","Greektown",2023,"Q1","Morning: 6am - 12pm",357400.9641,26.11852447
+"79","Greektown",2023,"Q1","Afternoon: 12pm - 6pm",627947.7327,45.88982648
+"80","Greektown",2023,"Q1","Evening: 6pm - 12am",309831.3686,22.64218342
+"81","Greektown",2022,"Q1","Early Morning: 12am - 6am",44004.86301,3.958188807
+"82","Greektown",2022,"Q1","Morning: 6am - 12pm",302099.5212,27.17351814
+"83","Greektown",2022,"Q1","Afternoon: 12pm - 6pm",511737.6128,46.03023285
+"84","Greektown",2022,"Q1","Evening: 6pm - 12am",253900.3972,22.8380602
+"85","Leslieville",2023,"Q1","Early Morning: 12am - 6am",56022.0882,5.279703622
+"86","Leslieville",2023,"Q1","Morning: 6am - 12pm",277872.0694,26.1875667
+"87","Leslieville",2023,"Q1","Afternoon: 12pm - 6pm",501340.3233,47.24794105
+"88","Leslieville",2023,"Q1","Evening: 6pm - 12am",225849.4778,21.28478863
+"89","Leslieville",2022,"Q1","Early Morning: 12am - 6am",90049.74639,11.28616052
+"90","Leslieville",2022,"Q1","Morning: 6am - 12pm",208286.8213,26.10510961
+"91","Leslieville",2022,"Q1","Afternoon: 12pm - 6pm",322660.1075,40.43980037
+"92","Leslieville",2022,"Q1","Evening: 6pm - 12am",176880.922,22.1689295
+"93","LibertyVillage",2023,"Q1","Early Morning: 12am - 6am",134961.984,10.38097807
+"94","LibertyVillage",2023,"Q1","Morning: 6am - 12pm",396658.137,30.51006882
+"95","LibertyVillage",2023,"Q1","Afternoon: 12pm - 6pm",503859.7063,38.75577703
+"96","LibertyVillage",2023,"Q1","Evening: 6pm - 12am",264609.4624,20.35317608
+"97","LibertyVillage",2022,"Q1","Early Morning: 12am - 6am",88518.95621,10.0158139
+"98","LibertyVillage",2022,"Q1","Morning: 6am - 12pm",295103.4745,33.39060477
+"99","LibertyVillage",2022,"Q1","Afternoon: 12pm - 6pm",336859.299,38.11522631
+"100","LibertyVillage",2022,"Q1","Evening: 6pm - 12am",163310.2128,18.47835502
+"101","PapeVillage",2023,"Q1","Early Morning: 12am - 6am",18169.34658,3.488379379
+"102","PapeVillage",2023,"Q1","Morning: 6am - 12pm",152055.391,29.19350391
+"103","PapeVillage",2023,"Q1","Afternoon: 12pm - 6pm",239996.8203,46.07760412
+"104","PapeVillage",2023,"Q1","Evening: 6pm - 12am",110631.9562,21.24051259
+"105","PapeVillage",2022,"Q1","Early Morning: 12am - 6am",19495.52207,4.832196137
+"106","PapeVillage",2022,"Q1","Morning: 6am - 12pm",107036.1747,26.53018411
+"107","PapeVillage",2022,"Q1","Afternoon: 12pm - 6pm",180274.2023,44.683097
+"108","PapeVillage",2022,"Q1","Evening: 6pm - 12am",96644.6547,23.95452275
+"109","QueenStreet",2023,"Q1","Early Morning: 12am - 6am",186109.3741,7.884992927
+"110","QueenStreet",2023,"Q1","Morning: 6am - 12pm",556434.3021,23.57474231
+"111","QueenStreet",2023,"Q1","Afternoon: 12pm - 6pm",1045209.126,44.28292024
+"112","QueenStreet",2023,"Q1","Evening: 6pm - 12am",572545.7523,24.25734452
+"113","QueenStreet",2022,"Q1","Early Morning: 12am - 6am",189859.3371,9.554840308
+"114","QueenStreet",2022,"Q1","Morning: 6am - 12pm",399218.2021,20.09101173
+"115","QueenStreet",2022,"Q1","Afternoon: 12pm - 6pm",894068.258,44.99478171
+"116","QueenStreet",2022,"Q1","Evening: 6pm - 12am",503902.9761,25.35936626
+"117","Riverside",2023,"Q1","Early Morning: 12am - 6am",64544.18975,8.337028724
+"118","Riverside",2023,"Q1","Morning: 6am - 12pm",231307.8827,29.8775222
+"119","Riverside",2023,"Q1","Afternoon: 12pm - 6pm",315198.0132,40.71342285
+"120","Riverside",2023,"Q1","Evening: 6pm - 12am",163136.8806,21.07202623
+"121","Riverside",2022,"Q1","Early Morning: 12am - 6am",57213.72148,9.943425654
+"122","Riverside",2022,"Q1","Morning: 6am - 12pm",174454.6024,30.31923679
+"123","Riverside",2022,"Q1","Afternoon: 12pm - 6pm",231209.6638,40.18294988
+"124","Riverside",2022,"Q1","Evening: 6pm - 12am",112514.4723,19.55438768
+"125","StLawrenceMarket",2023,"Q1","Early Morning: 12am - 6am",1117116.937,18.36087418
+"126","StLawrenceMarket",2023,"Q1","Morning: 6am - 12pm",1977966.133,32.50974548
+"127","StLawrenceMarket",2023,"Q1","Afternoon: 12pm - 6pm",1945470.64,31.97565131
+"128","StLawrenceMarket",2023,"Q1","Evening: 6pm - 12am",1043671.507,17.15372903
+"129","StLawrenceMarket",2022,"Q1","Early Morning: 12am - 6am",661115.4629,12.54225814
+"130","StLawrenceMarket",2022,"Q1","Morning: 6am - 12pm",1719931.204,32.62943064
+"131","StLawrenceMarket",2022,"Q1","Afternoon: 12pm - 6pm",1801627.522,34.17932074
+"132","StLawrenceMarket",2022,"Q1","Evening: 6pm - 12am",1088429.75,20.64899047
+"133","WestQueenWest",2023,"Q1","Early Morning: 12am - 6am",160505.3931,9.440400591
+"134","WestQueenWest",2023,"Q1","Morning: 6am - 12pm",419649.8767,24.68242885
+"135","WestQueenWest",2023,"Q1","Afternoon: 12pm - 6pm",708073.8627,41.64658136
+"136","WestQueenWest",2023,"Q1","Evening: 6pm - 12am",411967.7133,24.2305892
+"137","WestQueenWest",2022,"Q1","Early Morning: 12am - 6am",85189.20372,9.716134096
+"138","WestQueenWest",2022,"Q1","Morning: 6am - 12pm",242494.4344,27.65735961
+"139","WestQueenWest",2022,"Q1","Afternoon: 12pm - 6pm",350995.8933,40.03233998
+"140","WestQueenWest",2022,"Q1","Evening: 6pm - 12am",198101.3248,22.59416631
+"141","DowntownWest",2023,"Q2","Early Morning: 12am - 6am",3717734.508,20.11260531
+"142","DowntownWest",2023,"Q2","Morning: 6am - 12pm",5058386.674,27.36541151
+"143","DowntownWest",2023,"Q2","Afternoon: 12pm - 6pm",5928597.251,32.07317153
+"144","DowntownWest",2023,"Q2","Evening: 6pm - 12am",3779880.901,20.44881165
+"145","DowntownWest",2022,"Q2","Early Morning: 12am - 6am",2987887.338,15.81424166
+"146","DowntownWest",2022,"Q2","Morning: 6am - 12pm",4870634.632,25.77921602
+"147","DowntownWest",2022,"Q2","Afternoon: 12pm - 6pm",6083652.781,32.19945882
+"148","DowntownWest",2022,"Q2","Evening: 6pm - 12am",4951474.411,26.20708349
+"149","DowntownYonge",2023,"Q2","Early Morning: 12am - 6am",2413067.924,13.95190535
+"150","DowntownYonge",2023,"Q2","Morning: 6am - 12pm",4686424.433,27.09602554
+"151","DowntownYonge",2023,"Q2","Afternoon: 12pm - 6pm",7007717.257,40.51730451
+"152","DowntownYonge",2023,"Q2","Evening: 6pm - 12am",3188406.03,18.4347646
+"153","DowntownYonge",2022,"Q2","Early Morning: 12am - 6am",2266886.635,12.55237641
+"154","DowntownYonge",2022,"Q2","Morning: 6am - 12pm",4442498.107,24.59933707
+"155","DowntownYonge",2022,"Q2","Afternoon: 12pm - 6pm",7484497.928,41.44372893
+"156","DowntownYonge",2022,"Q2","Evening: 6pm - 12am",3865539.395,21.40455758
+"157","FinancialDistrict",2023,"Q2","Early Morning: 12am - 6am",1417488.751,7.831888552
+"158","FinancialDistrict",2023,"Q2","Morning: 6am - 12pm",6921113.186,38.24043549
+"159","FinancialDistrict",2023,"Q2","Afternoon: 12pm - 6pm",6395769.207,35.33781246
+"160","FinancialDistrict",2023,"Q2","Evening: 6pm - 12am",3364568.099,18.58986349
+"161","FinancialDistrict",2022,"Q2","Early Morning: 12am - 6am",1640890.047,7.633170679
+"162","FinancialDistrict",2022,"Q2","Morning: 6am - 12pm",8293673.768,38.58090768
+"163","FinancialDistrict",2022,"Q2","Afternoon: 12pm - 6pm",7104002.155,33.04673646
+"164","FinancialDistrict",2022,"Q2","Evening: 6pm - 12am",4458268.257,20.73918517
+"165","GerrardIndiaBaz",2023,"Q2","Early Morning: 12am - 6am",60636.39975,9.178748453
+"166","GerrardIndiaBaz",2023,"Q2","Morning: 6am - 12pm",115558.4969,17.49250251
+"167","GerrardIndiaBaz",2023,"Q2","Afternoon: 12pm - 6pm",287927.4208,43.58460231
+"168","GerrardIndiaBaz",2023,"Q2","Evening: 6pm - 12am",196494.9776,29.74414673
+"169","GerrardIndiaBaz",2022,"Q2","Early Morning: 12am - 6am",26545.45541,6.984171013
+"170","GerrardIndiaBaz",2022,"Q2","Morning: 6am - 12pm",57759.28936,15.19660327
+"171","GerrardIndiaBaz",2022,"Q2","Afternoon: 12pm - 6pm",166633.5734,43.84168043
+"172","GerrardIndiaBaz",2022,"Q2","Evening: 6pm - 12am",129141.9428,33.97754529
+"173","Greektown",2023,"Q2","Early Morning: 12am - 6am",173756.2894,7.179699992
+"174","Greektown",2023,"Q2","Morning: 6am - 12pm",641773.4283,26.5184109
+"175","Greektown",2023,"Q2","Afternoon: 12pm - 6pm",1038212.416,42.89947548
+"176","Greektown",2023,"Q2","Evening: 6pm - 12am",566363.0178,23.40241363
+"177","Greektown",2022,"Q2","Early Morning: 12am - 6am",101344.7895,5.242201175
+"178","Greektown",2022,"Q2","Morning: 6am - 12pm",481255.6082,24.89362035
+"179","Greektown",2022,"Q2","Afternoon: 12pm - 6pm",842871.6136,43.59871469
+"180","Greektown",2022,"Q2","Evening: 6pm - 12am",507776.7546,26.26546379
+"181","Leslieville",2023,"Q2","Early Morning: 12am - 6am",148741.5436,7.665070818
+"182","Leslieville",2023,"Q2","Morning: 6am - 12pm",458680.9898,23.63712373
+"183","Leslieville",2023,"Q2","Afternoon: 12pm - 6pm",843221.1719,43.45356274
+"184","Leslieville",2023,"Q2","Evening: 6pm - 12am",489867.3107,25.24424271
+"185","Leslieville",2022,"Q2","Early Morning: 12am - 6am",166435.9705,11.64306685
+"186","Leslieville",2022,"Q2","Morning: 6am - 12pm",348986.364,24.4134219
+"187","Leslieville",2022,"Q2","Afternoon: 12pm - 6pm",558097.9508,39.04187138
+"188","Leslieville",2022,"Q2","Evening: 6pm - 12am",355965.3699,24.90163987
+"189","LibertyVillage",2023,"Q2","Early Morning: 12am - 6am",303004.5082,11.80763436
+"190","LibertyVillage",2023,"Q2","Morning: 6am - 12pm",752829.992,29.33666346
+"191","LibertyVillage",2023,"Q2","Afternoon: 12pm - 6pm",972366.1447,37.89166033
+"192","LibertyVillage",2023,"Q2","Evening: 6pm - 12am",537973.9071,20.96404185
+"193","LibertyVillage",2022,"Q2","Early Morning: 12am - 6am",203963.4093,10.49768469
+"194","LibertyVillage",2022,"Q2","Morning: 6am - 12pm",596988.9663,30.72610894
+"195","LibertyVillage",2022,"Q2","Afternoon: 12pm - 6pm",705924.3321,36.33284559
+"196","LibertyVillage",2022,"Q2","Evening: 6pm - 12am",436060.3803,22.44336078
+"197","PapeVillage",2023,"Q2","Early Morning: 12am - 6am",61813.92088,6.353951372
+"198","PapeVillage",2023,"Q2","Morning: 6am - 12pm",269036.6335,27.65470402
+"199","PapeVillage",2023,"Q2","Afternoon: 12pm - 6pm",412192.035,42.36987573
+"200","PapeVillage",2023,"Q2","Evening: 6pm - 12am",229799.6196,23.62146888
+"201","PapeVillage",2022,"Q2","Early Morning: 12am - 6am",35007.63186,4.998998467
+"202","PapeVillage",2022,"Q2","Morning: 6am - 12pm",193345.0003,27.60916145
+"203","PapeVillage",2022,"Q2","Afternoon: 12pm - 6pm",291990.2683,41.69544827
+"204","PapeVillage",2022,"Q2","Evening: 6pm - 12am",179950.0102,25.69639182
+"205","QueenStreet",2023,"Q2","Early Morning: 12am - 6am",302127.2164,7.292742318
+"206","QueenStreet",2023,"Q2","Morning: 6am - 12pm",893827.9199,21.57520522
+"207","QueenStreet",2023,"Q2","Afternoon: 12pm - 6pm",1919462.046,46.33194671
+"208","QueenStreet",2023,"Q2","Evening: 6pm - 12am",1027430.642,24.80010575
+"209","QueenStreet",2022,"Q2","Early Morning: 12am - 6am",377182.6021,10.44437602
+"210","QueenStreet",2022,"Q2","Morning: 6am - 12pm",684093.652,18.94289741
+"211","QueenStreet",2022,"Q2","Afternoon: 12pm - 6pm",1553319.543,43.01219966
+"212","QueenStreet",2022,"Q2","Evening: 6pm - 12am",996750.6469,27.60052691
+"213","Riverside",2023,"Q2","Early Morning: 12am - 6am",97697.55733,8.033205937
+"214","Riverside",2023,"Q2","Morning: 6am - 12pm",342248.04,28.14143016
+"215","Riverside",2023,"Q2","Afternoon: 12pm - 6pm",481401.3471,39.58334543
+"216","Riverside",2023,"Q2","Evening: 6pm - 12am",294824.5082,24.24201847
+"217","Riverside",2022,"Q2","Early Morning: 12am - 6am",105598.4916,10.19071587
+"218","Riverside",2022,"Q2","Morning: 6am - 12pm",285929.4973,27.59344591
+"219","Riverside",2022,"Q2","Afternoon: 12pm - 6pm",404154.3326,39.00265913
+"220","Riverside",2022,"Q2","Evening: 6pm - 12am",240540.1866,23.21317909
+"221","StLawrenceMarket",2023,"Q2","Early Morning: 12am - 6am",2035518.094,18.77779923
+"222","StLawrenceMarket",2023,"Q2","Morning: 6am - 12pm",3451530.042,31.84061018
+"223","StLawrenceMarket",2023,"Q2","Afternoon: 12pm - 6pm",3437539.856,31.71154972
+"224","StLawrenceMarket",2023,"Q2","Evening: 6pm - 12am",1915436.814,17.67004087
+"225","StLawrenceMarket",2022,"Q2","Early Morning: 12am - 6am",1553140.57,15.32456101
+"226","StLawrenceMarket",2022,"Q2","Morning: 6am - 12pm",3178865.096,31.36529498
+"227","StLawrenceMarket",2022,"Q2","Afternoon: 12pm - 6pm",3286195.94,32.42430928
+"228","StLawrenceMarket",2022,"Q2","Evening: 6pm - 12am",2116774.322,20.88583473
+"229","WestQueenWest",2023,"Q2","Early Morning: 12am - 6am",310057.664,10.52021083
+"230","WestQueenWest",2023,"Q2","Morning: 6am - 12pm",711591.1373,24.14418238
+"231","WestQueenWest",2023,"Q2","Afternoon: 12pm - 6pm",1166461.681,39.57787285
+"232","WestQueenWest",2023,"Q2","Evening: 6pm - 12am",759146.6504,25.75773393
+"233","WestQueenWest",2022,"Q2","Early Morning: 12am - 6am",233680.4695,11.88329687
+"234","WestQueenWest",2022,"Q2","Morning: 6am - 12pm",493908.4851,25.11660975
+"235","WestQueenWest",2022,"Q2","Afternoon: 12pm - 6pm",731398.6746,37.1936414
+"236","WestQueenWest",2022,"Q2","Evening: 6pm - 12am",507473.9676,25.80645198
+"237","DowntownWest",2023,"Q3","Early Morning: 12am - 6am",3991487.092,19.99514491
+"238","DowntownWest",2023,"Q3","Morning: 6am - 12pm",5416234.501,27.13234221
+"239","DowntownWest",2023,"Q3","Afternoon: 12pm - 6pm",6417154.691,32.14639933
+"240","DowntownWest",2023,"Q3","Evening: 6pm - 12am",4137405.108,20.72611355
+"241","DowntownWest",2022,"Q3","Early Morning: 12am - 6am",2016558.42,16.10088016
+"242","DowntownWest",2022,"Q3","Morning: 6am - 12pm",3182112.12,25.40705263
+"243","DowntownWest",2022,"Q3","Afternoon: 12pm - 6pm",4050454.063,32.34018655
+"244","DowntownWest",2022,"Q3","Evening: 6pm - 12am",3275398.276,26.15188065
+"245","DowntownYonge",2023,"Q3","Early Morning: 12am - 6am",2608684.59,13.65994989
+"246","DowntownYonge",2023,"Q3","Morning: 6am - 12pm",5166718.6,27.05467631
+"247","DowntownYonge",2023,"Q3","Afternoon: 12pm - 6pm",7783726.553,40.75821012
+"248","DowntownYonge",2023,"Q3","Evening: 6pm - 12am",3538192.07,18.52716368
+"249","DowntownYonge",2022,"Q3","Early Morning: 12am - 6am",1698198.225,13.01864935
+"250","DowntownYonge",2022,"Q3","Morning: 6am - 12pm",3168954.553,24.29369406
+"251","DowntownYonge",2022,"Q3","Afternoon: 12pm - 6pm",5225245.25,40.0575355
+"252","DowntownYonge",2022,"Q3","Evening: 6pm - 12am",2951952.267,22.63012109
+"253","FinancialDistrict",2023,"Q3","Early Morning: 12am - 6am",1588058.48,7.825011367
+"254","FinancialDistrict",2023,"Q3","Morning: 6am - 12pm",7728409.712,38.08102446
+"255","FinancialDistrict",2023,"Q3","Afternoon: 12pm - 6pm",7192039.422,35.43810944
+"256","FinancialDistrict",2023,"Q3","Evening: 6pm - 12am",3786139.972,18.65585473
+"257","FinancialDistrict",2022,"Q3","Early Morning: 12am - 6am",1145438.21,7.933057064
+"258","FinancialDistrict",2022,"Q3","Morning: 6am - 12pm",5433214.454,37.62926708
+"259","FinancialDistrict",2022,"Q3","Afternoon: 12pm - 6pm",4818201.737,33.36982214
+"260","FinancialDistrict",2022,"Q3","Evening: 6pm - 12am",3041945.174,21.06785372
+"261","GerrardIndiaBaz",2023,"Q3","Early Morning: 12am - 6am",57225.91219,7.618597788
+"262","GerrardIndiaBaz",2023,"Q3","Morning: 6am - 12pm",144308.0881,19.21201845
+"263","GerrardIndiaBaz",2023,"Q3","Afternoon: 12pm - 6pm",326649.1226,43.48743755
+"264","GerrardIndiaBaz",2023,"Q3","Evening: 6pm - 12am",222951.3218,29.68194621
+"265","GerrardIndiaBaz",2022,"Q3","Early Morning: 12am - 6am",29565.52673,10.46448202
+"266","GerrardIndiaBaz",2022,"Q3","Morning: 6am - 12pm",42025.46847,14.87457887
+"267","GerrardIndiaBaz",2022,"Q3","Afternoon: 12pm - 6pm",110441.0713,39.08973498
+"268","GerrardIndiaBaz",2022,"Q3","Evening: 6pm - 12am",100500.0902,35.57120413
+"269","Greektown",2023,"Q3","Early Morning: 12am - 6am",183835.7663,6.661321209
+"270","Greektown",2023,"Q3","Morning: 6am - 12pm",733115.7898,26.56457912
+"271","Greektown",2023,"Q3","Afternoon: 12pm - 6pm",1199400.225,43.46047735
+"272","Greektown",2023,"Q3","Evening: 6pm - 12am",643397.5321,23.31362233
+"273","Greektown",2022,"Q3","Early Morning: 12am - 6am",80969.75446,6.324995026
+"274","Greektown",2022,"Q3","Morning: 6am - 12pm",297758.2433,23.25954204
+"275","Greektown",2022,"Q3","Afternoon: 12pm - 6pm",556968.4167,43.50788129
+"276","Greektown",2022,"Q3","Evening: 6pm - 12am",344458.813,26.90758165
+"277","Leslieville",2023,"Q3","Early Morning: 12am - 6am",173307.359,8.124211882
+"278","Leslieville",2023,"Q3","Morning: 6am - 12pm",524391.417,24.58214704
+"279","Leslieville",2023,"Q3","Afternoon: 12pm - 6pm",919436.999,43.10088756
+"280","Leslieville",2023,"Q3","Evening: 6pm - 12am",516084.7946,24.19275353
+"281","Leslieville",2022,"Q3","Early Morning: 12am - 6am",121130.2612,12.43949442
+"282","Leslieville",2022,"Q3","Morning: 6am - 12pm",213771.2834,21.95328122
+"283","Leslieville",2022,"Q3","Afternoon: 12pm - 6pm",393386.0988,40.39885767
+"284","Leslieville",2022,"Q3","Evening: 6pm - 12am",245467.8571,25.20836668
+"285","LibertyVillage",2023,"Q3","Early Morning: 12am - 6am",298368.8965,11.01143976
+"286","LibertyVillage",2023,"Q3","Morning: 6am - 12pm",790196.4361,29.16255869
+"287","LibertyVillage",2023,"Q3","Afternoon: 12pm - 6pm",1036707.15,38.26014866
+"288","LibertyVillage",2023,"Q3","Evening: 6pm - 12am",584354.0782,21.56585289
+"289","LibertyVillage",2022,"Q3","Early Morning: 12am - 6am",172081.654,11.00204575
+"290","LibertyVillage",2022,"Q3","Morning: 6am - 12pm",446417.9131,28.54174278
+"291","LibertyVillage",2022,"Q3","Afternoon: 12pm - 6pm",571223.0074,36.52116026
+"292","LibertyVillage",2022,"Q3","Evening: 6pm - 12am",374365.2128,23.93505121
+"293","PapeVillage",2023,"Q3","Early Morning: 12am - 6am",57089.41836,5.436810885
+"294","PapeVillage",2023,"Q3","Morning: 6am - 12pm",303213.8376,28.87603938
+"295","PapeVillage",2023,"Q3","Afternoon: 12pm - 6pm",456835.3106,43.50591162
+"296","PapeVillage",2023,"Q3","Evening: 6pm - 12am",232914.8483,22.18123811
+"297","PapeVillage",2022,"Q3","Early Morning: 12am - 6am",29284.07926,6.788046425
+"298","PapeVillage",2022,"Q3","Morning: 6am - 12pm",101145.5028,23.44551668
+"299","PapeVillage",2022,"Q3","Afternoon: 12pm - 6pm",179219.6453,41.5430945
+"300","PapeVillage",2022,"Q3","Evening: 6pm - 12am",121757.3576,28.2233424
+"301","QueenStreet",2023,"Q3","Early Morning: 12am - 6am",351592.256,7.382340635
+"302","QueenStreet",2023,"Q3","Morning: 6am - 12pm",1063610.592,22.33250464
+"303","QueenStreet",2023,"Q3","Afternoon: 12pm - 6pm",2164544.005,45.44867212
+"304","QueenStreet",2023,"Q3","Evening: 6pm - 12am",1182865.352,24.83648261
+"305","QueenStreet",2022,"Q3","Early Morning: 12am - 6am",287204.0676,11.92759858
+"306","QueenStreet",2022,"Q3","Morning: 6am - 12pm",447937.8458,18.60288003
+"307","QueenStreet",2022,"Q3","Afternoon: 12pm - 6pm",999590.7557,41.5130516
+"308","QueenStreet",2022,"Q3","Evening: 6pm - 12am",673162.4802,27.9564698
+"309","Riverside",2023,"Q3","Early Morning: 12am - 6am",90438.83313,6.812348776
+"310","Riverside",2023,"Q3","Morning: 6am - 12pm",380410.7064,28.65462015
+"311","Riverside",2023,"Q3","Afternoon: 12pm - 6pm",544090.9254,40.98391168
+"312","Riverside",2023,"Q3","Evening: 6pm - 12am",312631.5093,23.5491194
+"313","Riverside",2022,"Q3","Early Morning: 12am - 6am",58702.61249,8.470302397
+"314","Riverside",2022,"Q3","Morning: 6am - 12pm",176463.859,25.46227816
+"315","Riverside",2022,"Q3","Afternoon: 12pm - 6pm",287064.0748,41.42097631
+"316","Riverside",2022,"Q3","Evening: 6pm - 12am",170809.7932,24.64644313
+"317","StLawrenceMarket",2023,"Q3","Early Morning: 12am - 6am",2212347.541,18.46533376
+"318","StLawrenceMarket",2023,"Q3","Morning: 6am - 12pm",3790663.973,31.63873403
+"319","StLawrenceMarket",2023,"Q3","Afternoon: 12pm - 6pm",3842502.661,32.07140505
+"320","StLawrenceMarket",2023,"Q3","Evening: 6pm - 12am",2135571.95,17.82452716
+"321","StLawrenceMarket",2022,"Q3","Early Morning: 12am - 6am",1164021.668,16.75522952
+"322","StLawrenceMarket",2022,"Q3","Morning: 6am - 12pm",2071677.109,29.82025715
+"323","StLawrenceMarket",2022,"Q3","Afternoon: 12pm - 6pm",2221861.842,31.98205511
+"324","StLawrenceMarket",2022,"Q3","Evening: 6pm - 12am",1489653.482,21.44245823
+"325","WestQueenWest",2023,"Q3","Early Morning: 12am - 6am",346426.7693,10.31342348
+"326","WestQueenWest",2023,"Q3","Morning: 6am - 12pm",815652.7556,24.28268547
+"327","WestQueenWest",2023,"Q3","Afternoon: 12pm - 6pm",1362079.029,40.55026655
+"328","WestQueenWest",2023,"Q3","Evening: 6pm - 12am",834830.5356,24.85362451
+"329","WestQueenWest",2022,"Q3","Early Morning: 12am - 6am",199504.447,12.77353449
+"330","WestQueenWest",2022,"Q3","Morning: 6am - 12pm",380993.7982,24.39362879
+"331","WestQueenWest",2022,"Q3","Afternoon: 12pm - 6pm",573140.8012,36.69609324
+"332","WestQueenWest",2022,"Q3","Evening: 6pm - 12am",408218.7714,26.13674348
+"333","DowntownWest",2023,"Q4","Early Morning: 12am - 6am",4424928.203,19.9595576
+"334","DowntownWest",2023,"Q4","Morning: 6am - 12pm",6143135.286,27.70988748
+"335","DowntownWest",2023,"Q4","Afternoon: 12pm - 6pm",7049911.413,31.80008951
+"336","DowntownWest",2023,"Q4","Evening: 6pm - 12am",4551495.442,20.53046542
+"337","DowntownWest",2022,"Q4","Early Morning: 12am - 6am",1745478.634,17.55752968
+"338","DowntownWest",2022,"Q4","Morning: 6am - 12pm",2683413.349,26.99208606
+"339","DowntownWest",2022,"Q4","Afternoon: 12pm - 6pm",3329744.991,33.49344721
+"340","DowntownWest",2022,"Q4","Evening: 6pm - 12am",2182844.922,21.95693706
+"341","DowntownYonge",2023,"Q4","Early Morning: 12am - 6am",3015752.698,14.23819747
+"342","DowntownYonge",2023,"Q4","Morning: 6am - 12pm",5878562.114,27.75430767
+"343","DowntownYonge",2023,"Q4","Afternoon: 12pm - 6pm",8387523.802,39.59980547
+"344","DowntownYonge",2023,"Q4","Evening: 6pm - 12am",3898881.094,18.40768939
+"345","DowntownYonge",2022,"Q4","Early Morning: 12am - 6am",1301652.244,14.25331845
+"346","DowntownYonge",2022,"Q4","Morning: 6am - 12pm",2465253.619,26.99495589
+"347","DowntownYonge",2022,"Q4","Afternoon: 12pm - 6pm",3561154.241,38.9952583
+"348","DowntownYonge",2022,"Q4","Evening: 6pm - 12am",1804214.938,19.75646736
+"349","FinancialDistrict",2023,"Q4","Early Morning: 12am - 6am",1775219.302,7.971943408
+"350","FinancialDistrict",2023,"Q4","Morning: 6am - 12pm",8750576.584,39.2960471
+"351","FinancialDistrict",2023,"Q4","Afternoon: 12pm - 6pm",7689275.704,34.53008352
+"352","FinancialDistrict",2023,"Q4","Evening: 6pm - 12am",4053266.397,18.20192598
+"353","FinancialDistrict",2022,"Q4","Early Morning: 12am - 6am",881235.1817,8.319708867
+"354","FinancialDistrict",2022,"Q4","Morning: 6am - 12pm",3981158.461,37.58597028
+"355","FinancialDistrict",2022,"Q4","Afternoon: 12pm - 6pm",3699169.52,34.92372308
+"356","FinancialDistrict",2022,"Q4","Evening: 6pm - 12am",2030576.488,19.17059777
+"357","GerrardIndiaBaz",2023,"Q4","Early Morning: 12am - 6am",63434.45123,7.907757192
+"358","GerrardIndiaBaz",2023,"Q4","Morning: 6am - 12pm",149600.8479,18.64928534
+"359","GerrardIndiaBaz",2023,"Q4","Afternoon: 12pm - 6pm",349982.1547,43.62887749
+"360","GerrardIndiaBaz",2023,"Q4","Evening: 6pm - 12am",239162.6041,29.81407999
+"361","GerrardIndiaBaz",2022,"Q4","Early Morning: 12am - 6am",28512.47245,8.426844207
+"362","GerrardIndiaBaz",2022,"Q4","Morning: 6am - 12pm",76782.19764,22.69293267
+"363","GerrardIndiaBaz",2022,"Q4","Afternoon: 12pm - 6pm",140732.3127,41.59335097
+"364","GerrardIndiaBaz",2022,"Q4","Evening: 6pm - 12am",92325.92551,27.28687215
+"365","Greektown",2023,"Q4","Early Morning: 12am - 6am",210369.0852,7.085768096
+"366","Greektown",2023,"Q4","Morning: 6am - 12pm",795537.6366,26.79573949
+"367","Greektown",2023,"Q4","Afternoon: 12pm - 6pm",1271235.344,42.81845324
+"368","Greektown",2023,"Q4","Evening: 6pm - 12am",691753.9299,23.30003917
+"369","Greektown",2022,"Q4","Early Morning: 12am - 6am",79289.37237,6.667705409
+"370","Greektown",2022,"Q4","Morning: 6am - 12pm",321294.0043,27.01867484
+"371","Greektown",2022,"Q4","Afternoon: 12pm - 6pm",538900.576,45.31793075
+"372","Greektown",2022,"Q4","Evening: 6pm - 12am",249671.3488,20.995689
+"373","Leslieville",2023,"Q4","Early Morning: 12am - 6am",182482.5644,7.907031189
+"374","Leslieville",2023,"Q4","Morning: 6am - 12pm",577035.6679,25.00315051
+"375","Leslieville",2023,"Q4","Afternoon: 12pm - 6pm",998037.2837,43.2452928
+"376","Leslieville",2023,"Q4","Evening: 6pm - 12am",550296.3194,23.8445255
+"377","Leslieville",2022,"Q4","Early Morning: 12am - 6am",77883.41896,8.003265935
+"378","Leslieville",2022,"Q4","Morning: 6am - 12pm",262556.5376,26.98019452
+"379","Leslieville",2022,"Q4","Afternoon: 12pm - 6pm",428429.7468,44.02525266
+"380","Leslieville",2022,"Q4","Evening: 6pm - 12am",204275.7549,20.99128688
+"381","LibertyVillage",2023,"Q4","Early Morning: 12am - 6am",361058.1808,12.21047441
+"382","LibertyVillage",2023,"Q4","Morning: 6am - 12pm",897726.3451,30.35982882
+"383","LibertyVillage",2023,"Q4","Afternoon: 12pm - 6pm",1089087.12,36.8313782
+"384","LibertyVillage",2023,"Q4","Evening: 6pm - 12am",609082.9216,20.59831856
+"385","LibertyVillage",2022,"Q4","Early Morning: 12am - 6am",141176.887,11.1603501
+"386","LibertyVillage",2022,"Q4","Morning: 6am - 12pm",370128.4679,29.25948695
+"387","LibertyVillage",2022,"Q4","Afternoon: 12pm - 6pm",484911.257,38.33332431
+"388","LibertyVillage",2022,"Q4","Evening: 6pm - 12am",268769.5737,21.24683864
+"389","PapeVillage",2023,"Q4","Early Morning: 12am - 6am",66549.56721,5.83566165
+"390","PapeVillage",2023,"Q4","Morning: 6am - 12pm",332645.6027,29.16934351
+"391","PapeVillage",2023,"Q4","Afternoon: 12pm - 6pm",486258.7788,42.63952159
+"392","PapeVillage",2023,"Q4","Evening: 6pm - 12am",254940.5978,22.35547325
+"393","PapeVillage",2022,"Q4","Early Morning: 12am - 6am",27707.63963,6.054357386
+"394","PapeVillage",2022,"Q4","Morning: 6am - 12pm",128699.5799,28.12196429
+"395","PapeVillage",2022,"Q4","Afternoon: 12pm - 6pm",204403.0468,44.66382242
+"396","PapeVillage",2022,"Q4","Evening: 6pm - 12am",96837.63687,21.1598559
+"397","QueenStreet",2023,"Q4","Early Morning: 12am - 6am",383661.7386,7.50828345
+"398","QueenStreet",2023,"Q4","Morning: 6am - 12pm",1167912.948,22.85612709
+"399","QueenStreet",2023,"Q4","Afternoon: 12pm - 6pm",2275575.624,44.5331527
+"400","QueenStreet",2023,"Q4","Evening: 6pm - 12am",1282695.918,25.10243676
+"401","QueenStreet",2022,"Q4","Early Morning: 12am - 6am",242383.0009,10.60470787
+"402","QueenStreet",2022,"Q4","Morning: 6am - 12pm",514402.825,22.50608197
+"403","QueenStreet",2022,"Q4","Afternoon: 12pm - 6pm",986955.0003,43.18112005
+"404","QueenStreet",2022,"Q4","Evening: 6pm - 12am",541876.1268,23.70809011
+"405","Riverside",2023,"Q4","Early Morning: 12am - 6am",115074.2936,8.056298563
+"406","Riverside",2023,"Q4","Morning: 6am - 12pm",421275.3339,29.49329308
+"407","Riverside",2023,"Q4","Afternoon: 12pm - 6pm",567450.3443,39.72693856
+"408","Riverside",2023,"Q4","Evening: 6pm - 12am",324576.7538,22.7234698
+"409","Riverside",2022,"Q4","Early Morning: 12am - 6am",42009.48276,5.869935927
+"410","Riverside",2022,"Q4","Morning: 6am - 12pm",228443.9366,31.92020426
+"411","Riverside",2022,"Q4","Afternoon: 12pm - 6pm",289972.7974,40.51756008
+"412","Riverside",2022,"Q4","Evening: 6pm - 12am",155245.6965,21.69229973
+"413","StLawrenceMarket",2023,"Q4","Early Morning: 12am - 6am",2498592.169,18.71160956
+"414","StLawrenceMarket",2023,"Q4","Morning: 6am - 12pm",4315461.33,32.31789025
+"415","StLawrenceMarket",2023,"Q4","Afternoon: 12pm - 6pm",4173356.339,31.25368572
+"416","StLawrenceMarket",2023,"Q4","Evening: 6pm - 12am",2365755.536,17.71681448
+"417","StLawrenceMarket",2022,"Q4","Early Morning: 12am - 6am",1037664.85,17.15292116
+"418","StLawrenceMarket",2022,"Q4","Morning: 6am - 12pm",1947099.299,32.1861541
+"419","StLawrenceMarket",2022,"Q4","Afternoon: 12pm - 6pm",1950967.632,32.25009885
+"420","StLawrenceMarket",2022,"Q4","Evening: 6pm - 12am",1113761.715,18.41082589
+"421","WestQueenWest",2023,"Q4","Early Morning: 12am - 6am",405020.1845,11.07558813
+"422","WestQueenWest",2023,"Q4","Morning: 6am - 12pm",908810.4319,24.85211952
+"423","WestQueenWest",2023,"Q4","Afternoon: 12pm - 6pm",1437394.704,39.30666256
+"424","WestQueenWest",2023,"Q4","Evening: 6pm - 12am",905647.6122,24.76562979
+"425","WestQueenWest",2022,"Q4","Early Morning: 12am - 6am",165047.7742,11.33256304
+"426","WestQueenWest",2022,"Q4","Morning: 6am - 12pm",395942.65,27.18634082
+"427","WestQueenWest",2022,"Q4","Afternoon: 12pm - 6pm",563923.1209,38.72026961
+"428","WestQueenWest",2022,"Q4","Evening: 6pm - 12am",331489.3326,22.76082653
