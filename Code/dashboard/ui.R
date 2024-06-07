@@ -29,15 +29,15 @@ dashboardPage(
       selectInput(
         "year",
         "Select Year",
-        choices = c("2023"),
-        selected = "2023",
+        choices = c("2023", "2024"),
+        selected = "2024",
         selectize = FALSE
       ),
       selectInput(
         "quarter",
         "Select Quarter",
         choices = c("Q1", "Q2", "Q3", "Q4"),
-        selected = "Q4",
+        selected = "Q1",
         selectize = FALSE
       )
     )

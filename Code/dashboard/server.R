@@ -20,7 +20,7 @@ function(input, output) {
     
     # filter the data based on the BIA
     monthlyFiltered = ff_monthly %>%
-      filter(Area == str_replace_all(input$bia, " ", "") &
+      filter(Name == str_replace_all(input$bia, " ", "") &
                Date < target_end_date)
   })
   
@@ -86,7 +86,7 @@ function(input, output) {
   vacancyRateData = reactive({
     vacancyRateFiltered = vacancyrate %>%
       filter((
-        Area == str_replace_all(input$bia, " ", "") &
+        Name == str_replace_all(input$bia, " ", "") &
           Quarter == input$quarter
       ) &
         (
@@ -106,7 +106,7 @@ function(input, output) {
   monthlyRentData = reactive({
     monthlyRentFiltered = marketrent %>%
       filter((
-        Area == str_replace_all(input$bia, " ", "") &
+        Name == str_replace_all(input$bia, " ", "") &
           Quarter == input$quarter
       ) &
         (
@@ -150,7 +150,7 @@ function(input, output) {
       scale_x_date(
         limits = c(
           as.Date("2020-01-01", "%Y-%m-%d"),
-          as.Date("2024-01-01", "%Y-%m-%d")
+          as.Date("2024-04-01", "%Y-%m-%d")
         ),
         date_breaks = "3 month",
         date_labels = "%b %Y"
