@@ -215,12 +215,42 @@ dashboardPage(
                      title = "BIA Retail Map",
                      solidHeader = TRUE,
                      width = 12,
-                     style = "display: flex; flex-direction: column; padding: 1em",
+                     style = "display: flex; flex-direction: column; padding: 1em;",
                      leafletOutput("retailMap", width = "100%")
                    )
                  )
         )
+      ),
+      tabItem(
+        tabName = "retailSpending",
+        fluidRow(style = "margin: 0px; padding: 0px;",
+                 column(
+                   width = 6,
+                   # Household Spend Visitors
+                   box(
+                     title = "Household Spending: Visitors",
+                     "Description Panel",
+                     solidHeader = TRUE,
+                     gt::gt_output("hhSpendVisPlot"),
+                     width = 12,
+                     style = "display: flex; flex-direction: column; padding: 1em;"
+                   )
+                 ),
+                 column(
+                   width = 6,
+                   # Household Spend Residents
+                   box(
+                     title = "Household Spending: Residents",
+                     "Description Panel",
+                     solidHeader = TRUE,
+                     gt::gt_output("hhSpendVisPlot"),
+                     width = 12,
+                     style = "display: flex; flex-direction: column; padding: 1em;"
+                   )
+                 )
+                 
+        ),
+        
       )
-    )
   )
 )

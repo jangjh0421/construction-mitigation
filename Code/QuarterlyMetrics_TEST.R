@@ -349,8 +349,8 @@ CoT_Dashboard_stats = function(input_stats, desired_quarter, desired_year){
 #### LOAD SCRIPT-SPECIFIC VARIABLES ####
 
 # Temporal variables
-year = 2023
-data_year = 23
+year = 2024
+data_year = 24
 quarter = "Q1"
 
 # BIA list

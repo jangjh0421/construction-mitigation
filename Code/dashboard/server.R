@@ -163,9 +163,14 @@ function(input, output, session) {
         Quarter == input$quarter
       ) &
         (
-          Year == as.numeric(input$year) |
-            Year == as.numeric(input$year) - 1
+          Year == as.numeric(input$year)
         )
+      ) %>%
+      select(target, control, yoy_growth) %>%
+      rename(
+        "Current Year" = target,
+        "Previous Year" = control,
+        "Percent Change" = yoy_growth
       )
   })
   
@@ -176,9 +181,14 @@ function(input, output, session) {
         Quarter == input$quarter
       ) &
         (
-          Year == as.numeric(input$year) |
-            Year == as.numeric(input$year) - 1
+          Year == as.numeric(input$year)
         )
+      ) %>%
+      select(target, control, yoy_growth) %>%
+      rename(
+        "Current Year" = target,
+        "Previous Year" = control,
+        "Percent Change" = yoy_growth
       )
   })
   
@@ -440,12 +450,32 @@ function(input, output, session) {
   
   
   # Office Vacancy Summary Table
-  
-  
+  output$officeVacancyTable = gt::render_gt({
+    officeVacancyData() %>%
+      gt::gt() %>%
+      gt::fmt_percent(
+        columns = c('Percent Change', 'Current Year', 'Previous Year'),
+        decimals = 1,
+        scale_values = FALSE
+      ) %>%
+      gt::tab_options(table.width = gt::pct(95)) %>%
+      gt::opt_table_font(font = list("sans-serif"))
+  })
   
   
   # Unemployment Summary Table
-  
+  output$unemploymentTable = gt::render_gt({
+    unemploymentData() %>%
+      gt::gt() %>%
+      gt::fmt_percent(
+        columns = c('Percent Change', 'Current Year', 'Previous Year'),
+        decimals = 1,
+        scale_values = FALSE
+      ) %>%
+      gt::tab_options(table.width = gt::pct(95)) %>%
+      gt::opt_table_font(font = list("sans-serif"))
+  })  
+      
   
   # BIA Retail Business Map
   output$retailMap <- renderLeaflet({
