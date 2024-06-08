@@ -28,6 +28,12 @@ marketrent = read_csv(paste0(input_directory, "marketrent_meta.csv")) %>%
   select(-...1)
 vacancyrate = read_csv(paste0(input_directory, "vacancyrate_meta.csv")) %>%
   select(-...1)
+cot_office_vacancy = read_csv(paste0(input_directory, "Cot_Office_Vacancy_meta.csv")) %>%
+  select(-...1)
+cot_retail_sales = read_csv(paste0(input_directory, "Cot_Retail_Sales_meta.csv")) %>%
+  select(-...1)
+cot_unemployment = read_csv(paste0(input_directory, "Cot_Unemployment_meta.csv")) %>%
+  select(-...1)
 
 # load in the area shapefiles
 BIAs_shp = st_read(paste0(input_directory, "BIAs/All.shp")) %>%

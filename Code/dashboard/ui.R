@@ -6,6 +6,8 @@ dashboardPage(
       # side bar tabs
       menuItem(text = "Visitor Levels", tabName = "visitorLevels"),
       menuItem(text = "Commercial Real Estate", tabName = "realEstate"),
+      menuItem(text = "Retail Spending", tabName = "retailSpending"),
+      menuItem(text = "Travel Times", tabName = "travelTimes"),
       # drop down inputs
       selectInput(
         "bia",
@@ -182,6 +184,32 @@ dashboardPage(
                  )),
         fluidRow(style = "margin: 0px; padding: 0px;",
                  column(
+                   width = 6,
+                   # Office Occupancy
+                   box(
+                     title = "Office Vacancy Rate: City of Toronto",
+                     "Description Panel",
+                     solidHeader = TRUE,
+                     gt::gt_output("officeVacancyTable"),
+                     width = 12,
+                     style = "display: flex; flex-direction: column; padding: 1em;margin-bottom: 0px;"
+                   )
+                 ),
+                 column(
+                   width = 6,
+                   # Unemployment Rate
+                   box(
+                     title = "Unemployment Rate: City of Toronto",
+                     "Description Panel",
+                     solidHeader = TRUE,
+                     gt::gt_output("unemploymentTable"),
+                     width = 12,
+                     style = "display: flex; flex-direction: column; padding: 1em;margin-bottom: 0px;"
+                   )
+                 )
+        ),
+        fluidRow(style = "margin: 0px; padding: 0px;",
+                 column(
                    width = 12,
                    box(
                      title = "BIA Retail Map",
@@ -190,7 +218,8 @@ dashboardPage(
                      style = "display: flex; flex-direction: column; padding: 1em",
                      leafletOutput("retailMap", width = "100%")
                    )
-                 ))
+                 )
+        )
       )
     )
   )

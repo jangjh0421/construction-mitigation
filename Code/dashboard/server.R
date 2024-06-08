@@ -1,6 +1,6 @@
 function(input, output, session) {
   
-  ## Input Reactivity
+  ## SELECT INPUT REACTIVITY --------------------------------------------------
   input_choices = reactive({
     if(input$year == "2024"){
       return(c("Q1"))
@@ -18,11 +18,14 @@ function(input, output, session) {
   
   
   
-  ## Reactivity ---------------------------------------------------------------
+  ## CHART REACTIVITY ---------------------------------------------------------
   
   output$selectedBIA <- renderText({
     paste(input$bia)
   })
+  
+  
+  ## VISITOR LEVELS TAB
   
   # Monthly Visits Filter
   monthlyData = reactive({
@@ -101,6 +104,9 @@ function(input, output, session) {
       rename("Period" = time_window, "Percent Change" = Change)
   })
   
+  
+  ## COMMERCIAL REAL ESTATE TAB
+  
   # Vacancy Rate Summary
   vacancyRateData = reactive({
     vacancyRateFiltered = vacancyrate %>%
@@ -150,6 +156,36 @@ function(input, output, session) {
       filter(layer == str_replace_all(input$bia, " ", ""))
   })
   
+  # Office Vacancy Filter
+  officeVacancyData = reactive({
+    officeVacancyFiltered = cot_office_vacancy %>%
+      filter((
+        Quarter == input$quarter
+      ) &
+        (
+          Year == as.numeric(input$year) |
+            Year == as.numeric(input$year) - 1
+        )
+      )
+  })
+  
+  # Unemployment Filter
+  unemploymentData = reactive({
+    unemploymentFiltered = cot_unemployment %>%
+      filter((
+        Quarter == input$quarter
+      ) &
+        (
+          Year == as.numeric(input$year) |
+            Year == as.numeric(input$year) - 1
+        )
+      )
+  })
+  
+  
+  
+  
+  ## CHART VISUALS ------------------------------------------------------------
   
   
   ## Visitor Levels -----------------------------------------------------------
@@ -403,6 +439,15 @@ function(input, output, session) {
   })
   
   
+  # Office Vacancy Summary Table
+  
+  
+  
+  
+  # Unemployment Summary Table
+  
+  
+  # BIA Retail Business Map
   output$retailMap <- renderLeaflet({
     leaflet() %>%
       addProviderTiles(providers$CartoDB.Positron) %>%

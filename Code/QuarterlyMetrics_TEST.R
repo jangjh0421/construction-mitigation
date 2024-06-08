@@ -349,8 +349,8 @@ CoT_Dashboard_stats = function(input_stats, desired_quarter, desired_year){
 #### LOAD SCRIPT-SPECIFIC VARIABLES ####
 
 # Temporal variables
-year = 2024
-data_year = 24
+year = 2023
+data_year = 23
 quarter = "Q1"
 
 # BIA list
@@ -705,7 +705,19 @@ Unemployment = read_csv("./Data/CoTDashboards/Unemployment_Rate.csv") %>%
 
 Retail_sales = CoT_Dashboard_stats(Retail_sales, quarter, year)
 Office_Vacancy = CoT_Dashboard_stats(Office_Vacancy, quarter, year)
-Unemployment = CoT_Dashboard_stats(Unemployment, quarter, year) 
+Unemployment = CoT_Dashboard_stats(Unemployment, quarter, year)
+
+# bind the old data to the new data set for retail sales
+Retail_sales_meta = meta_data_bind(Retail_sales, "Cot_Retail_Sales_meta")
+write.csv(Retail_sales_meta, "./Interim/Cot_Retail_Sales_meta.csv")
+
+# bind the old data to the new data set for office vacancy
+Office_Vacancy_meta = meta_data_bind(Office_Vacancy, "Cot_Office_Vacancy_meta")
+write.csv(Office_Vacancy_meta, "./Interim/Cot_Office_Vacancy_meta.csv")
+
+# bind the old data to the new data set for unemployment
+Unemployment_meta = meta_data_bind(Unemployment, "Cot_Unemployment_meta")
+write.csv(Unemployment_meta, "./Interim/Cot_Unemployment_meta.csv")
 
 
 #### HOUSEHOLD AND SPENDING DATA
